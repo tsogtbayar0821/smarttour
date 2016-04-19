@@ -20,7 +20,11 @@
   },
   "devDependencies": {
     "angular-mocks": "~1.5.3"
+<<<<<<< HEAD
   },  
+=======
+  },
+>>>>>>> f4f3528e1c52a43e150801edc4744c5dbb81cae7
   "resolutions": {
     "jquery": "~2.1.4",
     "angular": "~1.5.3"
