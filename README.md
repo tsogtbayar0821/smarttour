@@ -16,7 +16,7 @@
 	<pre><code>npm install</code></pre>
 	<pre><code>bower install</code></pre>
 4. Install gulp in your project devDependencies
-	<pre><code>sudo npm install --save-dev gulp</code></pre>
+	<pre><code>npm install --save-dev gulp</code></pre>
 
 reference the documentation for making style
 
