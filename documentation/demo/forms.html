@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <title>BMD - Forms</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/prettify.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Forms</h1>
+      </div>
+    </div>
+    <div class="row line-spacing">
+      <div class="col-lg-6">
+        <div class="well bmd-component">
+          <form class="form-horizontal">
+            <fieldset>
+              <legend>Legend</legend>
+              <div class="form-group">
+                <label for="inputEmail" class="col-lg-2 control-label bmd-control-label"><i class="flaticon-black402"></i></label>
+                <div class="col-lg-9">
+                  <div class="bmd-field-group">
+                    <input type="text" class="bmd-input" required>
+                    <span class="bmd-bar"></span>
+                    <label class="bmd-label">Email</label>
+                    <span class="bmd-field-feedback"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputFile" class="col-lg-2 control-label bmd-control-label"><i class="flaticon-copy31"></i></label>
+                <div class="col-lg-9">
+                  <div class="bmd-field-group">
+                    <input type="text" class="bmd-input bmd-input-file" required>
+                    <span class="bmd-bar"></span>
+                    <label class="bmd-label">Browse files...</label>
+                    <span class="bmd-field-feedback"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword" class="col-lg-2 control-label bmd-control-label"><i class="flaticon-https"></i></label>
+                <div class="col-lg-9">
+                  <div class="bmd-field-group">
+                    <input type="password" class="bmd-input" required>
+                    <span class="bmd-bar"></span>
+                    <label class="bmd-label">Password</label>
+                    <div class="checkbox bmd-checkbox">
+                      <label>
+                        <input type="checkbox" class="bmd-ripple bmd-ink-gray">
+                        <span class="check"></span>
+                        Default checkbox
+                      </label>
+                    </div>
+                    <br>
+                    <div class="checkbox bmd-checkbox bmd-checkbox-primary">
+                      <label>
+                        <input type="checkbox" class="bmd-ripple">
+                        <span class="check"></span>
+                        Primary checkbox
+                      </label>
+                    </div>
+                    <br>
+                    <div class="checkbox bmd-checkbox bmd-checkbox-info">
+                      <label>
+                        <input type="checkbox" class="bmd-ripple">
+                        <span class="check"></span>
+                        Info checkbox
+                      </label>
+                    </div>
+                    <br>
+                    <div class="checkbox bmd-checkbox bmd-checkbox-success">
+                      <label>
+                        <input type="checkbox" class="bmd-ripple">
+                        <span class="check"></span>
+                        Success checkbox
+                      </label>
+                    </div>
+                    <br>
+                    <div class="checkbox bmd-checkbox bmd-checkbox-warning">
+                      <label>
+                        <input type="checkbox" class="bmd-ripple">
+                        <span class="check"></span>
+                        Warning checkbox
+                      </label>
+                    </div>
+                    <br>
+                    <div class="checkbox bmd-checkbox bmd-checkbox-danger">
+                      <label>
+                        <input type="checkbox" class="bmd-ripple">
+                        <span class="check"></span>
+                        Danger checkbox
+                      </label>
+                    </div>
+                    <span class="bmd-field-feedback"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="textarea" class="col-lg-2 control-label bmd-control-label"><i class="flaticon-add183"></i></label>
+                <div class="col-lg-9">
+                  <div class="bmd-field-group">
+                    <textarea rows="3" class="bmd-textarea" required></textarea>
+                    <span class="bmd-bar"></span>
+                    <label class="bmd-label">Textarea</label>
+                    <span class="bmd-field-feedback">
+                      A longer block of help text that breaks onto a new line and may extend beyond one line.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="select" class="col-lg-2 control-label">Selects</label>
+                <div class="col-lg-9">
+                  <div role="presentation" class="dropdown bmd-select form-control">
+                    <a id="drop4" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                      <span class="bmd-selected-value">Selected value</span>
+                      <span class="caret"></span>
+                    </a>
+                    <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-value="Action">Action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-value="Another">Another action</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                    <span class="bmd-bar"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label">Radios</label>
+                <div class="col-lg-10">
+                  <div class="radio bmd-radio">
+                    <label>
+                      <input class="bmd-radio-input bmd-ripple bmd-ink-gray" type="radio" id="radio1" name="radio-category" checked>
+                      Default option
+                      <span class="bmd-radio-check"></span>
+                    </label>
+                  </div>
+                  <div class="radio bmd-radio bmd-radio-primary">
+                    <label>
+                      <input class="bmd-radio-input bmd-ripple" type="radio" id="radio2" name="radio-category">
+                      Primary option
+                      <span class="bmd-radio-check"></span>
+                    </label>
+                  </div>
+                  <div class="radio bmd-radio bmd-radio-info">
+                    <label>
+                      <input class="bmd-radio-input bmd-ripple" type="radio" id="radio2" name="radio-category">
+                      Info option
+                      <span class="bmd-radio-check"></span>
+                    </label>
+                  </div>
+                  <div class="radio bmd-radio bmd-radio-success">
+                    <label>
+                      <input class="bmd-radio-input bmd-ripple" type="radio" id="radio2" name="radio-category">
+                      Success option
+                      <span class="bmd-radio-check"></span>
+                    </label>
+                  </div>
+                  <div class="radio bmd-radio bmd-radio-warning">
+                    <label>
+                      <input class="bmd-radio-input bmd-ripple" type="radio" id="radio2" name="radio-category">
+                      Warning option
+                      <span class="bmd-radio-check"></span>
+                    </label>
+                  </div>
+                  <div class="radio bmd-radio bmd-radio-danger">
+                    <label>
+                      <input class="bmd-radio-input bmd-ripple" type="radio" id="radio2" name="radio-category">
+                      Danger option
+                      <span class="bmd-radio-check"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label">Switches</label>
+                <div id="switch-example" class="col-lg-10">
+                  <div class="checkbox bmd-switch">
+                    <label>
+                      <input type="checkbox" checked>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">On</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-primary">
+                    <label>
+                      <input type="checkbox" checked>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">On</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-info">
+                    <label>
+                      <input type="checkbox" checked>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">On</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-success">
+                    <label>
+                      <input type="checkbox" checked>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">On</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-warning">
+                    <label>
+                      <input type="checkbox" checked>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">On</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-danger">
+                    <label>
+                      <input type="checkbox" checked>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">On</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label">Disabled Switches</label>
+                <div class="col-lg-10">
+                  <div class="checkbox bmd-switch disabled">
+                    <label>
+                      <input type="checkbox" disabled>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">Disabled and off (for all state color)</label>
+                  <br>
+                  <div class="checkbox bmd-switch disabled">
+                    <label>
+                      <input type="checkbox" checked disabled>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;"> Disabled and on (default)</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-primary disabled">
+                    <label>
+                      <input type="checkbox" checked disabled>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;"> Disabled and on (primary)</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-info disabled">
+                    <label>
+                      <input type="checkbox" checked disabled>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;"> Disabled and on (info)</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-success disabled">
+                    <label>
+                      <input type="checkbox" checked disabled>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;"> Disabled and on (success)</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-warning disabled">
+                    <label>
+                      <input type="checkbox" checked disabled>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;"> Disabled and on (warning)</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-danger disabled">
+                    <label>
+                      <input type="checkbox" checked disabled="">
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;"> Disabled and on (danger)</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label">Switch size</label>
+                <div class="col-lg-10">
+                  <div class="checkbox bmd-switch bmd-switch-xs bmd-switch-primary">
+                    <label>
+                      <input type="checkbox" checked>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">Extra small <code>.bmd-switch-xs</code></label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-sm bmd-switch-primary">
+                    <label>
+                      <input type="checkbox" checked>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">Small <code>.bmd-switch-sm</code></label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-primary">
+                    <label>
+                      <input type="checkbox" checked>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">Default</label>
+                  <br>
+                  <div class="checkbox bmd-switch bmd-switch-lg bmd-switch-primary">
+                    <label>
+                      <input type="checkbox" checked>
+                      <div class="bmd-switch-track"></div>
+                      <div class="bmd-switch-thumb bmd-ripple"></div>
+                    </label>
+                  </div>
+                  <label style="vertical-align: top; margin: 0; padding: 7px 15px;">Large <code>.bmd-switch-lg</code></label>
+                </div>
+              </div>
+              <br>
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="reset" class="btn btn-default bmd-ripple bmd-ink-grey-400">Cancel</button>
+                  <button href="#" class="btn btn-primary bmd-ripple">Submit</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4 col-lg-offset-1">
+        <form class="bmd-component">
+          <div class="form-group">
+            <div class="bmd-field-group">
+              <input type="text" class="bmd-input" value="This is focused..." required>
+              <span class="bmd-bar"></span>
+              <label class="bmd-label">Focused input</label>
+              <span class="bmd-field-feedback"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="bmd-field-group">
+              <input type="text" class="bmd-input" value="Disabled input here..." disabled required>
+              <span class="bmd-bar"></span>
+              <label class="bmd-label">Disabled input</label>
+              <span class="bmd-field-feedback"></span>
+            </div>
+          </div>
+          <div class="form-group has-warning">
+            <div class="bmd-field-group">
+              <input type="text" class="bmd-input" required>
+              <span class="bmd-bar"></span>
+              <label class="bmd-label">Input warning</label>
+              <span class="bmd-field-feedback"></span>
+            </div>
+          </div>
+          <div class="form-group has-error">
+            <div class="bmd-field-group">
+              <input type="text" class="bmd-input" required>
+              <span class="bmd-bar"></span>
+              <label class="bmd-label">Input error</label>
+              <span class="bmd-field-feedback"></span>
+            </div>
+          </div>
+          <div class="form-group has-success">
+            <div class="bmd-field-group">
+              <input type="text" class="bmd-input" required>
+              <span class="bmd-bar"></span>
+              <label class="bmd-label">Input success</label>
+              <span class="bmd-field-feedback"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="bmd-field-group">
+              <input type="text" class="input-lg bmd-input" required>
+              <span class="bmd-bar"></span>
+              <label class="bmd-label">Input large</label>
+              <span class="bmd-field-feedback"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="bmd-field-group">
+              <input type="text" class="bmd-input" required>
+              <span class="bmd-bar"></span>
+              <label class="bmd-label">Default input</label>
+              <span class="bmd-field-feedback"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="bmd-field-group">
+              <input type="text" class="input-sm bmd-input" required>
+              <span class="bmd-bar"></span>
+              <label class="bmd-label">Small input</label>
+              <span class="bmd-field-feedback"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon bmd-addon">$</span>
+              <div class="bmd-field-group">
+                <input type="text" class="bmd-input" required>
+                <span class="bmd-bar"></span>
+                <label class="bmd-label">Input addons</label>
+              </div>
+              <span class="input-group-btn">
+                <button class="btn btn-default bmd-btn-round bmd-ripple bmd-ink-grey-400" type="button">Button</button>
+              </span>
+              <span class="bmd-field-feedback"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row line-spacing">
+      <div class="col-lg-12">
+        <p>Date and time input is using another jQuery plugin -
+          <a href="https://github.com/T00rk/bootstrap-material-datetimepicker" target="_blank">bootstrap-material-datetimepicker</a>
+          which is customized for adding option "stateColor" and aligning flat button style to BMD.
+          Please bear in mind to use customization version for BMD.
+        </p>
+        <div class="well bmd-component">
+          <form class="form-horizontal">
+            <fieldset>
+              <legend>Date and Time input</legend>
+              <div class="form-group">
+                <label for="inputDate" class="col-lg-1 control-label bmd-control-label"><i class="material-icons">event</i></label>
+                <div class="col-lg-2">
+                  <div class="bmd-field-group">
+                    <input id="inputDate" type="text" class="bmd-input" required>
+                    <span class="bmd-bar"></span>
+                    <label class="bmd-label">Date</label>
+                    <span class="bmd-field-feedback"></span>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <code>code:<br>$('#inputDate').bootstrapMaterialDatePicker({ time: false, format: 'DD/MM/YYYY' });</code>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputTime" class="col-lg-1 control-label bmd-control-label"><i class="material-icons">alarm</i></label>
+                <div class="col-lg-2">
+                  <div class="bmd-field-group">
+                    <input id="inputTime" type="text" class="bmd-input" required>
+                    <span class="bmd-bar"></span>
+                    <label class="bmd-label">Time</label>
+                    <span class="bmd-field-feedback"></span>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <code>code:<br>$('#inputTime').bootstrapMaterialDatePicker({ time: true, date: false, format: 'hh:mm A', stateColor: 'info' });</code>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputDateTime" class="col-lg-1 control-label bmd-control-label"><i class="material-icons">event</i></label>
+                <div class="col-lg-2">
+                  <div class="bmd-field-group">
+                    <input id="inputDateTime" type="text" class="bmd-input" required>
+                    <span class="bmd-bar"></span>
+                    <label class="bmd-label">Date and Time</label>
+                    <span class="bmd-field-feedback"></span>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <code>code:<br>$('#inputDateTime').bootstrapMaterialDatePicker({ time: true, format: 'DD/MM/YYYY - HH:mm', stateColor: 'success' });</code>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="source-modal" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Source Code</h4>
+          </div>
+          <div class="modal-body">
+            <pre></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/prettify.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap-material-datetimepicker-customized.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    $('#switch-example .bmd-switch input').on('change', function(e) {
+      $(this).closest('.bmd-switch').next('label').text(e.currentTarget.checked?'on':'off');
+    })
+    $('#inputDate').bootstrapMaterialDatePicker({ time: false, format: 'DD/MM/YYYY' });
+    $('#inputTime').bootstrapMaterialDatePicker({ time: true, date: false, format: 'hh:mm A', stateColor: 'info' });
+    $('#inputDateTime').bootstrapMaterialDatePicker({ time: true, format: 'DD/MM/YYYY - HH:mm', stateColor: 'success' });
+    bmd_INITIAL.inputFile('.bmd-input-file');
+  </script>
+</body>
+</html>

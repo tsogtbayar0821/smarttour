@@ -1,0 +1,719 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <title>BMD - Tree View</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/prettify.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Tree View</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p><br>
+          Tree view is a component that can be used independently or together with sidebar nav.
+          It begins with expanding first-level items and collapsible in all viewports.
+          It is flexibe and easy to change style and icons. Two LESS variables <code>@treeview-indent</code>
+          and <code>@treeview-item-space</code> to control branch indentation and each item spacing respectively.
+          Three attributes <code>data-expanded-icon</code>, <code>data-collapsed-icon</code> and
+          <code>data-item-icon</code> controls collapsible icon and item icon.
+          To use it, html must contain 2 component classes -
+          <code>bmd-treeview</code>, <code>bmd-treeview-root</code>. Whereas there are three optional classes -
+          <code>bmd-treeview-{state}</code> controls stateful color,
+          <code>bmd-treeview-{style}-line</code> controls line style,
+          <code>bmd-treeview-branch</code> if any branches
+        </p>
+
+        <pre class="prettyprint linenums">
+
+<ul class="bmd-treeview">
+  <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+    <a href="#" class="bmd-ripple" data-target="#example-tree" data-toggle="collapse">Root</a>
+    <ul id="example-tree" class="collapse in">
+      <li><a href="#" class="bmd-ripple">Item 1</a></li>
+      <li class="bmd-treeview-branch">
+        <a href="#" data-target="#example-tree-item2" data-toggle="collapse" class="bmd-ripple collapsed">Item 2</a>
+        <ul class="collapse" id="example-tree-item2">
+          <li><a href="#" class="bmd-ripple">Item 2-1</a></li>
+          <li><a href="#" class="bmd-ripple">Item 2-2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+        </pre>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h4>Simple example</h4>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="bmd-treeview">
+            <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+              <a href="#" class="bmd-ripple" data-target="#example-tree" data-toggle="collapse">Root</a>
+              <ul id="example-tree" class="collapse in">
+                <li><a href="#" class="bmd-ripple">Item 1</a></li>
+                <li class="bmd-treeview-branch">
+                  <a href="#" data-target="#example-tree-item2" data-toggle="collapse" class="bmd-ripple collapsed">Item 2</a>
+                  <ul class="collapse" id="example-tree-item2">
+                    <li><a href="#" class="bmd-ripple">Item 2-1</a></li>
+                    <li><a href="#" class="bmd-ripple">Item 2-2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <h4>Default</h4>
+        <div class="bmd-component example-box">
+          <ul class="bmd-treeview">
+            <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+              <a href="#" class="bmd-ripple" data-target="#tree1" data-toggle="collapse">Root</a>
+              <ul id="tree1" class="collapse in">
+                <li><a href="#" class="bmd-ripple">Item 1</a></li>
+                <li class="bmd-treeview-branch">
+                  <a href="#" data-target="#tree1-item2" data-toggle="collapse" class="bmd-ripple collapsed">Item 2</a>
+                  <ul class="collapse" id="tree1-item2">
+                    <li><a href="#" class="bmd-ripple">Item 2-1</a></li>
+                    <li><a href="#" class="bmd-ripple">Item 2-2</a></li>
+                    <li class="bmd-treeview-branch">
+                      <a href="#" class="bmd-ripple collapsed" data-target="#tree1-item2-3" data-toggle="collapse">Item 2-3</a>
+                      <ul class="collapse" id="tree1-item2-3">
+                        <li class="bmd-treeview-branch">
+                          <a href="#" class="bmd-ripple collapsed" data-target="#tree1-item2-3-1" data-toggle="collapse">Item 2-3-1</a>
+                          <ul class="collapse" id="tree1-item2-3-1">
+                            <li class="bmd-treeview-branch">
+                              <a href="#" class="bmd-ripple collapsed" data-target="#tree1-item2-3-1-1" data-toggle="collapse">Item 2-3-1-1</a>
+                              <ul class="collapse" id="tree1-item2-3-1-1">
+                                <li><a href="#" class="bmd-ripple">Item 2-3-1-1-1</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#" class="bmd-ripple">Item 2-3-1-2</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="bmd-ripple">Item 2-3-2</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" class="bmd-ripple">Item 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4>Primary with dotted lines</h4>
+        <div class="bmd-component example-box">
+          <ul class="bmd-treeview bmd-treeview-primary bmd-treeview-dotted-line">
+            <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+              <a href="#" class="bmd-ripple" data-target="#tree2" data-toggle="collapse">Root</a>
+              <ul id="tree2" class="collapse in">
+                <li><a href="#" class="bmd-ripple">Item 1</a></li>
+                <li class="bmd-treeview-branch">
+                  <a href="#" data-target="#tree2-item2" data-toggle="collapse" class="bmd-ripple collapsed">Item 2</a>
+                  <ul class="collapse" id="tree2-item2">
+                    <li><a href="#" class="bmd-ripple">Item 2-1</a></li>
+                    <li><a href="#" class="bmd-ripple">Item 2-2</a></li>
+                    <li class="bmd-treeview-branch">
+                      <a href="#" class="bmd-ripple collapsed" data-target="#tree2-item2-3" data-toggle="collapse">Item 2-3</a>
+                      <ul class="collapse" id="tree2-item2-3">
+                        <li class="bmd-treeview-branch">
+                          <a href="#" class="bmd-ripple collapsed" data-target="#tree2-item2-3-1" data-toggle="collapse">Item 2-3-1</a>
+                          <ul class="collapse" id="tree2-item2-3-1">
+                            <li class="bmd-treeview-branch">
+                              <a href="#" class="bmd-ripple collapsed" data-target="#tree2-item2-3-1-1" data-toggle="collapse">Item 2-3-1-1</a>
+                              <ul class="collapse" id="tree2-item2-3-1-1">
+                                <li><a href="#" class="bmd-ripple">Item 2-3-1-1-1</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#" class="bmd-ripple">Item 2-3-1-2</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="bmd-ripple">Item 2-3-2</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" class="bmd-ripple">Item 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4>Info with dashed lines</h4>
+        <div class="bmd-component example-box">
+          <ul class="bmd-treeview bmd-treeview-info bmd-treeview-dashed-line">
+            <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+              <a href="#" class="bmd-ripple" data-target="#tree3" data-toggle="collapse">Root</a>
+              <ul id="tree3" class="collapse in">
+                <li><a href="#" class="bmd-ripple">Item 1</a></li>
+                <li class="bmd-treeview-branch">
+                  <a href="#" data-target="#tree3-item2" data-toggle="collapse" class="bmd-ripple collapsed">Item 2</a>
+                  <ul class="collapse" id="tree3-item2">
+                    <li><a href="#" class="bmd-ripple">Item 2-1</a></li>
+                    <li><a href="#" class="bmd-ripple">Item 2-2</a></li>
+                    <li class="bmd-treeview-branch">
+                      <a href="#" class="bmd-ripple collapsed" data-target="#tree3-item2-3" data-toggle="collapse">Item 2-3</a>
+                      <ul class="collapse" id="tree3-item2-3">
+                        <li class="bmd-treeview-branch">
+                          <a href="#" class="bmd-ripple collapsed" data-target="#tree3-item2-3-1" data-toggle="collapse">Item 2-3-1</a>
+                          <ul class="collapse" id="tree3-item2-3-1">
+                            <li class="bmd-treeview-branch">
+                              <a href="#" class="bmd-ripple collapsed" data-target="#tree3-item2-3-1-1" data-toggle="collapse">Item 2-3-1-1</a>
+                              <ul class="collapse" id="tree3-item2-3-1-1">
+                                <li><a href="#" class="bmd-ripple">Item 2-3-1-1-1</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#" class="bmd-ripple">Item 2-3-1-2</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="bmd-ripple">Item 2-3-2</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" class="bmd-ripple">Item 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4>Success with icon for individual item</h4>
+        <div class="bmd-component example-box">
+          <ul class="bmd-treeview bmd-treeview-success">
+            <li class="bmd-treeview-root bmd-treeview-success" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+              <a href="#" class="bmd-ripple" data-target="#tree4" data-toggle="collapse">Root</a>
+              <ul id="tree4" class="collapse in">
+                <li><a href="#" class="bmd-ripple"><span class="bmd-treeview-icon flaticon-thumb54"></span> Thumb 1</a></li>
+                <li class="bmd-treeview-branch">
+                  <a href="#" data-target="#tree4-item2" data-toggle="collapse" class="bmd-ripple collapsed">Item 2</a>
+                  <ul class="collapse" id="tree4-item2">
+                    <li><a href="#" class="bmd-ripple">Item 2-1</a></li>
+                    <li><a href="#" class="bmd-ripple"><span class="bmd-treeview-icon flaticon-mountain31"> </span>Picture 2-2</a></li>
+                    <li class="bmd-treeview-branch">
+                      <a href="#" class="bmd-ripple collapsed" data-target="#tree4-item2-3" data-toggle="collapse">Item 2-3</a>
+                      <ul class="collapse" id="tree4-item2-3">
+                        <li class="bmd-treeview-branch">
+                          <a href="#" class="bmd-ripple collapsed" data-target="#tree4-item2-3-1" data-toggle="collapse">Item 2-3-1</a>
+                          <ul class="collapse" id="tree4-item2-3-1">
+                            <li class="bmd-treeview-branch">
+                              <a href="#" class="bmd-ripple collapsed" data-target="#tree4-item2-3-1-1" data-toggle="collapse">Item 2-3-1-1</a>
+                              <ul class="collapse" id="tree4-item2-3-1-1">
+                                <li><a href="#" class="bmd-ripple">Item 2-3-1-1-1</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#" class="bmd-ripple">Item 2-3-1-2</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="bmd-ripple">Item 2-3-2</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" class="bmd-ripple">Item 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4>Warning with icons for branch</h4>
+        <div class="bmd-component example-box">
+          <ul class="bmd-treeview bmd-treeview-warning bmd-treeview-dotted-line">
+            <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+              <a href="#" class="bmd-ripple" data-target="#tree5" data-toggle="collapse">Root</a>
+              <ul id="tree5" class="collapse in">
+                <li class="bmd-treeview-branch" data-expanded-icon="flaticon-expand38" data-collapsed-icon="flaticon-right237" data-item-icon="flaticon-mountain31">
+                  <a href="#" data-target="#tree5-item2" data-toggle="collapse" class="bmd-ripple collapsed">Picture 1</a>
+                  <ul class="collapse" id="tree5-item2">
+                    <li><a href="#" class="bmd-ripple">Picture 1-1</a></li>
+                    <li><a href="#" class="bmd-ripple">Picture 1-2</a></li>
+                    <li class="bmd-treeview-branch">
+                      <a href="#" class="bmd-ripple collapsed" data-target="#tree5-item2-3" data-toggle="collapse">Picture 1-3</a>
+                      <ul class="collapse" id="tree5-item2-3">
+                        <li class="bmd-treeview-branch">
+                          <a href="#" class="bmd-ripple collapsed" data-target="#tree5-item2-3-1" data-toggle="collapse">Picture 1-3-1</a>
+                          <ul class="collapse" id="tree5-item2-3-1">
+                            <li class="bmd-treeview-branch">
+                              <a href="#" class="bmd-ripple collapsed" data-target="#tree5-item2-3-1-1" data-toggle="collapse">Picture 1-3-1-1</a>
+                              <ul class="collapse" id="tree5-item2-3-1-1">
+                                <li><a href="#" class="bmd-ripple">Picture 1-3-1-1-1</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#" class="bmd-ripple">Picture 1-3-1-2</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="bmd-ripple">Picture 1-3-2</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" class="bmd-ripple">Document 1</a></li>
+                <li><a href="#" class="bmd-ripple">Document 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4>Danger with no lines and disabled item</h4>
+        <div class="bmd-component example-box">
+          <ul class="bmd-treeview bmd-treeview-danger bmd-treeview-hidden-line">
+            <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+              <a href="#" class="bmd-ripple" data-target="#tree6" data-toggle="collapse">Root</a>
+              <ul id="tree6" class="collapse in">
+                <li class="disabled"><a href="#" class="bmd-ripple">Item 1</a></li>
+                <li class="bmd-treeview-branch">
+                  <a href="#" data-target="#tree6-item2" data-toggle="collapse" class="bmd-ripple collapsed">Item 2</a>
+                  <ul class="collapse" id="tree6-item2">
+                    <li><a href="#" class="bmd-ripple">Item 2-1</a></li>
+                    <li><a href="#" class="bmd-ripple">Item 2-2</a></li>
+                    <li class="bmd-treeview-branch">
+                      <a href="#" class="bmd-ripple collapsed" data-target="#tree6-item2-3" data-toggle="collapse">Item 2-3</a>
+                      <ul class="collapse" id="tree6-item2-3">
+                        <li class="bmd-treeview-branch">
+                          <a href="#" class="bmd-ripple collapsed" data-target="#tree6-item2-3-1" data-toggle="collapse">Item 2-3-1</a>
+                          <ul class="collapse" id="tree6-item2-3-1">
+                            <li class="bmd-treeview-branch">
+                              <a href="#" class="bmd-ripple collapsed" data-target="#tree6-item2-3-1-1" data-toggle="collapse">Item 2-3-1-1</a>
+                              <ul class="collapse" id="tree6-item2-3-1-1">
+                                <li><a href="#" class="bmd-ripple">Item 2-3-1-1-1</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#" class="bmd-ripple">Item 2-3-1-2</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="bmd-ripple">Item 2-3-2</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" class="bmd-ripple">Item 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <h4>Applying to sidebar</h4>
+        <div class="col-lg-12 sidebar-example-wrapper">
+          <div class="bmd-component">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#treeview-sidebar-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+                </div>
+                <div class="collapse navbar-collapse" id="treeview-sidebar-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" class="bmd-ripple">Link</a></li>
+                    <li class="dropdown bmd-dropdown">
+                      <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                      </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                    </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- inline style for demo purpose -->
+        <div id="treeview-sidebar-default" class="bmd-sidebar bmd-sidebar-left bmd-sidebar-collapse" style="position:absolute">
+          <div style="position: absolute; top: 0; overflow: auto; margin-top: 60px; padding: 0 15px; bottom: 0; width: 100%;">
+            <ul class="bmd-treeview bmd-treeview-dotted-line">
+              <!-- For demo purpose -->
+              <style>
+                .bmd-sidebar .bmd-treeview-root > a { font-size: 18px; }
+              </style>
+              <!-- tree 1 -->
+              <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+                <a href="#" class="bmd-ripple" data-target="#tree7" data-toggle="collapse">Tree 1</a>
+                <ul id="tree7" class="collapse in">
+                  <li><a href="#" class="bmd-ripple">Item 1</a></li>
+                  <li class="bmd-treeview-branch">
+                    <a href="#" data-target="#tree7-item2" data-toggle="collapse" class="bmd-ripple collapsed">Item 2</a>
+                    <ul class="collapse" id="tree7-item2">
+                      <li><a href="#" class="bmd-ripple">Item 2-1</a></li>
+                      <li><a href="#" class="bmd-ripple">Item 2-2</a></li>
+                      <li class="bmd-treeview-branch">
+                        <a href="#" class="bmd-ripple collapsed" data-target="#tree7-item2-3" data-toggle="collapse">Item 2-3</a>
+                        <ul class="collapse" id="tree7-item2-3">
+                          <li class="bmd-treeview-branch">
+                            <a href="#" class="bmd-ripple collapsed" data-target="#tree7-item2-3-1" data-toggle="collapse">Item 2-3-1</a>
+                            <ul class="collapse" id="tree7-item2-3-1">
+                              <li class="bmd-treeview-branch">
+                                <a href="#" class="bmd-ripple collapsed" data-target="#tree7-item2-3-1-1" data-toggle="collapse">Item 2-3-1-1</a>
+                                <ul class="collapse" id="tree7-item2-3-1-1">
+                                  <li><a href="#" class="bmd-ripple">Item 2-3-1-1-1</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#" class="bmd-ripple">Item 2-3-1-2</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#" class="bmd-ripple">Item 2-3-2</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="bmd-ripple">Item 3</a></li>
+                </ul>
+              </li>
+              <!-- tree 2 -->
+              <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+                <a href="#" class="bmd-ripple" data-target="#tree8" data-toggle="collapse">Tree 2</a>
+                <ul id="tree8" class="collapse in">
+                  <li class="bmd-treeview-branch">
+                    <a href="#" data-target="#tree8-item1" data-toggle="collapse" class="bmd-ripple collapsed">Item 1</a>
+                    <ul class="collapse" id="tree8-item1">
+                      <li><a href="#" class="bmd-ripple">Item 1-1</a></li>
+                      <li class="bmd-treeview-branch">
+                        <a href="#" class="bmd-ripple collapsed" data-target="#tree8-item1-2" data-toggle="collapse">Item 1-2</a>
+                        <ul class="collapse" id="tree8-item1-2">
+                          <li class="bmd-treeview-branch">
+                            <a href="#" class="bmd-ripple collapsed" data-target="#tree8-item1-2-1" data-toggle="collapse">Item 1-2-1</a>
+                            <ul class="collapse" id="tree8-item1-2-1">
+                              <li class="bmd-treeview-branch">
+                                <a href="#" class="bmd-ripple collapsed" data-target="#tree8-item1-2-1-1" data-toggle="collapse">Item 1-2-1-1</a>
+                                <ul class="collapse" id="tree8-item1-2-1-1">
+                                  <li><a href="#" class="bmd-ripple">Item 1-2-1-1-1</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#" class="bmd-ripple">Item 1-2-1-2</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#" class="bmd-ripple">Item 1-2-2</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#" class="bmd-ripple">Item 1-3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="bmd-ripple">Item 2</a></li>
+                  <li class="bmd-treeview-branch">
+                    <a href="#" data-target="#tree8-item3" data-toggle="collapse" class="bmd-ripple collapsed">Item 3</a>
+                    <ul class="collapse" id="tree8-item3">
+                      <li><a href="#" class="bmd-ripple">Item 3-1</a></li>
+                      <li><a href="#" class="bmd-ripple">Item 3-2</a></li>
+                      <li class="bmd-treeview-branch">
+                        <a href="#" class="bmd-ripple collapsed" data-target="#tree8-item3-3" data-toggle="collapse">Item 3-3</a>
+                        <ul class="collapse" id="tree8-item3-3">
+                          <li class="bmd-treeview-branch">
+                            <a href="#" class="bmd-ripple collapsed" data-target="#tree8-item3-3-1" data-toggle="collapse">Item 3-3-1</a>
+                            <ul class="collapse" id="tree8-item3-3-1">
+                              <li class="bmd-treeview-branch">
+                                <a href="#" class="bmd-ripple collapsed" data-target="#tree8-item3-3-1-1" data-toggle="collapse">Item 3-3-1-1</a>
+                                <ul class="collapse" id="tree8-item3-3-1-1">
+                                  <li><a href="#" class="bmd-ripple">Item 3-3-1-1-1</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#" class="bmd-ripple">Item 3-3-1-2</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#" class="bmd-ripple">Item 3-3-2</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bmd-page-container">
+          <div class="container">
+            <h3 class="text-center">Your page contents are here</h3>
+            <br>
+            <h4>Section 1</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <!-- inline style for demo purpose -->
+        <a href="#" class="bmd-sidebar-toggle" data-target="#treeview-sidebar-default" style="position:absolute;">
+          <i class="flaticon-menu55"></i>
+          <i class="flaticon-close47"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <h4>Applying to sidebar with no lines</h4>
+    <div class="col-lg-12 sidebar-example-wrapper">
+      <div class="bmd-component">
+        <nav class="navbar navbar-primary">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#treeview-sidebar-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="treeview-sidebar-2">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+                <li class="dropdown bmd-dropdown">
+                  <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                  </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="bmd-ripple">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- inline style for demo purpose -->
+    <div id="treeview-sidebar-primary" class="bmd-sidebar bmd-sidebar-primary bmd-sidebar-left bmd-sidebar-collapse" style="position:absolute">
+      <div style="position: absolute; top: 0; overflow: auto; margin-top: 60px; padding: 0 15px; bottom: 0; width: 100%;">
+        <ul class="bmd-treeview bmd-treeview-primary bmd-treeview-hidden-line">
+          <!-- For demo purpose -->
+          <style>
+            .bmd-sidebar .bmd-treeview-root > a { font-size: 18px; }
+          </style>
+          <!-- tree 1 -->
+          <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+            <a href="#" class="bmd-ripple" data-target="#tree9" data-toggle="collapse">Tree 1</a>
+            <ul id="tree9" class="collapse in">
+              <li><a href="#" class="bmd-ripple">Item 1</a></li>
+              <li class="bmd-treeview-branch">
+                <a href="#" data-target="#tree9-item2" data-toggle="collapse" class="bmd-ripple collapsed">Item 2</a>
+                <ul class="collapse" id="tree9-item2">
+                  <li><a href="#" class="bmd-ripple">Item 2-1</a></li>
+                  <li><a href="#" class="bmd-ripple">Item 2-2</a></li>
+                  <li class="bmd-treeview-branch">
+                    <a href="#" class="bmd-ripple collapsed" data-target="#tree9-item2-3" data-toggle="collapse">Item 2-3</a>
+                    <ul class="collapse" id="tree9-item2-3">
+                      <li class="bmd-treeview-branch">
+                        <a href="#" class="bmd-ripple collapsed" data-target="#tree9-item2-3-1" data-toggle="collapse">Item 2-3-1</a>
+                        <ul class="collapse" id="tree9-item2-3-1">
+                          <li class="bmd-treeview-branch">
+                            <a href="#" class="bmd-ripple collapsed" data-target="#tree9-item2-3-1-1" data-toggle="collapse">Item 2-3-1-1</a>
+                            <ul class="collapse" id="tree9-item2-3-1-1">
+                              <li><a href="#" class="bmd-ripple">Item 2-3-1-1-1</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#" class="bmd-ripple">Item 2-3-1-2</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#" class="bmd-ripple">Item 2-3-2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#" class="bmd-ripple">Item 3</a></li>
+            </ul>
+          </li>
+          <!-- tree 2 -->
+          <li class="bmd-treeview-root" data-expanded-icon="flaticon-round56" data-collapsed-icon="flaticon-add182" data-item-icon="flaticon-google134">
+            <a href="#" class="bmd-ripple" data-target="#tree10" data-toggle="collapse">Tree 2</a>
+            <ul id="tree10" class="collapse in">
+              <li class="bmd-treeview-branch">
+                <a href="#" data-target="#tree10-item1" data-toggle="collapse" class="bmd-ripple collapsed">Item 1</a>
+                <ul class="collapse" id="tree10-item1">
+                  <li><a href="#" class="bmd-ripple">Item 1-1</a></li>
+                  <li class="bmd-treeview-branch">
+                    <a href="#" class="bmd-ripple collapsed" data-target="#tree10-item1-2" data-toggle="collapse">Item 1-2</a>
+                    <ul class="collapse" id="tree10-item1-2">
+                      <li class="bmd-treeview-branch">
+                        <a href="#" class="bmd-ripple collapsed" data-target="#tree10-item1-2-1" data-toggle="collapse">Item 1-2-1</a>
+                        <ul class="collapse" id="tree10-item1-2-1">
+                          <li class="bmd-treeview-branch">
+                            <a href="#" class="bmd-ripple collapsed" data-target="#tree10-item1-2-1-1" data-toggle="collapse">Item 1-2-1-1</a>
+                            <ul class="collapse" id="tree10-item1-2-1-1">
+                              <li><a href="#" class="bmd-ripple">Item 1-2-1-1-1</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#" class="bmd-ripple">Item 1-2-1-2</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#" class="bmd-ripple">Item 1-2-2</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="bmd-ripple">Item 1-3</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="bmd-ripple">Item 2</a></li>
+              <li class="bmd-treeview-branch">
+                <a href="#" data-target="#tree10-item3" data-toggle="collapse" class="bmd-ripple collapsed">Item 3</a>
+                <ul class="collapse" id="tree10-item3">
+                  <li><a href="#" class="bmd-ripple">Item 3-1</a></li>
+                  <li><a href="#" class="bmd-ripple">Item 3-2</a></li>
+                  <li class="bmd-treeview-branch">
+                    <a href="#" class="bmd-ripple collapsed" data-target="#tree10-item3-3" data-toggle="collapse">Item 3-3</a>
+                    <ul class="collapse" id="tree10-item3-3">
+                      <li class="bmd-treeview-branch">
+                        <a href="#" class="bmd-ripple collapsed" data-target="#tree10-item3-3-1" data-toggle="collapse">Item 3-3-1</a>
+                        <ul class="collapse" id="tree10-item3-3-1">
+                          <li class="bmd-treeview-branch">
+                            <a href="#" class="bmd-ripple collapsed" data-target="#tree10-item3-3-1-1" data-toggle="collapse">Item 3-3-1-1</a>
+                            <ul class="collapse" id="tree10-item3-3-1-1">
+                              <li><a href="#" class="bmd-ripple">Item 3-3-1-1-1</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#" class="bmd-ripple">Item 3-3-1-2</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#" class="bmd-ripple">Item 3-3-2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bmd-page-container">
+      <div class="container">
+        <h3 class="text-center">Your page contents are here</h3>
+        <br>
+        <h4>Section 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <!-- inline style for demo purpose -->
+    <a href="#" class="bmd-sidebar-toggle bmd-sidebar-toggle-primary" data-target="#treeview-sidebar-primary" style="position:absolute;">
+      <i class="flaticon-menu55"></i>
+      <i class="flaticon-close47"></i>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped bs-events-table">
+        <thead>
+          <tr>
+            <th>Class name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>bmd-treeview</code></td>
+            <td>Mandatory component class. Set in element <code>&lt;ul&gt;</code></td>
+          </tr>
+          <tr>
+            <td><code>bmd-treeview-root</code></td>
+            <td>
+              Mandatory component class. Set in element <code>&lt;li&gt;</code><br>
+              Three attributes <code>data-collapsed-icon</code>, <code>data-expanded-icon</code> and
+              <code>data-item-icon</code> can be set in this element if need. They apply to all branches under this tree.
+            </td>
+          </tr>
+          <tr>
+            <td><code>bmd-treeview-branch</code></td>
+            <td>Optional component class. Set in element <code>&lt;li&gt;</code><br>
+              Three attributes <code>data-collapsed-icon</code>, <code>data-expanded-icon</code> and
+              <code>data-item-icon</code> can be set in this element if need. They apply to all branches under this sub-branch.
+            </td>
+          </tr>
+          <tr>
+            <td><code>bmd-treeview-{state}</code></td>
+            <td>
+              Optional class to control color. Where {state} is 'default', 'primary', 'info', 'success', 'warning' or 'danger'.
+              default color is same as 'default' if this class is omitted.
+            </td>
+          </tr>
+          <tr>
+            <td><code>bmd-treeview-{style}-line</code></td>
+            <td>
+              Optional class to control line style. Where {style} is 'solid', 'dotted', 'dashed' or 'hidden'.
+              default style is 'solid' if this class is omitted.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+<div id="source-modal" class="modal fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Source Code</h4>
+      </div>
+      <div class="modal-body">
+        <pre></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

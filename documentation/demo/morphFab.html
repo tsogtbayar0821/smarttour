@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <title>BMD - Morph FAB</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/prettify.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<bod id="morphFab">
+  <div class="container-fluid">
+    <div id="fab-menu" class="bmd-sidebar bmd-sidebar-right bmd-sidebar-overlay bmd-bg-green">
+      <ul class="bmd-sidebar-nav list-unstyled">
+        <li class="bmd-sidebar-brand">
+          <h3 style="direction: rtl; text-align: right; "><a href="#" class="bmd-ripple bmd-text-green-50">Morph FABs</a></h3>
+        </li>
+      </ul>
+      <ul class="list-inline" style="direction: rtl; padding-right: 15px; padding-top: 20px;">
+        <li>
+          <a href="#" class="btn bmd-bg-purple bmd-fab bmd-morph-fab bmd-ripple bmd-floating" data-target="#widget1" data-closemenu="true" data-sticktarget="false">
+            <span class="bmd-icon flaticon-mark1 bmd-text-purple-50"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn btn-info bmd-fab bmd-morph-fab bmd-ripple bmd-floating" data-target="#widget5" data-closemenu="true" data-sticktarget="true">
+            <span class="bmd-icon flaticon-mark1"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="bmd-page-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Morph FAB</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Morph FAB can transform into panel, card or even other elements. Below are some examples to use together
+            with different menus. Click on close button of each element to revert to FAB. Then click on above yellow or green
+            FAB menu to find morph FABs.</p>
+          </div>
+        </div>
+        <br>
+        <div class="row grid">
+          <div class="col-lg-4">
+            <div id="widget4" class="bmd-morph bmd-morph-expanded">
+              <a href="#" title="Close image" class="bmd-morph-close" style="display:block">
+                <img class="img-responsive" src="img/red.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="widget1" class="bmd-morph bmd-morph-closed">
+            <div class="panel panel-default bmd-card bmd-floating">
+              <div class="panel-heading bmd-bg-purple bmd-text-purple-50">
+                <h3 class="panel-title" style="display:inline-block">Table</h3>
+                <button type="button" title="Close table" class="close btn-link bmd-morph-close bmd-flat-btn bmd-text-grey-900" aria-hidden="true">×</button>
+              </div>
+              <div class="panel-body bmd-card-image">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                     <th>#</th>
+                     <th>Column heading</th>
+                     <th>Column heading</th>
+                     <th>Column heading</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                 <tr class="info">
+                   <td>1</td>
+                   <td>Column content</td>
+                   <td>Column content</td>
+                   <td>Column content</td>
+                 </tr>
+                 <tr class="success">
+                   <td>2</td>
+                   <td>Column content</td>
+                   <td>Column content</td>
+                   <td>Column content</td>
+                 </tr>
+                 <tr class="danger">
+                   <td>3</td>
+                   <td>Column content</td>
+                   <td>Column content</td>
+                   <td>Column content</td>
+                 </tr>
+                 <tr class="warning">
+                   <td>4</td>
+                   <td>Column content</td>
+                   <td>Column content</td>
+                   <td>Column content</td>
+                 </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="panel-footer">
+                <a href="#" class="bmd-card-action bmd-link-primary">Share</a>
+                <a href="#" class="bmd-card-action bmd-link-primary">Learn more</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="widget2" class="bmd-morph bmd-morph-expanded">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <div class="panel-title" style="display:inline-block;">Bootstrap Panel</div>
+                  <button type="button" title="Close panel" class="close btn-link bmd-morph-close bmd-flat-btn bmd-text-grey-900" aria-hidden="true">×</button>
+                </div>
+                <div class="panel-body" style="padding:0">
+                  <img class="img-responsive" src="img/work2.png">
+                  <figcaption style="padding:0 15px;">
+                    <h3>Title goes here</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </figcaption>
+                </div>
+                <div class="panel-footer text-left">
+                  <a href="#" class="btn-link">Share</a>&nbsp;&nbsp;
+                  <a href="#" class="btn-link">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="widget3" class="bmd-morph bmd-morph-expanded">
+              <div class="panel panel-default bmd-card">
+                <div class="panel-body bmd-card-image">
+                  <div class="bmd-card-image-holder">
+                    <img class="img-responsive" src="img/work6.png">
+                    <a class="btn btn-success bmd-fab bmd-ripple bmd-morph-close bmd-floating" title="Close card">
+                      <span class="bmd-icon flaticon-close47"></span>
+                    </a>
+                  </div>
+                  <figcaption class="bmd-card-caption text-left">
+                    <h3>Title goes here</h3>
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </figcaption>
+                </div>
+                <div class="panel-footer text-left">
+                  <a href="#" class="bmd-card-action bmd-link-primary">Share</a>
+                  <a href="#" class="bmd-card-action bmd-link-primary">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="widget5" class="bmd-morph bmd-morph-expanded">
+              <div class="modal" style="display:block;position:relative;z-index:0;">
+                <div class="modal-dialog bmd-modal-dialog" style="width:auto;margin:0;">
+                  <div class="modal-content bmd-border-info">
+                    <div class="modal-header bmd-bg-info">
+                      <button type="button" class="close btn-link bmd-morph-close bmd-flat-btn bmd-flat-btn-light" aria-hidden="true">×</button>
+                      <h4 class="modal-title bmd-text-cyan-100">Info modal dialog</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>One fine body…</p>
+                    </div>
+                    <div class="modal-footer bmd-border-cyan-100">
+                      <button type="button" class="btn btn-default bmd-ripple bmd-ink-grey-400 bmd-morph-close" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-info bmd-ripple">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="widget6" class="bmd-morph bmd-morph-expanded">
+              <div class="panel panel-warning">
+                <div class="panel-heading bmd-bg-warning">
+                  <div class="panel-title" style="display:inline-block;">Login Form</div>
+                  <button type="button" title="Close form" class="close btn-link bmd-morph-close bmd-flat-btn bmd-text-grey-900" aria-hidden="true">×</button>
+                </div>
+                <div class="panel-body">
+                  <form class="form-horizontal">
+                    <fieldset>
+                      <div class="form-group has-warning">
+                        <label for="inputEmail" class="col-lg-2 control-label bmd-control-label"><i class="flaticon-black402 bmd-text-warning"></i></label>
+                        <div class="col-lg-9">
+                          <div class="bmd-field-group">
+                            <input type="text" class="bmd-input" required="">
+                            <span class="bmd-bar"></span>
+                            <label class="bmd-label">Email</label>
+                            <span class="bmd-field-feedback"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group has-warning">
+                        <label for="inputPassword" class="col-lg-2 control-label bmd-control-label"><i class="flaticon-https bmd-text-warning"></i></label>
+                        <div class="col-lg-9">
+                          <div class="bmd-field-group">
+                            <input type="password" class="bmd-input" required>
+                            <span class="bmd-bar"></span>
+                            <label class="bmd-label">Password</label>
+                            <span class="bmd-field-feedback"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="panel-footer text-right">
+                  <button class="btn btn-default bmd-ripple bmd-morph-close">Close</button>
+                  <button class="btn btn-warning bmd-ripple">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <hr>
+            <p><strong>Basic Usage</strong></p>
+  <pre class="linenums prettyprint">
+
+  &lt;div class="row"&gt;
+    &lt;div class="col-lg-4"&gt;
+      &lt;!-- This is a target element to be transformed into and expanded on initial load --&gt;
+      &lt;div id="morph-img" class="bmd-morph bmd-morph-expanded"&gt;
+        &lt;!-- display attribute must be block for &lt;a&gt; tag --&gt;
+        &lt;a href="#" class="bmd-morph-close" style="display:block"&gt;
+          &lt;img class="img-responsive" src="images/work1.png"&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  ..
+  ..
+  &lt;!-- This is a morph FAB --&gt;
+  &lt;a href="#" class="btn btn-primary bmd-fab bmd-morph-fab bmd-ripple bmd-floating"
+    style="position:fixed;bottom:90px;right:20px" data-target="#morph-img"&gt;
+    &lt;span class="bmd-icon flaticon-mark1"&gt;&lt;/span&gt;
+  &lt;/a&gt;
+
+  </pre>
+            <p class="line-spacing"><strong>Options</strong></p>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr> <th>Name</th> <th>Type</th> <th>Default</th> <th>Description</th> </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>sticktarget</td> <td>boolean</td> <td>false</td>
+                  <td>Reserve column space for target element so that FAB always morph target at the same column.
+                  Otherwise, append to the end of row.</td>
+                </tr>
+                <tr>
+                  <td>stickfab</td> <td>boolean</td> <td>false</td>
+                  <td>Only apply to FAB parent being <code>&lt;li&gt;</code>. Same as "sticktarget".
+                  Reserve original order for FAB so that FAB always home in the same order.
+                  Otherwise, append to the end of <code>&lt;ul&gt;</code>.</td>
+                </tr>
+                <tr>
+                  <td>closemenu</td> <td>boolean</td> <td>false</td>
+                  <td>Only apply to FAB belonging to <code>bmd-sidebar</code>, <code>bmd-bottom-sheet</code> or
+                  <code>bmd-fab-speed-dial-container</code>. Menu will be auto closed when FAB left or homed.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="line-spacing"><strong>Method</strong></p>
+            <p class="text-danger">$("#example").morphFab(options)</p>
+            <p>Create a new instance of morph FAB with options</p>
+            <p class="text-danger">.morphFab("expand")</p>
+            <p>Transform into target element</p>
+            <p class="text-danger">.morphFab("close")</p>
+            <p>Revert to FAB state</p>
+
+            <p class="line-spacing"><strong>Events</strong></p>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr> <th>Event Type</th> <th>Description</th> </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>expanded.bmd.morphFab</td>
+                  <td>This event is fired when target element is completely transformed
+                  (will wait for CSS transitions and animations to complete).</td>
+                </tr>
+                <tr>
+                  <td>closed.bmd.morphFab</td>
+                  <td>This event is fired when FAB is completely reverted from target element
+                  (will wait for CSS transitions and animations to complete).</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sidebar menu for morph fab -->
+    <a href="#" title="Toggle sidebar FAB menu" class="btn btn-success bmd-ripple bmd-bg-green bmd-text-green-50 bmd-fab bmd-fab-sm bmd-sidebar-toggle" data-target="#fab-menu">
+      <span class="bmd-icon flaticon-menu55"></span>
+      <span class="flaticon-close47"></span>
+    </a>
+
+    <a href="#" title="Toggle bottom FAB menu" class="btn btn-warning bmd-ripple bmd-fab bmd-fab-sm" data-toggle="bmd-bottom-sheet" data-target="#bottom-menu"
+      style="position:fixed;right:95px;top:15px;">
+      <span class="bmd-icon flaticon-menu55"></span>
+    </a>
+
+    <a href="#" class="btn btn-danger bmd-fab bmd-morph-fab bmd-ripple bmd-floating"
+      style="position:fixed;bottom:165px;right:20px;z-index:1" data-target="#widget4" data-sticktarget="true">
+      <span class="bmd-icon flaticon-mark1"></span>
+    </a>
+
+    <div class="bmd-fab-speed-dial-container" style="z-index:1;position:fixed;bottom:95px;right:20px">
+      <a href="#" class="bmd-fab-speed-dialer spin btn btn-success bmd-ripple bmd-fab bmd-floating">
+        <span class="bmd-icon in flaticon-share39"></span>
+        <span class="bmd-icon out flaticon-close47"></span>
+      </a>
+      <ul class="bmd-fab-speed-dial-list left">
+        <li><a href="#" class="btn btn-primary bmd-ripple bmd-fab bmd-fab-sm bmd-floating"><span class="bmd-icon flaticon-facebook56"></span></a></li>
+        <li><a href="#" class="btn btn-warning bmd-fab bmd-fab-sm bmd-morph-fab bmd-ripple bmd-floating" data-target="#widget6" data-closemenu="true" data-sticktarget="true">
+          <span class="bmd-icon flaticon-linkedin24"></span>
+        </a></li>
+        <li><a href="#" class="btn btn-danger bmd-ripple bmd-fab bmd-fab-sm bmd-floating"><span class="bmd-icon flaticon-google120"></span></a></li>
+      </ul>
+    </div>
+</div>
+<div id="bottom-menu" class="bmd-bottom-sheet bmd-bg-orange">
+  <div class="col-lg-12">
+    <button type="button" class="close btn-link bmd-flat-btn bmd-text-grey-900" data-dismiss="#bottom-menu">×</button>
+    <ul class="bmd-bottom-sheet-list">
+      <li>
+        <a href="#" class="btn btn-success bmd-fab bmd-morph-fab bmd-ripple bmd-floating" data-target="#widget3" data-closemenu="true" data-sticktarget="true">
+          <span class="bmd-icon flaticon-mark1"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="btn btn-primary bmd-fab bmd-morph-fab bmd-ripple bmd-floating" data-target="#widget2" data-closemenu="true" data-sticktarget="true">
+          <span class="bmd-icon flaticon-mark1"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/prettify.js"></script>
+  <script src="js/main.min.js"></script>
+
+</body>
+</html>

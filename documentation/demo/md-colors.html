@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <title>BMD - MD Colors</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/prettify.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>MD color and utility classes</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>State color classes</h3>
+        <p>Please note all color classes have <code>!important</code> to force overriding bootstrap rules.</p>
+        <p>Class name: <code>bmd-{prop}-{state}</code><br>
+          <code>{prop}</code> supports below CSS properties currently:<br>
+          'text' - color<br>
+          'bg' - background-color<br>
+          'border' - border-color<br>
+          'ink' - background-color (color of ripple)<br>
+          <code>{state}</code> is 'default', 'primary', 'info', 'success', 'warning' or 'danger'
+        </p>
+        <h3>MD color classes</h3>
+        <p>Class name: <code>bmd-{prop}-{color}-[color-level]</code><br>
+          <code>{prop}</code> supports below CSS properties currently:<br>
+          'text' - color<br>
+          'bg' - background-color<br>
+          'border' - border-color<br>
+          'ink' - background-color (color of ripple)<br>
+          <code>{color}</code> is MD color listed as below table<br>
+          <code>[color-level]</code> is MD color level and optional. It will use <code>500</code> if omitted.
+        </p>
+        <h3>Floating class</h3>
+        <p>
+          Class name: <code>bmd-floating</code><br>
+          Just makes an element has shadow.
+        </p>
+        <h3>Example:</h3>
+
+        <pre class="prettyprint linenums">
+
+<p class="bmd-bg-green-50 bmd-text-green-900 bmd-border-success bmd-floating">
+  This is an example to apply MD color classes
+  <button class="btn btn-default bmd-ripple bmd-ink-pink">Ink in pink</button>
+</p>
+
+        </pre>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <p class="bmd-bg-green-50 bmd-text-green-900 bmd-border-success bmd-floating" style="border-radius:3px; padding:30px;margin-top:30px;border-width: 3px; border-style:solid;">This is an example to apply MD color classes
+              <button class="btn btn-default bmd-ripple bmd-ink-pink">Ink in pink</button>
+            </p>
+          </div>
+        </div>
+        <table id="md-color-table" class="table table-bordered table-striped line-spacing">
+          <tr>
+            <th colspan="14">Class name and Color</th>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-red</code> <code>bmd-{prop}-red-50</code> .. <code>bmd-{prop}-red-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-red-50">50 #F44336</td>
+            <td class="color-cell bmd-bg-red-100">100 #FFCDD2</td>
+            <td class="color-cell bmd-bg-red-200">200 #EF9A9A</td>
+            <td class="color-cell bmd-bg-red-300">300 #E57373</td>
+            <td class="color-cell bmd-bg-red-400">400 #EF5350</td>
+            <td class="color-cell bmd-bg-red-500">500 #F44336</td>
+            <td class="color-cell bmd-bg-red-600">600 #E53935</td>
+            <td class="color-cell bmd-bg-red-700">700 #D32F2F</td>
+            <td class="color-cell bmd-bg-red-800">800 #C62828</td>
+            <td class="color-cell bmd-bg-red-900">900 #B71C1C</td>
+            <td class="color-cell bmd-bg-red-a100">A100 #FF8A80</td>
+            <td class="color-cell bmd-bg-red-a200">A200 #FF5252</td>
+            <td class="color-cell bmd-bg-red-a400">A400 #FF1744</td>
+            <td class="color-cell bmd-bg-red-a700">A700 #D50000</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-pink</code> <code>bmd-{prop}-pink-50</code> .. <code>bmd-{prop}-pink-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-pink-50">50 #FCE4EC</td>
+            <td class="color-cell bmd-bg-pink-100">100 #F8BBD0</td>
+            <td class="color-cell bmd-bg-pink-200">200 #F48FB1</td>
+            <td class="color-cell bmd-bg-pink-300">300 #F06292</td>
+            <td class="color-cell bmd-bg-pink-400">400 #EC407A</td>
+            <td class="color-cell bmd-bg-pink-500">500 #E91E63</td>
+            <td class="color-cell bmd-bg-pink-600">600 #D81B60</td>
+            <td class="color-cell bmd-bg-pink-700">700 #C2185B</td>
+            <td class="color-cell bmd-bg-pink-800">800 #AD1457</td>
+            <td class="color-cell bmd-bg-pink-900">900 #880E4F</td>
+            <td class="color-cell bmd-bg-pink-a100">A100 #FF80AB</td>
+            <td class="color-cell bmd-bg-pink-a200">A200 #FF4081</td>
+            <td class="color-cell bmd-bg-pink-a400">A400 #F50057</td>
+            <td class="color-cell bmd-bg-pink-a700">A700 #C51162</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-purple</code> <code>bmd-{prop}-purple-50</code> .. <code>bmd-{prop}-purple-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-purple-50">50 #F3E5F5</td>
+            <td class="color-cell bmd-bg-purple-100">100 #E1BEE7</td>
+            <td class="color-cell bmd-bg-purple-200">200 #CE93D8</td>
+            <td class="color-cell bmd-bg-purple-300">300 #BA68C8</td>
+            <td class="color-cell bmd-bg-purple-400">400 #AB47BC</td>
+            <td class="color-cell bmd-bg-purple-500">500 #9C27B0</td>
+            <td class="color-cell bmd-bg-purple-600">600 #8E24AA</td>
+            <td class="color-cell bmd-bg-purple-700">700 #7B1FA2</td>
+            <td class="color-cell bmd-bg-purple-800">800 #6A1B9A</td>
+            <td class="color-cell bmd-bg-purple-900">900 #4A148C</td>
+            <td class="color-cell bmd-bg-purple-a100">A100 #EA80FC</td>
+            <td class="color-cell bmd-bg-purple-a200">A200 #E040FB</td>
+            <td class="color-cell bmd-bg-purple-a400">A400 #D500F9</td>
+            <td class="color-cell bmd-bg-purple-a700">A700 #AA00FF</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-deep-purple</code> <code>bmd-{prop}-deep-purple-50</code> .. <code>bmd-{prop}-deep-purple-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-deep-purple-50">50 #EDE7F6</td>
+            <td class="color-cell bmd-bg-deep-purple-100">100 #D1C4E9</td>
+            <td class="color-cell bmd-bg-deep-purple-200">200 #B39DDB</td>
+            <td class="color-cell bmd-bg-deep-purple-300">300 #9575CD</td>
+            <td class="color-cell bmd-bg-deep-purple-400">400 #7E57C2</td>
+            <td class="color-cell bmd-bg-deep-purple-500">500 #673AB7</td>
+            <td class="color-cell bmd-bg-deep-purple-600">600 #5E35B1</td>
+            <td class="color-cell bmd-bg-deep-purple-700">700 #512DA8</td>
+            <td class="color-cell bmd-bg-deep-purple-800">800 #4527A0</td>
+            <td class="color-cell bmd-bg-deep-purple-900">900 #311B92</td>
+            <td class="color-cell bmd-bg-deep-purple-a100">A100 #B388FF</td>
+            <td class="color-cell bmd-bg-deep-purple-a200">A200 #7C4DFF</td>
+            <td class="color-cell bmd-bg-deep-purple-a400">A400 #651FFF</td>
+            <td class="color-cell bmd-bg-deep-purple-a700">A700 #6200EA</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-indigo</code> <code>bmd-{prop}-indigo-50</code> .. <code>bmd-{prop}-indigo-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-indigo-50">50 #E8EAF6</td>
+            <td class="color-cell bmd-bg-indigo-100">100 #C5CAE9</td>
+            <td class="color-cell bmd-bg-indigo-200">200 #9FA8DA</td>
+            <td class="color-cell bmd-bg-indigo-300">300 #7986CB</td>
+            <td class="color-cell bmd-bg-indigo-400">400 #5C6BC0</td>
+            <td class="color-cell bmd-bg-indigo-500">500 #3F51B5</td>
+            <td class="color-cell bmd-bg-indigo-600">600 #3949AB</td>
+            <td class="color-cell bmd-bg-indigo-700">700 #303F9F</td>
+            <td class="color-cell bmd-bg-indigo-800">800 #283593</td>
+            <td class="color-cell bmd-bg-indigo-900">900 #1A237E</td>
+            <td class="color-cell bmd-bg-indigo-a100">A100 #8C9EFF</td>
+            <td class="color-cell bmd-bg-indigo-a200">A200 #536DFE</td>
+            <td class="color-cell bmd-bg-indigo-a400">A400 #3D5AFE</td>
+            <td class="color-cell bmd-bg-indigo-a700">A700 #304FFE</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-blue</code> <code>bmd-{prop}-blue-50</code> .. <code>bmd-{prop}-blue-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-blue-50">50 #E3F2FD</td>
+            <td class="color-cell bmd-bg-blue-100">100 #BBDEFB</td>
+            <td class="color-cell bmd-bg-blue-200">200 #90CAF9</td>
+            <td class="color-cell bmd-bg-blue-300">300 #64B5F6</td>
+            <td class="color-cell bmd-bg-blue-400">400 #42A5F5</td>
+            <td class="color-cell bmd-bg-blue-500">500 #2196F3</td>
+            <td class="color-cell bmd-bg-blue-600">600 #1E88E5</td>
+            <td class="color-cell bmd-bg-blue-700">700 #1976D2</td>
+            <td class="color-cell bmd-bg-blue-800">800 #1565C0</td>
+            <td class="color-cell bmd-bg-blue-900">900 #0D47A1</td>
+            <td class="color-cell bmd-bg-blue-a100">A100 #82B1FF</td>
+            <td class="color-cell bmd-bg-blue-a200">A200 #448AFF</td>
+            <td class="color-cell bmd-bg-blue-a400">A400 #2979FF</td>
+            <td class="color-cell bmd-bg-blue-a700">A700 #2962FF</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-light-blue</code> <code>bmd-{prop}-light-blue-50</code> .. <code>bmd-{prop}-light-blue-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-light-blue-50">50 #E1F5FE</td>
+            <td class="color-cell bmd-bg-light-blue-100">100 #B3E5FC</td>
+            <td class="color-cell bmd-bg-light-blue-200">200 #81D4FA</td>
+            <td class="color-cell bmd-bg-light-blue-300">300 #4FC3F7</td>
+            <td class="color-cell bmd-bg-light-blue-400">400 #29B6F6</td>
+            <td class="color-cell bmd-bg-light-blue-500">500 #03A9F4</td>
+            <td class="color-cell bmd-bg-light-blue-600">600 #039BE5</td>
+            <td class="color-cell bmd-bg-light-blue-700">700 #0288D1</td>
+            <td class="color-cell bmd-bg-light-blue-800">800 #0277BD</td>
+            <td class="color-cell bmd-bg-light-blue-900">900 #01579B</td>
+            <td class="color-cell bmd-bg-light-blue-a100">A100 #80D8FF</td>
+            <td class="color-cell bmd-bg-light-blue-a200">A200 #40C4FF</td>
+            <td class="color-cell bmd-bg-light-blue-a400">A400 #00B0FF</td>
+            <td class="color-cell bmd-bg-light-blue-a700">A700 #0091EA</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-cyan</code> <code>bmd-{prop}-cyan-50</code> .. <code>bmd-{prop}-cyan-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-cyan-50">50 #E0F7FA</td>
+            <td class="color-cell bmd-bg-cyan-100">100 #B2EBF2</td>
+            <td class="color-cell bmd-bg-cyan-200">200 #80DEEA</td>
+            <td class="color-cell bmd-bg-cyan-300">300 #4DD0E1</td>
+            <td class="color-cell bmd-bg-cyan-400">400 #26C6DA</td>
+            <td class="color-cell bmd-bg-cyan-500">500 #00BCD4</td>
+            <td class="color-cell bmd-bg-cyan-600">600 #00BCD4</td>
+            <td class="color-cell bmd-bg-cyan-700">700 #0097A7</td>
+            <td class="color-cell bmd-bg-cyan-800">800 #00838F</td>
+            <td class="color-cell bmd-bg-cyan-900">900 #006064</td>
+            <td class="color-cell bmd-bg-cyan-a100">A100 #84FFFF</td>
+            <td class="color-cell bmd-bg-cyan-a200">A200 #18FFFF</td>
+            <td class="color-cell bmd-bg-cyan-a400">A400 #00E5FF</td>
+            <td class="color-cell bmd-bg-cyan-a700">A700 #00B8D4</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-teal</code> <code>bmd-{prop}-teal-50</code> .. <code>bmd-{prop}-teal-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-teal-50">50 #E0F2F1</td>
+            <td class="color-cell bmd-bg-teal-100">100 #B2DFDB</td>
+            <td class="color-cell bmd-bg-teal-200">200 #80CBC4</td>
+            <td class="color-cell bmd-bg-teal-300">300 #4DB6AC</td>
+            <td class="color-cell bmd-bg-teal-400">400 #26A69A</td>
+            <td class="color-cell bmd-bg-teal-500">500 #009688</td>
+            <td class="color-cell bmd-bg-teal-600">600 #009688</td>
+            <td class="color-cell bmd-bg-teal-700">700 #00796B</td>
+            <td class="color-cell bmd-bg-teal-800">800 #00695C</td>
+            <td class="color-cell bmd-bg-teal-900">900 #004D40</td>
+            <td class="color-cell bmd-bg-teal-a100">A100 #A7FFEB</td>
+            <td class="color-cell bmd-bg-teal-a200">A200 #64FFDA</td>
+            <td class="color-cell bmd-bg-teal-a400">A400 #1DE9B6</td>
+            <td class="color-cell bmd-bg-teal-a700">A700 #00BFA5</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-green</code> <code>bmd-{prop}-green-50</code> .. <code>bmd-{prop}-green-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-green-50">50 #E8F5E9</td>
+            <td class="color-cell bmd-bg-green-100">100 #C8E6C9</td>
+            <td class="color-cell bmd-bg-green-200">200 #A5D6A7</td>
+            <td class="color-cell bmd-bg-green-300">300 #81C784</td>
+            <td class="color-cell bmd-bg-green-400">400 #66BB6A</td>
+            <td class="color-cell bmd-bg-green-500">500 #4CAF50</td>
+            <td class="color-cell bmd-bg-green-600">600 #4CAF50</td>
+            <td class="color-cell bmd-bg-green-700">700 #388E3C</td>
+            <td class="color-cell bmd-bg-green-800">800 #2E7D32</td>
+            <td class="color-cell bmd-bg-green-900">900 #1B5E20</td>
+            <td class="color-cell bmd-bg-green-a100">A100 #B9F6CA</td>
+            <td class="color-cell bmd-bg-green-a200">A200 #69F0AE</td>
+            <td class="color-cell bmd-bg-green-a400">A400 #00E676</td>
+            <td class="color-cell bmd-bg-green-a700">A700 #00C853</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-light-green</code> <code>bmd-{prop}-light-green-50</code> .. <code>bmd-{prop}-light-green-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-light-green-50">50 #F1F8E9</td>
+            <td class="color-cell bmd-bg-light-green-100">100 #DCEDC8</td>
+            <td class="color-cell bmd-bg-light-green-200">200 #C5E1A5</td>
+            <td class="color-cell bmd-bg-light-green-300">300 #AED581</td>
+            <td class="color-cell bmd-bg-light-green-400">400 #9CCC65</td>
+            <td class="color-cell bmd-bg-light-green-500">500 #8BC34A</td>
+            <td class="color-cell bmd-bg-light-green-600">600 #7CB342</td>
+            <td class="color-cell bmd-bg-light-green-700">700 #689F38</td>
+            <td class="color-cell bmd-bg-light-green-800">800 #558B2F</td>
+            <td class="color-cell bmd-bg-light-green-900">900 #33691E</td>
+            <td class="color-cell bmd-bg-light-green-a100">A100 #CCFF90</td>
+            <td class="color-cell bmd-bg-light-green-a200">A200 #B2FF59</td>
+            <td class="color-cell bmd-bg-light-green-a400">A400 #76FF03</td>
+            <td class="color-cell bmd-bg-light-green-a700">A700 #64DD17</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-lime</code> <code>bmd-{prop}-lime-50</code> .. <code>bmd-{prop}-lime-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-lime-50">50 #F9FBE7</td>
+            <td class="color-cell bmd-bg-lime-100">100 #F0F4C3</td>
+            <td class="color-cell bmd-bg-lime-200">200 #E6EE9C</td>
+            <td class="color-cell bmd-bg-lime-300">300 #DCE775</td>
+            <td class="color-cell bmd-bg-lime-400">400 #D4E157</td>
+            <td class="color-cell bmd-bg-lime-500">500 #CDDC39</td>
+            <td class="color-cell bmd-bg-lime-600">600 #CDDC39</td>
+            <td class="color-cell bmd-bg-lime-700">700 #AFB42B</td>
+            <td class="color-cell bmd-bg-lime-800">800 #9E9D24</td>
+            <td class="color-cell bmd-bg-lime-900">900 #827717</td>
+            <td class="color-cell bmd-bg-lime-a100">A100 #F4FF81</td>
+            <td class="color-cell bmd-bg-lime-a200">A200 #EEFF41</td>
+            <td class="color-cell bmd-bg-lime-a400">A400 #C6FF00</td>
+            <td class="color-cell bmd-bg-lime-a700">A700 #AEEA00</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-yellow</code> <code>bmd-{prop}-yellow-50</code> .. <code>bmd-{prop}-yellow-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-yellow-50">50 #FFFDE7</td>
+            <td class="color-cell bmd-bg-yellow-100">100 #FFF9C4</td>
+            <td class="color-cell bmd-bg-yellow-200">200 #FFF59D</td>
+            <td class="color-cell bmd-bg-yellow-300">300 #FFF176</td>
+            <td class="color-cell bmd-bg-yellow-400">400 #FFEE58</td>
+            <td class="color-cell bmd-bg-yellow-500">500 #FFEB3B</td>
+            <td class="color-cell bmd-bg-yellow-600">600 #FFEB3B</td>
+            <td class="color-cell bmd-bg-yellow-700">700 #FBC02D</td>
+            <td class="color-cell bmd-bg-yellow-800">800 #F9A825</td>
+            <td class="color-cell bmd-bg-yellow-900">900 #F57F17</td>
+            <td class="color-cell bmd-bg-yellow-a100">A100 #FFFF8D</td>
+            <td class="color-cell bmd-bg-yellow-a200">A200 #FFFF00</td>
+            <td class="color-cell bmd-bg-yellow-a400">A400 #FFEA00</td>
+            <td class="color-cell bmd-bg-yellow-a700">A700 #FFD600</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-amber</code> <code>bmd-{prop}-amber-50</code> .. <code>bmd-{prop}-amber-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-amber-50">50 #FFF8E1</td>
+            <td class="color-cell bmd-bg-amber-100">100 #FFECB3</td>
+            <td class="color-cell bmd-bg-amber-200">200 #FFE082</td>
+            <td class="color-cell bmd-bg-amber-300">300 #FFD54F</td>
+            <td class="color-cell bmd-bg-amber-400">400 #FFCA28</td>
+            <td class="color-cell bmd-bg-amber-500">500 #FFC107</td>
+            <td class="color-cell bmd-bg-amber-600">600 #FFC107</td>
+            <td class="color-cell bmd-bg-amber-700">700 #FFA000</td>
+            <td class="color-cell bmd-bg-amber-800">800 #FF8F00</td>
+            <td class="color-cell bmd-bg-amber-900">900 #FF6F00</td>
+            <td class="color-cell bmd-bg-amber-a100">A100 #FFE57F</td>
+            <td class="color-cell bmd-bg-amber-a200">A200 #FFD740</td>
+            <td class="color-cell bmd-bg-amber-a400">A400 #FFC400</td>
+            <td class="color-cell bmd-bg-amber-a700">A700 #FFAB00</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-orange</code> <code>bmd-{prop}-orange-50</code> .. <code>bmd-{prop}-orange-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-orange-50">50 #FFF3E0</td>
+            <td class="color-cell bmd-bg-orange-100">100 #FFE0B2</td>
+            <td class="color-cell bmd-bg-orange-200">200 #FFCC80</td>
+            <td class="color-cell bmd-bg-orange-300">300 #FFB74D</td>
+            <td class="color-cell bmd-bg-orange-400">400 #FFA726</td>
+            <td class="color-cell bmd-bg-orange-500">500 #FF9800</td>
+            <td class="color-cell bmd-bg-orange-600">600 #FF9800</td>
+            <td class="color-cell bmd-bg-orange-700">700 #F57C00</td>
+            <td class="color-cell bmd-bg-orange-800">800 #EF6C00</td>
+            <td class="color-cell bmd-bg-orange-900">900 #E65100</td>
+            <td class="color-cell bmd-bg-orange-a100">A100 #FFD180</td>
+            <td class="color-cell bmd-bg-orange-a200">A200 #FFAB40</td>
+            <td class="color-cell bmd-bg-orange-a400">A400 #FF9100</td>
+            <td class="color-cell bmd-bg-orange-a700">A700 #FF6D00</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-deep-orange</code> <code>bmd-{prop}-deep-orange-50</code> .. <code>bmd-{prop}-deep-orange-a700</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-deep-orange-50">50 #FBE9E7</td>
+            <td class="color-cell bmd-bg-deep-orange-100">100 #FFCCBC</td>
+            <td class="color-cell bmd-bg-deep-orange-200">200 #FFAB91</td>
+            <td class="color-cell bmd-bg-deep-orange-300">300 #FF8A65</td>
+            <td class="color-cell bmd-bg-deep-orange-400">400 #FF7043</td>
+            <td class="color-cell bmd-bg-deep-orange-500">500 #FF5722</td>
+            <td class="color-cell bmd-bg-deep-orange-600">600 #F4511E</td>
+            <td class="color-cell bmd-bg-deep-orange-700">700 #E64A19</td>
+            <td class="color-cell bmd-bg-deep-orange-800">800 #D84315</td>
+            <td class="color-cell bmd-bg-deep-orange-900">900 #BF360C</td>
+            <td class="color-cell bmd-bg-deep-orange-a100">A100 #FF9E80</td>
+            <td class="color-cell bmd-bg-deep-orange-a200">A200 #FF6E40</td>
+            <td class="color-cell bmd-bg-deep-orange-a400">A400 #FF3D00</td>
+            <td class="color-cell bmd-bg-deep-orange-a700">A700 #DD2C00</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-brown</code> <code>bmd-{prop}-brown-50</code> .. <code>bmd-{prop}-brown-900</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-brown-50">50 #EFEBE9</td>
+            <td class="color-cell bmd-bg-brown-100">100 #D7CCC8</td>
+            <td class="color-cell bmd-bg-brown-200">200 #BCAAA4</td>
+            <td class="color-cell bmd-bg-brown-300">300 #A1887F</td>
+            <td class="color-cell bmd-bg-brown-400">400 #8D6E63</td>
+            <td class="color-cell bmd-bg-brown-500">500 #795548</td>
+            <td class="color-cell bmd-bg-brown-600">600 #795548</td>
+            <td class="color-cell bmd-bg-brown-700">700 #5D4037</td>
+            <td class="color-cell bmd-bg-brown-800">800 #4E342E</td>
+            <td class="color-cell bmd-bg-brown-900">900 #3E2723</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-grey</code> <code>bmd-{prop}-grey-50</code> .. <code>bmd-{prop}-grey-900</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-grey-50">50 #FAFAFA</td>
+            <td class="color-cell bmd-bg-grey-100">100 #F5F5F5</td>
+            <td class="color-cell bmd-bg-grey-200">200 #EEEEEE</td>
+            <td class="color-cell bmd-bg-grey-300">300 #E0E0E0</td>
+            <td class="color-cell bmd-bg-grey-400">400 #BDBDBD</td>
+            <td class="color-cell bmd-bg-grey-500">500 #9E9E9E</td>
+            <td class="color-cell bmd-bg-grey-600">600 #9E9E9E</td>
+            <td class="color-cell bmd-bg-grey-700">700 #616161</td>
+            <td class="color-cell bmd-bg-grey-800">800 #424242</td>
+            <td class="color-cell bmd-bg-grey-900">900 #212121</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td colspan="14">
+              <code>bmd-{prop}-blue-grey</code> <code>bmd-{prop}-blue-grey-50</code> .. <code>bmd-{prop}-blue-grey-900</code>
+            </td>
+          </tr>
+          <tr>
+            <td class="color-cell bmd-bg-blue-grey-50">50 #ECEFF1</td>
+            <td class="color-cell bmd-bg-blue-grey-100">100 #CFD8DC</td>
+            <td class="color-cell bmd-bg-blue-grey-200">200 #B0BEC5</td>
+            <td class="color-cell bmd-bg-blue-grey-300">300 #90A4AE</td>
+            <td class="color-cell bmd-bg-blue-grey-400">400 #78909C</td>
+            <td class="color-cell bmd-bg-blue-grey-500">500 #607D8B</td>
+            <td class="color-cell bmd-bg-blue-grey-600">600 #546E7A</td>
+            <td class="color-cell bmd-bg-blue-grey-700">700 #455A64</td>
+            <td class="color-cell bmd-bg-blue-grey-800">800 #37474F</td>
+            <td class="color-cell bmd-bg-blue-grey-900">900 #263238</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div id="source-modal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Source Code</h4>
+        </div>
+        <div class="modal-body">
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/prettify.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

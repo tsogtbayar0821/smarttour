@@ -1,0 +1,993 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <title>BMD - Navs</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/prettify.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Navs</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 id="nav-tabs">Tabs</h3>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-tabs bmd-nav-tabs bmd-nav-tabs-default">
+            <li class="active"><a href="#home" data-toggle="tab" class="bmd-ripple">Home</a></li>
+            <li><a href="#profile" data-toggle="tab" class="bmd-ripple bmd-ink-grey-400">Profile</a></li>
+            <li class="disabled"><a>Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple bmd-ink-grey-400" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1" data-toggle="tab">Tab page 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#dropdown2" data-toggle="tab">Tab page 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="home">
+              <p>
+                Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                retro synth master cleanse. Mustache cliche tempor.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="profile">
+              <p>
+                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                Exercitation +1 labore velit, blog sartorial PBR leggings.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1">
+              <p>
+                Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                retro fanny pack lo-fi farm-to-table readymade.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2">
+              <p>
+                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+                cleanse gluten-free squid scenester freegan cosby sweater.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-tabs bmd-nav-tabs bmd-nav-tabs-primary">
+            <li class="active"><a href="#home-primary" data-toggle="tab" class="bmd-ripple">Home</a></li>
+            <li><a href="#profile-primary" data-toggle="tab" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a>Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1-primary" data-toggle="tab">Tab page 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#dropdown2-primary" data-toggle="tab">Tab page 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="home-primary">
+              <p>
+                Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                retro synth master cleanse. Mustache cliche tempor.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="profile-primary">
+              <p>
+                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                Exercitation +1 labore velit, blog sartorial PBR leggings.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1-primary">
+              <p>
+                Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                retro fanny pack lo-fi farm-to-table readymade.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2-primary">
+              <p>
+                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+                cleanse gluten-free squid scenester freegan cosby sweater.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-tabs bmd-nav-tabs bmd-nav-tabs-info">
+            <li class="active"><a href="#home-2" data-toggle="tab" class="bmd-ripple">Home</a></li>
+            <li><a href="#profile-2" data-toggle="tab" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a>Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1-2" data-toggle="tab">Tab page 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#dropdown2-2" data-toggle="tab">Tab page 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="home-2">
+              <p>
+                Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                retro synth master cleanse. Mustache cliche tempor.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="profile-2">
+              <p>
+                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                Exercitation +1 labore velit, blog sartorial PBR leggings.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1-2">
+              <p>
+                Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                retro fanny pack lo-fi farm-to-table readymade.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2-2">
+              <p>
+                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+                cleanse gluten-free squid scenester freegan cosby sweater.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-tabs bmd-nav-tabs bmd-nav-tabs-success">
+            <li class="active"><a href="#home-3" data-toggle="tab" class="bmd-ripple">Home</a></li>
+            <li><a href="#profile-3" data-toggle="tab" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a>Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1-3" data-toggle="tab">Tab page 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#dropdown2-3" data-toggle="tab">Tab page 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="home-3">
+              <p>
+                Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                retro synth master cleanse. Mustache cliche tempor.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="profile-3">
+              <p>
+                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                Exercitation +1 labore velit, blog sartorial PBR leggings.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1-3">
+              <p>
+                Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                retro fanny pack lo-fi farm-to-table readymade.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2-3">
+              <p>
+                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+                cleanse gluten-free squid scenester freegan cosby sweater.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-tabs bmd-nav-tabs bmd-nav-tabs-warning">
+            <li class="active"><a href="#home-4" data-toggle="tab" class="bmd-ripple">Home</a></li>
+            <li><a href="#profile-4" data-toggle="tab" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a>Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1-4" data-toggle="tab">Tab page 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#dropdown2-4" data-toggle="tab">Tab page 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="home-4">
+              <p>
+                Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                retro synth master cleanse. Mustache cliche tempor.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="profile-4">
+              <p>
+                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                Exercitation +1 labore velit, blog sartorial PBR leggings.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1-4">
+              <p>
+                Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                retro fanny pack lo-fi farm-to-table readymade.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2-4">
+              <p>
+                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+                cleanse gluten-free squid scenester freegan cosby sweater.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-tabs bmd-nav-tabs bmd-nav-tabs-danger">
+            <li class="active"><a href="#home-5" data-toggle="tab" class="bmd-ripple">Home</a></li>
+            <li><a href="#profile-5" data-toggle="tab" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a>Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1-5" data-toggle="tab">Tab page 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#dropdown2-5" data-toggle="tab">Tab page 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="home-5">
+              <p>
+                Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                retro synth master cleanse. Mustache cliche tempor.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="profile-5">
+              <p>
+                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                Exercitation +1 labore velit, blog sartorial PBR leggings.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1-5">
+              <p>
+                Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                retro fanny pack lo-fi farm-to-table readymade.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2-5">
+              <p>
+                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+                cleanse gluten-free squid scenester freegan cosby sweater.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 id="nav-pills">Pills</h3>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills bmd-nav-pills-default">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li class="active"><a href="#">Active item</a></li>
+                <li class="disabled"><a href="#">Disabled item</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills bmd-nav-pills-primary">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li class="active"><a href="#">Active item</a></li>
+                <li class="disabled"><a href="#">Disabled item</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills bmd-nav-pills-info">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li class="active"><a href="#">Active item</a></li>
+                <li class="disabled"><a href="#">Disabled item</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills bmd-nav-pills-success">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li class="active"><a href="#">Active item</a></li>
+                <li class="disabled"><a href="#">Disabled item</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills bmd-nav-pills-warning">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li class="active"><a href="#">Active item</a></li>
+                <li class="disabled"><a href="#">Disabled item</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills bmd-nav-pills-danger">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li class="active"><a href="#">Active item</a></li>
+                <li class="disabled"><a href="#">Disabled item</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Stack pills</h3>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills nav-stacked bmd-nav-pills-default">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills nav-stacked bmd-nav-pills-primary">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills nav-stacked bmd-nav-pills-info">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills nav-stacked bmd-nav-pills-success">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills nav-stacked bmd-nav-pills-warning">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="nav nav-pills nav-stacked bmd-nav-pills-danger">
+            <li class="active"><a href="#" class="bmd-ripple">Home</a></li>
+            <li><a href="#" class="bmd-ripple">Profile</a></li>
+            <li class="disabled"><a href="#">Disabled</a></li>
+            <li class="dropdown bmd-dropdown">
+              <a class="dropdown-toggle bmd-ripple" data-toggle="dropdown" href="#">
+                Dropdown <i class="flaticon-show8"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 id="pagination">Pagination</h3>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pagination pagination-lg bmd-state-default">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination bmd-state-default">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination pagination-sm bmd-state-default">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pagination pagination-lg bmd-state-primary">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination bmd-state-primary">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination pagination-sm bmd-state-primary">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pagination pagination-lg bmd-state-info">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination bmd-state-info">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination pagination-sm bmd-state-info">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pagination pagination-lg bmd-state-success">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination bmd-state-success">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination pagination-sm bmd-state-success">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pagination pagination-lg bmd-state-warning">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination bmd-state-warning">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination pagination-sm bmd-state-warning">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pagination pagination-lg bmd-state-danger">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination bmd-state-danger">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul><br>
+          <ul class="pagination pagination-sm bmd-state-danger">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Pager</h3>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pager bmd-state-default">
+            <li class="disabled"><a href="#" class="bmd-ripple">&larr; Older</a></li>
+            <li><a href="#" class="bmd-ripple">Previous</a></li>
+            <li><a href="#" class="bmd-ripple">Next</a></li>
+            <li><a href="#" class="bmd-ripple">Newer &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pager bmd-state-primary">
+            <li class="disabled"><a href="#" class="bmd-ripple">&larr; Older</a></li>
+            <li><a href="#" class="bmd-ripple">Previous</a></li>
+            <li><a href="#" class="bmd-ripple">Next</a></li>
+            <li><a href="#" class="bmd-ripple">Newer &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pager bmd-state-info">
+            <li class="disabled"><a href="#" class="bmd-ripple">&larr; Older</a></li>
+            <li><a href="#" class="bmd-ripple">Previous</a></li>
+            <li><a href="#" class="bmd-ripple">Next</a></li>
+            <li><a href="#" class="bmd-ripple">Newer &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pager bmd-state-success">
+            <li class="disabled"><a href="#" class="bmd-ripple">&larr; Older</a></li>
+            <li><a href="#" class="bmd-ripple">Previous</a></li>
+            <li><a href="#" class="bmd-ripple">Next</a></li>
+            <li><a href="#" class="bmd-ripple">Newer &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pager bmd-state-warning">
+            <li class="disabled"><a href="#" class="bmd-ripple">&larr; Older</a></li>
+            <li><a href="#" class="bmd-ripple">Previous</a></li>
+            <li><a href="#" class="bmd-ripple">Next</a></li>
+            <li><a href="#" class="bmd-ripple">Newer &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bmd-component example-box">
+          <ul class="pager bmd-state-danger">
+            <li class="disabled"><a href="#" class="bmd-ripple">&larr; Older</a></li>
+            <li><a href="#" class="bmd-ripple">Previous</a></li>
+            <li><a href="#" class="bmd-ripple">Next</a></li>
+            <li><a href="#" class="bmd-ripple">Newer &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Breadcrumbs</h3>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="breadcrumb bmd-state-default">
+            <li><a href="#">Home</a></li>
+            <li class="active">Library</li>
+          </ul>
+          <ul class="breadcrumb bmd-state-default">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="breadcrumb bmd-state-primary">
+            <li><a href="#">Home</a></li>
+            <li class="active">Library</li>
+          </ul>
+          <ul class="breadcrumb bmd-state-primary">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="breadcrumb bmd-state-info">
+            <li><a href="#">Home</a></li>
+            <li class="active">Library</li>
+          </ul>
+          <ul class="breadcrumb bmd-state-info">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="breadcrumb bmd-state-success">
+            <li><a href="#">Home</a></li>
+            <li class="active">Library</li>
+          </ul>
+          <ul class="breadcrumb bmd-state-success">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="breadcrumb bmd-state-warning">
+            <li><a href="#">Home</a></li>
+            <li class="active">Library</li>
+          </ul>
+          <ul class="breadcrumb bmd-state-warning">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="bmd-component example-box">
+          <ul class="breadcrumb bmd-state-danger">
+            <li><a href="#">Home</a></li>
+            <li class="active">Library</li>
+          </ul>
+          <ul class="breadcrumb bmd-state-danger">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="source-modal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Source Code</h4>
+        </div>
+        <div class="modal-body">
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/prettify.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

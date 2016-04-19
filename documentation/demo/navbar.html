@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <title>BMD - Navbar</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/prettify.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+<div class="row">
+  <div class="col-lg-12">
+    <h1>Navbar</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <h3>Default and stateful components</h3>
+    <div class="bmd-component">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <i class="flaticon-show8"></i>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon bmd-addon flaticon-search100"></span>
+                  <div class="bmd-field-group">
+                    <input type="text" class="input-sm bmd-input" required="" autocomplete="off">
+                    <span class="bmd-bar"></span>
+                  </div>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default bmd-btn-round bmd-ripple bmd-ink-grey-400" type="button">Submit</button>
+                  </span>
+                  <span class="bmd-field-feedback"></span>
+                </div>
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="bmd-component">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed bmd-ripple" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <i class="flaticon-show8"></i>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon bmd-addon flaticon-search100"></span>
+                  <div class="bmd-field-group">
+                    <input type="text" class="input-sm bmd-input" required="" autocomplete="off">
+                    <span class="bmd-bar bmd-light"></span>
+                  </div>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default bmd-btn-round bmd-ripple bmd-ink-grey-400" type="button">Submit</button>
+                  </span>
+                  <span class="bmd-field-feedback"></span>
+                </div>
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="bmd-component">
+      <nav class="navbar navbar-primary">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed bmd-ripple" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <i class="flaticon-show8"></i>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon bmd-addon flaticon-search100"></span>
+                  <div class="bmd-field-group">
+                    <input type="text" class="input-sm bmd-input" required="" autocomplete="off">
+                    <span class="bmd-bar bmd-light"></span>
+                  </div>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default bmd-btn-round bmd-ripple bmd-ink-grey-400" type="button">Submit</button>
+                  </span>
+                  <span class="bmd-field-feedback"></span>
+                </div>
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="bmd-component">
+      <nav class="navbar navbar-success">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed bmd-ripple" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <i class="flaticon-show8"></i>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon bmd-addon flaticon-search100"></span>
+                  <div class="bmd-field-group">
+                    <input type="text" class="input-sm bmd-input" required="" autocomplete="off">
+                    <span class="bmd-bar bmd-light"></span>
+                  </div>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default bmd-btn-round bmd-ripple bmd-ink-grey-400" type="button">Submit</button>
+                  </span>
+                  <span class="bmd-field-feedback"></span>
+                </div>
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="bmd-component">
+      <nav class="navbar navbar-info">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed bmd-ripple" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <i class="flaticon-show8"></i>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon bmd-addon flaticon-search100"></span>
+                  <div class="bmd-field-group">
+                    <input type="text" class="input-sm bmd-input" required="" autocomplete="off">
+                    <span class="bmd-bar bmd-light"></span>
+                  </div>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default bmd-btn-round bmd-ripple bmd-ink-grey-400" type="button">Submit</button>
+                  </span>
+                  <span class="bmd-field-feedback"></span>
+                </div>
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="bmd-component">
+      <nav class="navbar navbar-warning">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed bmd-ripple" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <i class="flaticon-show8"></i>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon bmd-addon flaticon-search100"></span>
+                  <div class="bmd-field-group">
+                    <input type="text" class="input-sm bmd-input" required="" autocomplete="off">
+                    <span class="bmd-bar bmd-light"></span>
+                  </div>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default bmd-btn-round bmd-ripple bmd-ink-grey-400" type="button">Submit</button>
+                  </span>
+                  <span class="bmd-field-feedback"></span>
+                </div>
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="bmd-component">
+      <nav class="navbar navbar-danger">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed bmd-ripple" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <i class="flaticon-show8"></i>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon bmd-addon flaticon-search100"></span>
+                  <div class="bmd-field-group">
+                    <input type="text" class="input-sm bmd-input" required="" autocomplete="off">
+                    <span class="bmd-bar bmd-light"></span>
+                  </div>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default bmd-btn-round bmd-ripple bmd-ink-grey-400" type="button">Submit</button>
+                  </span>
+                  <span class="bmd-field-feedback"></span>
+                </div>
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+</div>
+<div id="source-modal" class="modal fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Source Code</h4>
+      </div>
+      <div class="modal-body">
+        <pre></pre>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,636 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <title>BMD - Bottom Sheet</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/prettify.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Bottom Sheet</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          <br>
+          Bottom sheet is responsive meta component that
+          is fixed at bottom of screen. It begins collapsed and toggleable in all viewports.
+          To use it, html must has below basic markup and contain a component class - <code>bmd-bottom-sheet</code>.<br>
+          Whereas there are two optional classes<br>
+          <code>bmd-bottom-sheet-list</code> : Apply icon list style as below example<br>
+          <code>bmd-bottom-sheet-full-height</code> : Usually use for more information of card component (see below example)<br>
+          Besides, there is a toggle to trigger bottom sheet by two attributes in markup <code>data-toggle="bmd-bottom-sheet"</code>
+          and <code>data-target="#id"</code> whereas dismiss is controlled by <code>data-dismiss="#id"</code>
+        </p>
+
+        <pre class="prettyprint linenums">
+
+<a href="#" class="btn btn-primary bmd-ripple" data-toggle="bmd-bottom-sheet" data-target="#bottom-sheet-default">
+  bottom sheet toggle
+</a>
+..
+..
+<div id="bottom-sheet-default" class="bmd-bottom-sheet">
+  <div class="col-lg-12">
+    <button type="button" class="close btn-link bmd-flat-btn" data-dismiss="#bottom-sheet-default">×</button>
+    <ul class="bmd-bottom-sheet-list">
+      <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-facebook56"></spna></a></li>
+      <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-gmail3"></span></a></li>
+      <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-google120"></span></a></li>
+      <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-google125"></span></a></li>
+      <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-pinterest33"></span></a></li>
+      <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-twitter47"></span></a></li>
+      <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-linkedin24"></span></a></li>
+    </ul>
+  </div>
+</div>
+
+        </pre>
+
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="col-lg-12 sidebar-example-wrapper">
+          <div class="bmd-component">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" class="bmd-ripple">Link</a></li>
+                    <li class="dropdown bmd-dropdown">
+                      <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                      </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                    </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="text-center">Your page contents are here</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              </p><br>
+              <a href="#" class="btn btn-default bmd-ink-grey-400 bmd-ripple" data-toggle="bmd-bottom-sheet" data-target="#bottom-sheet-default">
+                Toggle bottom sheet
+              </a>&nbsp;&nbsp;
+              <span id="click-icon-default"></span>
+              <p><br>
+                Another section. consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- position "absolute" is used for demo purpose -->
+        <div id="bottom-sheet-default" class="bmd-bottom-sheet" style="position:absolute;">
+          <div class="col-lg-12">
+            <button type="button" class="close btn-link bmd-flat-btn" data-dismiss="#bottom-sheet-default">×</button>
+            <ul class="bmd-bottom-sheet-list">
+              <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-facebook56"></spna></a></li>
+              <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-gmail3"></span></a></li>
+              <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-google120"></span></a></li>
+              <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-google125"></span></a></li>
+              <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-pinterest33"></span></a></li>
+              <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-twitter47"></span></a></li>
+              <li><a href="#" class="share" data-dismiss="#bottom-sheet-default"><span class="flaticon-linkedin24"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="col-lg-12 sidebar-example-wrapper">
+      <div class="bmd-component">
+        <nav class="navbar navbar-primary">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+                <li class="dropdown bmd-dropdown">
+                  <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                  </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="bmd-ripple">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="text-center">Your page contents are here</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </p><br>
+          <a href="#" class="btn btn-primary bmd-ripple" data-toggle="bmd-bottom-sheet" data-target="#bottom-sheet-primary">
+            Toggle bottom sheet
+          </a>&nbsp;&nbsp;
+          <span id="click-icon-primary"></span>
+          <p><br>
+            Another section. consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- position "absolute" is used for demo purpose -->
+    <div id="bottom-sheet-primary" class="bmd-bottom-sheet bmd-bottom-sheet-primary" style="position:absolute;">
+      <div class="col-lg-12">
+        <button type="button" class="close btn-link bmd-flat-btn" data-dismiss="#bottom-sheet-primary">×</button>
+        <ul class="bmd-bottom-sheet-list">
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-primary"><span class="flaticon-facebook56"></spna></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-primary"><span class="flaticon-gmail3"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-primary"><span class="flaticon-google120"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-primary"><span class="flaticon-google125"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-primary"><span class="flaticon-pinterest33"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-primary"><span class="flaticon-twitter47"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-primary"><span class="flaticon-linkedin24"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="col-lg-12 sidebar-example-wrapper">
+      <div class="bmd-component">
+        <nav class="navbar navbar-info">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+                <li class="dropdown bmd-dropdown">
+                  <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                  </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="bmd-ripple">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="text-center">Your page contents are here</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </p><br>
+          <a href="#" class="btn btn-info bmd-ripple" data-toggle="bmd-bottom-sheet" data-target="#bottom-sheet-info">
+            Toggle bottom sheet
+          </a>&nbsp;&nbsp;
+          <span id="click-icon-info"></span>
+          <p><br>
+            Another section. consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- position "absolute" is used for demo purpose -->
+    <div id="bottom-sheet-info" class="bmd-bottom-sheet bmd-bottom-sheet-info" style="position:absolute;">
+      <div class="col-lg-12">
+        <button type="button" class="close btn-link bmd-flat-btn" data-dismiss="#bottom-sheet-info">×</button>
+        <ul class="bmd-bottom-sheet-list">
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-info"><span class="flaticon-facebook56"></spna></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-info"><span class="flaticon-gmail3"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-info"><span class="flaticon-google120"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-info"><span class="flaticon-linkedin24"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-info"><span class="flaticon-google125"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-info"><span class="flaticon-pinterest33"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-info"><span class="flaticon-twitter47"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-6">
+  <div class="col-lg-12 sidebar-example-wrapper">
+    <div class="bmd-component">
+      <nav class="navbar navbar-success">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+              </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="bmd-ripple">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center">Your page contents are here</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        </p><br>
+        <a href="#" class="btn btn-success bmd-ripple" data-toggle="bmd-bottom-sheet" data-target="#bottom-sheet-success">
+          Toggle bottom sheet
+        </a>&nbsp;&nbsp;
+        <span id="click-icon-success"></span>
+        <p><br>
+          Another section. consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- position "absolute" is used for demo purpose -->
+  <div id="bottom-sheet-success" class="bmd-bottom-sheet bmd-bottom-sheet-success" style="position:absolute;">
+    <div class="col-lg-12">
+      <button type="button" class="close btn-link bmd-flat-btn" data-dismiss="#bottom-sheet-success">×</button>
+      <ul class="bmd-bottom-sheet-list">
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-success"><span class="flaticon-facebook56"></spna></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-success"><span class="flaticon-gmail3"></span></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-success"><span class="flaticon-google120"></span></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-success"><span class="flaticon-google125"></span></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-success"><span class="flaticon-pinterest33"></span></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-success"><span class="flaticon-twitter47"></span></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-success"><span class="flaticon-linkedin24"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="col-lg-12 sidebar-example-wrapper">
+      <div class="bmd-component">
+        <nav class="navbar navbar-warning">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+                <li class="dropdown bmd-dropdown">
+                  <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                  </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="bmd-ripple">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="text-center">Your page contents are here</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </p><br>
+          <a href="#" class="btn btn-warning bmd-ripple" data-toggle="bmd-bottom-sheet" data-target="#bottom-sheet-warning">
+            Toggle bottom sheet
+          </a>&nbsp;&nbsp;
+          <span id="click-icon-warning"></span>
+          <p><br>
+            Another section. consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- position "absolute" is used for demo purpose -->
+    <div id="bottom-sheet-warning" class="bmd-bottom-sheet bmd-bottom-sheet-warning" style="position:absolute;">
+      <div class="col-lg-12">
+        <button type="button" class="close btn-link bmd-flat-btn" data-dismiss="#bottom-sheet-warning">×</button>
+        <ul class="bmd-bottom-sheet-list">
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-warning"><span class="flaticon-facebook56"></spna></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-warning"><span class="flaticon-gmail3"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-warning"><span class="flaticon-google120"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-warning"><span class="flaticon-linkedin24"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-warning"><span class="flaticon-google125"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-warning"><span class="flaticon-pinterest33"></span></a></li>
+          <li><a href="#" class="share" data-dismiss="#bottom-sheet-warning"><span class="flaticon-twitter47"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-6">
+  <div class="col-lg-12 sidebar-example-wrapper">
+    <div class="bmd-component">
+      <nav class="navbar navbar-danger">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+              </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="bmd-ripple">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center">Your page contents are here</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        </p><br>
+        <a href="#" class="btn btn-danger bmd-ripple" data-toggle="bmd-bottom-sheet" data-target="#bottom-sheet-danger">
+          Toggle bottom sheet
+        </a>&nbsp;&nbsp;
+        <span id="click-icon-danger"></span>
+        <p><br>
+          Another section. consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- position "absolute" is used for demo purpose -->
+  <div id="bottom-sheet-danger" class="bmd-bottom-sheet bmd-bottom-sheet-danger" style="position:absolute;">
+    <div class="col-lg-12">
+      <button type="button" class="close btn-link bmd-flat-btn" data-dismiss="#bottom-sheet-danger">×</button>
+      <ul class="bmd-bottom-sheet-list">
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-danger"><span class="flaticon-facebook56"></spna></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-danger"><span class="flaticon-gmail3"></span></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-danger"><span class="flaticon-google120"></span></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-danger"><span class="flaticon-google125"></span></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-danger"><span class="flaticon-pinterest33"></span></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-danger"><span class="flaticon-twitter47"></span></a></li>
+        <li><a href="#" class="share" data-dismiss="#bottom-sheet-danger"><span class="flaticon-linkedin24"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <h3>Applying to card component</h3>
+    <p>Click "Learn more" to trigger the bottom sheet within card.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <div class="bmd-component">
+      <div class="panel panel-default bmd-card">
+        <div class="panel-body bmd-card-image">
+          <div class="bmd-card-image-holder">
+            <img class="img-responsive" src="img/work1.png">
+            <a class="btn btn-primary bmd-ripple bmd-fab bmd-floating"><span class="bmd-icon flaticon-add186"></a>
+          </div>
+          <figcaption class="bmd-card-caption text-left">
+            <h3>Title goes here</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </figcaption>
+        </div>
+        <div class="panel-footer">
+          <a href="#" class="bmd-card-action bmd-link-success">Share</a>
+          <a href="#" class="bmd-card-action bmd-link-success" data-toggle="bmd-bottom-sheet" data-target="#card1-bottom-sheet">Learn more</a>
+        </div>
+        <!-- position "absolute" is used for demo purpose -->
+        <div id="card1-bottom-sheet" class="bmd-bottom-sheet" style="background-color:rgba(33,150,243,.8) !important;position:absolute;">
+          <div class="col-lg-12">
+            <button type="button" class="close btn-link bmd-flat-btn" data-dismiss="#card1-bottom-sheet">×</button>
+            <div class="bmd-text-blue-50 text-center" style="padding:30px;">
+              <h3>Information</h3>
+              <p>
+                Bottom sheet can be applied as more information of card component.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="bmd-component">
+      <div class="panel panel-default bmd-card">
+        <div class="panel-body bmd-card-image">
+          <div class="bmd-card-image-holder">
+            <img class="img-responsive" src="img/work3.png">
+            <a class="btn btn-success bmd-ripple bmd-fab bmd-floating"><span class="bmd-icon flaticon-add186"></a>
+          </div>
+          <figcaption class="bmd-card-caption text-left">
+            <h3>Title goes here</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </figcaption>
+        </div>
+        <div class="panel-footer">
+          <a href="#" class="bmd-card-action bmd-link-success">Share</a>
+          <a href="#" class="bmd-card-action bmd-link-success" data-toggle="bmd-bottom-sheet" data-target="#card-bottom-sheet">Learn more</a>
+        </div>
+        <!-- position "absolute" is used for demo purpose -->
+        <div id="card-bottom-sheet" class="bmd-bottom-sheet bmd-bottom-sheet-full-height" style="background-color:rgba(27,94,32,.8) !important;position:absolute;">
+          <div class="col-lg-12">
+            <button type="button" class="close btn-link bmd-flat-btn" data-dismiss="#card-bottom-sheet">×</button>
+            <div class="bmd-text-green-50 text-center" style="padding:30px;">
+              <h3>Information</h3>
+              <p>
+                Add class <code>bmd-bottom-sheet-full-height</code> to bmd-bottom-sheet element
+                that can cover the whole card face.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="source-modal" class="modal fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Source Code</h4>
+      </div>
+      <div class="modal-body">
+        <pre></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/main.min.js"></script>
+
+<script>
+  $('.bmd-bottom-sheet .share').on('click', function() {
+    var state = $(this).data('dismiss').split('-');
+    var icon = $(this).children('span').attr('class');
+    $('#click-icon-' + state[state.length-1]).text(icon + ' clicked!');
+  })
+</script>
+</body>
+</html>

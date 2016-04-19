@@ -1,0 +1,903 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <title>BMD - Sidebar Menu</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/prettify.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Sidebar Nav</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p><br>
+          Sidebar navigation menu is responsive meta component that
+          can be used together with bootstrap top navbar. It begins collapsed and toggleable in all viewports.
+          To use it, html must has below basic markup and contain 3 component classes -
+          <code>bmd-sidebar</code>, <code>bmd-page-container</code>, <code>bmd-sidebar-toggle</code>
+        </p>
+
+        <pre class="prettyprint linenums">
+
+<div id="sidebar-example" class="bmd-sidebar bmd-sidebar-collapse bmd-sidebar-left">
+  Your menu contents here... or use markup by copying from the below example
+</div>
+<div class="bmd-page-container">
+  Your page contents here...
+</div>
+<a href="#" class="bmd-sidebar-toggle" data-target="#sidebar-example"></a>
+
+        </pre>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <h4>Default and push page contents <code>bmd-sidebar-collapse</code></h4>
+        <div class="col-lg-12 sidebar-example-wrapper">
+          <div class="bmd-component">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" class="bmd-ripple">Link</a></li>
+                    <li class="dropdown bmd-dropdown">
+                      <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                      </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                    </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- inline style for demo purpose -->
+        <div id="sidebar-default" class="bmd-sidebar bmd-sidebar-left bmd-sidebar-collapse" style="position:absolute;">
+          <ul class="bmd-sidebar-nav list-unstyled">
+            <li class="bmd-sidebar-brand"><h3><a href="#" class="bmd-ripple">Sidebar Menu</a></h3></li>
+            <li><a href="#" class="bmd-ripple">Dashboard</a></li>
+            <li>
+              <a href="#" data-target="#submenu-default" data-toggle="collapse" class="bmd-ripple collapsed">Submenu</a>
+              <ul class="list-unstyled collapse" id="submenu-default">
+                <li><a href="#" class="bmd-ripple">Sub-item 1</a></li>
+                <li><a href="#" class="bmd-ripple">Sub-item 2</a></li>
+                <li><a href="#" class="bmd-ripple">Sub-item 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Shortcuts</a></li>
+          </ul>
+        </div>
+        <div class="bmd-page-container">
+          <div class="container">
+            <h3 class="text-center">Your page contents are here</h3>
+            <br>
+            <h4>Section 1</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <!-- inline style for demo purpose -->
+        <a href="#" class="bmd-sidebar-toggle" data-target="#sidebar-default" style="position:absolute;">
+          <i class="flaticon-menu55"></i>
+          <i class="flaticon-close47"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <h4>Primary and no wrap <code>bmd-allow-overflow</code></h4>
+    <div class="col-lg-12 sidebar-example-wrapper">
+      <div class="bmd-component">
+        <nav class="navbar navbar-primary">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+                <li class="dropdown bmd-dropdown">
+                  <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                  </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="bmd-ripple">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- inline style for demo purpose -->
+    <div id="sidebar-primary" class="bmd-sidebar-primary bmd-sidebar bmd-sidebar-collapse bmd-sidebar-left" style="position:absolute;">
+      <ul class="bmd-sidebar-nav list-unstyled">
+        <li class="bmd-sidebar-brand"><h3><a href="#" class="bmd-ripple">Sidebar Menu</a></h3></li>
+        <li><a href="#" class="bmd-ripple">Dashboard</a></li>
+        <li>
+          <a href="#" data-target="#submenu-primary" data-toggle="collapse" class="bmd-ripple collapsed">Submenu</a>
+          <ul class="list-unstyled collapse" id="submenu-primary">
+            <li><a href="#" class="bmd-ripple">Sub-item 1</a></li>
+            <li><a href="#" class="bmd-ripple">Sub-item 2</a></li>
+            <li><a href="#" class="bmd-ripple">Sub-item 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="bmd-page-container bmd-allow-overflow">
+      <div class="container">
+        <h3 class="text-center">Your page contents are here</h3>
+        <br>
+        <h4>Section 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <!-- inline style for demo purpose -->
+    <a href="#" class="bmd-sidebar-toggle bmd-sidebar-toggle-primary" data-target="#sidebar-primary" style="position:absolute;">
+      <i class="flaticon-menu55"></i>
+      <i class="flaticon-close47"></i>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <h4>Info <code>bmd-sidebar-info</code></h4>
+    <div class="col-lg-12 sidebar-example-wrapper">
+      <div class="bmd-component">
+        <nav class="navbar navbar-info">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+                <li class="dropdown bmd-dropdown">
+                  <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                  </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="bmd-ripple">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- inline style for demo purpose -->
+    <div id="sidebar-info" class="bmd-sidebar-info bmd-sidebar bmd-sidebar-collapse bmd-sidebar-left" style="position:absolute;">
+      <ul class="bmd-sidebar-nav list-unstyled">
+        <li class="bmd-sidebar-brand"><h3><a href="#" class="bmd-ripple">Sidebar Menu</a></h3></li>
+        <li><a href="#" class="bmd-ripple">Dashboard</a></li>
+        <li>
+          <a href="#" data-target="#submenu-info" data-toggle="collapse" class="bmd-ripple collapsed">Submenu</a>
+          <ul class="list-unstyled collapse" id="submenu-info">
+            <li><a href="#" class="bmd-ripple">Sub-item 1</a></li>
+            <li><a href="#" class="bmd-ripple">Sub-item 2</a></li>
+            <li><a href="#" class="bmd-ripple">Sub-item 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="bmd-page-container">
+      <div class="container">
+        <h3 class="text-center">Your page contents are here</h3>
+        <br>
+        <h4>Section 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <!-- inline style for demo purpose -->
+    <a href="#" class="bmd-sidebar-toggle bmd-sidebar-toggle-info" data-target="#sidebar-info" style="position:absolute;">
+      <i class="flaticon-menu55"></i>
+      <i class="flaticon-close47"></i>
+    </a>
+  </div>
+</div>
+</div>
+<div class="col-lg-6">
+  <h4>Success <code>bmd-sidebar-success</code></h4>
+  <div class="col-lg-12 sidebar-example-wrapper">
+    <div class="bmd-component">
+      <nav class="navbar navbar-success">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+              </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="bmd-ripple">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- inline style for demo purpose -->
+  <div id="sidebar-success" class="bmd-sidebar-success bmd-sidebar bmd-sidebar-collapse bmd-sidebar-left" style="position:absolute;">
+    <ul class="bmd-sidebar-nav list-unstyled">
+      <li class="bmd-sidebar-brand"><h3><a href="#" class="bmd-ripple">Sidebar Menu</a></h3></li>
+      <li><a href="#" class="bmd-ripple">Dashboard</a></li>
+      <li>
+        <a href="#" data-target="#submenu-success" data-toggle="collapse" class="bmd-ripple collapsed">Submenu</a>
+        <ul class="list-unstyled collapse" id="submenu-success">
+          <li><a href="#" class="bmd-ripple">Sub-item 1</a></li>
+          <li><a href="#" class="bmd-ripple">Sub-item 2</a></li>
+          <li><a href="#" class="bmd-ripple">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Shortcuts</a></li>
+    </ul>
+  </div>
+  <div class="bmd-page-container">
+    <div class="container">
+      <h3 class="text-center">Your page contents are here</h3>
+      <br>
+      <h4>Section 1</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <!-- inline style for demo purpose -->
+  <a href="#" class="bmd-sidebar-toggle bmd-sidebar-toggle-success" data-target="#sidebar-success" style="position:absolute;">
+    <i class="flaticon-menu55"></i>
+    <i class="flaticon-close47"></i>
+  </a>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <h4>Warning <code>bmd-sidebar-warning</code></h4>
+    <div class="col-lg-12 sidebar-example-wrapper">
+      <div class="bmd-component">
+        <nav class="navbar navbar-warning">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+                <li class="dropdown bmd-dropdown">
+                  <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                  </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="bmd-ripple">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- inline style for demo purpose -->
+    <div id="sidebar-warning" class="bmd-sidebar-warning bmd-sidebar bmd-sidebar-collapse bmd-sidebar-left" style="position:absolute;">
+      <ul class="bmd-sidebar-nav list-unstyled">
+        <li class="bmd-sidebar-brand"><h3><a href="#" class="bmd-ripple">Sidebar Menu</a></h3></li>
+        <li><a href="#" class="bmd-ripple">Dashboard</a></li>
+        <li>
+          <a href="#" data-target="#submenu-warning" data-toggle="collapse" class="bmd-ripple collapsed">Submenu</a>
+          <ul class="list-unstyled collapse" id="submenu-warning">
+            <li><a href="#" class="bmd-ripple">Sub-item 1</a></li>
+            <li><a href="#" class="bmd-ripple">Sub-item 2</a></li>
+            <li><a href="#" class="bmd-ripple">Sub-item 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Shortcuts</a></li>
+      </ul>
+    </div>
+    <div class="bmd-page-container">
+      <div class="container">
+        <h3 class="text-center">Your page contents are here</h3>
+        <br>
+        <h4>Section 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <!-- inline style for demo purpose -->
+    <a href="#" class="bmd-sidebar-toggle bmd-sidebar-toggle-warning" data-target="#sidebar-warning" style="position:absolute;">
+      <i class="flaticon-menu55"></i>
+      <i class="flaticon-close47"></i>
+    </a>
+  </div>
+</div>
+</div>
+<div class="col-lg-6">
+  <h4>Danger <code>bmd-sidebar-danger</code></h4>
+  <div class="col-lg-12 sidebar-example-wrapper">
+    <div class="bmd-component">
+      <nav class="navbar navbar-danger">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+              </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="bmd-ripple">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- inline style for demo purpose -->
+  <div id="sidebar-danger" class="bmd-sidebar-danger bmd-sidebar bmd-sidebar-collapse bmd-sidebar-left" style="position:absolute;">
+    <ul class="bmd-sidebar-nav list-unstyled">
+      <li class="bmd-sidebar-brand"><h3><a href="#" class="bmd-ripple">Sidebar Menu</a></h3></li>
+      <li><a href="#" class="bmd-ripple">Dashboard</a></li>
+      <li>
+        <a href="#" data-target="#submenu-danger" data-toggle="collapse" class="bmd-ripple collapsed">Submenu</a>
+        <ul class="list-unstyled collapse" id="submenu-danger">
+          <li><a href="#" class="bmd-ripple">Sub-item 1</a></li>
+          <li><a href="#" class="bmd-ripple">Sub-item 2</a></li>
+          <li><a href="#" class="bmd-ripple">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Shortcuts</a></li>
+    </ul>
+  </div>
+  <div class="bmd-page-container">
+    <div class="container">
+      <h3 class="text-center">Your page contents are here</h3>
+      <br>
+      <h4>Section 1</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <!-- inline style for demo purpose -->
+  <a href="#" class="bmd-sidebar-toggle bmd-sidebar-toggle-danger" data-target="#sidebar-danger" style="position:absolute;">
+    <i class="flaticon-menu55"></i>
+    <i class="flaticon-close47"></i>
+  </a>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <h4>Fix and push page contents <code>bmd-sidebar-fix</code></h4>
+    <div class="col-lg-12 sidebar-example-wrapper">
+      <div class="bmd-component">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+                <li class="dropdown bmd-dropdown">
+                  <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                  </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="bmd-ripple">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- inline style for demo purpose -->
+    <div id="sidebar-fix" class="bmd-sidebar bmd-sidebar-left bmd-sidebar-fix" style="position:absolute;">
+      <ul class="bmd-sidebar-nav list-unstyled">
+        <li class="bmd-sidebar-brand"><h3><a href="#" class="bmd-ripple">Sidebar Menu</a></h3></li>
+        <li><a href="#" class="bmd-ripple">Dashboard</a></li>
+        <li>
+          <a href="#" data-target="#submenu-fix" data-toggle="collapse" class="bmd-ripple collapsed">Submenu</a>
+          <ul class="list-unstyled collapse" id="submenu-fix">
+            <li><a href="#" class="bmd-ripple">Sub-item 1</a></li>
+            <li><a href="#" class="bmd-ripple">Sub-item 2</a></li>
+            <li><a href="#" class="bmd-ripple">Sub-item 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Shortcuts</a></li>
+      </ul>
+    </div>
+    <!-- background-color is must for fix and push, inline style for demo purpose -->
+    <div class="bmd-page-container" style="background-color:#fff;height:100%;margin-top:-20px;padding-top:20px;">
+      <div class="container">
+        <h3 class="text-center">Your page contents are here</h3>
+        <br>
+        <h4>Section 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <!-- inline style for demo purpose -->
+    <a href="#" class="bmd-sidebar-toggle" data-target="#sidebar-fix" style="position:absolute;">
+      <i class="flaticon-menu55"></i>
+      <i class="flaticon-close47"></i>
+    </a>
+  </div>
+</div>
+</div>
+<div class="col-lg-6">
+  <h4>Overlay page contents <code>bmd-sidebar-overlay</code></h4>
+  <div class="col-lg-12 sidebar-example-wrapper">
+    <div class="bmd-component">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+              </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="bmd-ripple">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- inline style for demo purpose -->
+  <div id="sidebar-overlay" class="bmd-sidebar bmd-sidebar-left bmd-sidebar-overlay" style="position:absolute;">
+    <ul class="bmd-sidebar-nav list-unstyled">
+      <li class="bmd-sidebar-brand"><h3><a href="#" class="bmd-ripple">Sidebar Menu</a></h3></li>
+      <li><a href="#" class="bmd-ripple">Dashboard</a></li>
+      <li>
+        <a href="#" data-target="#submenu-overlay" data-toggle="collapse" class="bmd-ripple collapsed">Submenu</a>
+        <ul class="list-unstyled collapse" id="submenu-overlay">
+          <li><a href="#" class="bmd-ripple">Sub-item 1</a></li>
+          <li><a href="#" class="bmd-ripple">Sub-item 2</a></li>
+          <li><a href="#" class="bmd-ripple">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Shortcuts</a></li>
+    </ul>
+  </div>
+  <div class="bmd-page-container">
+    <div class="container">
+      <h3 class="text-center">Your page contents are here</h3>
+      <br>
+      <h4>Section 1</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <!-- inline style for demo purpose -->
+  <a href="#" class="bmd-sidebar-toggle" data-target="#sidebar-overlay" style="position:absolute;">
+    <i class="flaticon-menu55"></i>
+    <i class="flaticon-close47"></i>
+  </a>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <h4>Sticky small sidebar <code>bmd-sidebar-small</code></h4>
+    <div class="col-lg-12 sidebar-example-wrapper">
+      <div class="bmd-component">
+        <nav class="navbar navbar-primary">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" class="bmd-ripple">Link</a></li>
+                <li class="dropdown bmd-dropdown">
+                  <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                  </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+                </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="bmd-ripple">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- inline style for demo purpose -->
+    <div id="sidebar-small" class="bmd-sidebar-primary bmd-sidebar bmd-sidebar-small bmd-sidebar-collapse bmd-sidebar-left" style="position:absolute;">
+      <ul class="bmd-sidebar-nav list-unstyled">
+        <li class="bmd-sidebar-brand"><h3><a href="#" class="bmd-ripple">Sidebar Menu</a></h3></li>
+        <li><a href="#" class="bmd-ripple">Dashboard<i class="bmd-sidebar-small-icon flaticon-android11"></i></a></li>
+        <li>
+          <a href="#" data-target="#submenu-small" data-toggle="collapse" class="bmd-ripple collapsed">Submenu<i class="bmd-sidebar-small-icon flaticon-connection21"></i></a>
+          <ul class="list-unstyled collapse" id="submenu-small">
+            <li><a href="#" class="bmd-ripple">Sub-item 1</a></li>
+            <li><a href="#" class="bmd-ripple">Sub-item 2</a></li>
+            <li><a href="#" class="bmd-ripple">Sub-item 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Shortcuts<i class="bmd-sidebar-small-icon flaticon-drafts"></i></a></li>
+      </ul>
+    </div>
+    <div class="bmd-page-container">
+      <div class="container">
+        <h3 class="text-center">Your page contents are here</h3>
+        <br>
+        <h4>Section 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <!-- inline style for demo purpose -->
+    <a href="#" class="bmd-sidebar-toggle bmd-sidebar-toggle-primary" data-target="#sidebar-small" style="position:absolute;">
+      <i class="flaticon-menu55"></i>
+      <i class="flaticon-close47"></i>
+    </a>
+  </div>
+</div>
+</div>
+<div class="col-lg-6">
+  <h4>Right positioning <code>bmd-sidebar-right</code></h4>
+  <div class="col-lg-12 sidebar-example-wrapper">
+    <div class="bmd-component">
+      <nav class="navbar navbar-primary">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bmd-ripple" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#" class="bmd-ripple">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#" class="bmd-ripple">Link</a></li>
+              <li class="dropdown bmd-dropdown">
+                <a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"><span class="bmd-ink" style="height: 111px; width: 111px; position: absolute; top: -27.5px; left: -10.703125px;"></span>Dropdown <i class="flaticon-show8"></i>
+                </a><ul class="dropdown-menu" role="menu"><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false">
+              </a><li><a href="#" class="dropdown-toggle bmd-ripple" data-toggle="dropdown" role="button" aria-expanded="false"></a><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="bmd-ripple">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- inline style for demo purpose -->
+  <div id="sidebar-right" class="bmd-sidebar-primary bmd-sidebar bmd-sidebar-collapse bmd-sidebar-right" style="position:absolute;">
+    <ul class="bmd-sidebar-nav list-unstyled">
+      <li class="bmd-sidebar-brand"><h3><a href="#" class="bmd-ripple">Sidebar Menu</a></h3></li>
+      <li><a href="#" class="bmd-ripple">Dashboard</a></li>
+      <li>
+        <a href="#" data-target="#submenu-right" data-toggle="collapse" class="bmd-ripple collapsed">Submenu</a>
+        <ul class="list-unstyled collapse" id="submenu-right">
+          <li><a href="#" class="bmd-ripple">Sub-item 1</a></li>
+          <li><a href="#" class="bmd-ripple">Sub-item 2</a></li>
+          <li><a href="#" class="bmd-ripple">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Shortcuts</a></li>
+    </ul>
+  </div>
+  <div class="bmd-page-container">
+    <div class="container">
+      <h3 class="text-center">Your page contents are here</h3>
+      <br>
+      <h4>Section 1</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <!-- inline style for demo purpose -->
+  <a href="#" class="bmd-sidebar-toggle bmd-sidebar-toggle-primary" data-target="#sidebar-right" style="position:absolute;">
+    <i class="flaticon-menu55"></i>
+    <i class="flaticon-close47"></i>
+  </a>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped bs-events-table">
+        <thead>
+          <tr>
+            <th>Class name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>bmd-sidebar-active</code></td>
+            <td>The sidebar menu is shown.</td>
+          </tr>
+          <tr>
+            <td><code>bmd-sidebar-collapse, fix, overlay</code></td>
+            <td>Define sidebar menu behavior. One of them must be specified in markup.</td>
+          </tr>
+          <tr>
+            <td><code>bmd-sidebar-small</code></td>
+            <td>Small sidebar menu is still shown when collapsed. The default width is 62px defined in LESS variable <code>@small-menu-width</code>.</td>
+          </tr>
+          <tr>
+            <td><code>bmd-sidebar-left, right</code></td>
+            <td>Position the sidebar menu. Either one must be specified in markup.</td>
+          </tr>
+          <tr>
+            <td><code>bmd-allow-overflow</code></td>
+            <td>To use it, please set together with <code>bmd-page-container</code>. Allow page contents overflow with full width of viewport. Some page contents will be invisible when sidebar menu is active and you may make to scrollable with overflow attribute of body.</td>
+          </tr>
+          <tr>
+            <td><code>bmd-sidebar-xs, sm, md, lg</code></td>
+            <td>Predefined width: xs=150px, sm=200px, md=250px (default), lg=350px. Their LESS variables are <code>@sidebar-xs-width</code>, <code>@sidebar-sm-width</code>, <code>@sidebar-md-width</code>, <code>@sidebar-lg-width</code></td>
+          </tr>
+          <tr>
+            <td><code>bmd-sidebar-brand</code></td>
+            <td>Different css style from menu items.</td>
+          </tr>
+          <tr>
+            <td><code>bmd-sidebar-default, primary, info, success, warning, danger</code></td>
+            <td>State color for sidebar menu background. <code>bmd-sidebar-default</code> is used if not specified.</td>
+          </tr>
+          <tr>
+            <td><code>bmd-sidebar-toggle-default, primary, info, success, warning, danger</code></td>
+            <td>State color for sidebar toggle. <code>bmd-sidebar-toggle-default</code> is used if not specified.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+<div id="source-modal" class="modal fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Source Code</h4>
+      </div>
+      <div class="modal-body">
+        <pre></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
