@@ -10,9 +10,9 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'app/templates/home/main.html',
-                controller: 'MainController',
-                controllerAs: 'main'
+                templateUrl: 'app/templates/home/home.html',
+                controller: 'HomeController',
+                controllerAs: 'home'
             });
         // --- Hotel ---
         var hotelTemplatesDir = TEMPLATES_DIR + 'hotel/';

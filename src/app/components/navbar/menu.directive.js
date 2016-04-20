@@ -3,13 +3,13 @@
 
     angular
         .module('tour')
-        .directive('tourNavbar', tourNavbar);
+        .directive('tourMenu', tourMenu);
 
     /** @ngInject */
-    function tourNavbar() {
+    function tourMenu() {
         var directive = {
             restrict: 'E',
-            templateUrl: 'app/components/navbar/navbar.html',
+            templateUrl: 'app/components/navbar/menu.html',
             scope: {
                 creationDate: '='
             },

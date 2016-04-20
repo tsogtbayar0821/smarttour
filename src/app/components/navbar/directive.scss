@@ -1,0 +1,35 @@
+.navbar.navbar-default {
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    margin-top: 0px;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    line-height: 1.25em;
+}
+
+a:hover,
+a:focus {
+    color: greenyellow;
+}
+
+#menu {
+    .navbar.navbar-default {
+        background: rgba(255, 0, 0, 0);
+        min-height: 1px;
+        border: none;
+        a {
+            padding: 5px 15px;
+            color: blue;
+        }
+    }
+}

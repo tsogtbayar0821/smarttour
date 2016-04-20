@@ -3,10 +3,10 @@
 
   angular
     .module('tour')
-    .controller('MainController', MainController);
+    .controller('CampsiteController', CampsiteController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function CampsiteController($timeout, webDevTec, toastr) {
     var vm = this;
 
     vm.awesomeThings = [];
