@@ -7,10 +7,18 @@
         .controller('HotelsDetailController', HotelsDetailController);
 
     /** @ngInject */
-    function HotelsListController($timeout, webDevTec, toastr) {
+    function HotelsListController($timeout, $http, webDevTec, toastr) {
         var vm = this;
+        var vmdata = null;
 
-        vm.awesomeThings = [];
+        vm.data = null;
+
+        $http.get('app/data/hotels.json').success(function(response){
+            vm.data = response.data;
+        });
+        // $http({method: 'GET', url: 'app/data/hotels.json'}).success(function(response){
+        //     vm.data = response.data;
+        // });
         vm.classAnimation = '';
         vm.creationDate = 1461062986089;
         vm.showToastr = showToastr;
