@@ -26,13 +26,13 @@
                 url: '/list',
                 controller: 'HotelsListController',
                 controllerAs: 'hotel',
-                templateUrl: hotelTemplatesDir + 'hotel_list.html',
+                templateUrl: 'hotel_list.html',
             })
             .state('hotel.detail', {
                 url: '/detail/:id',
                 controller: 'HotelsDetailController',
                 controllerAs: 'vm',
-                templateUrl: hotelTemplatesDir + 'hotel_detail.html',
+                templateUrl: 'hotel_detail.html',
             });
         $stateProvider
             .state('booking', {
@@ -43,13 +43,13 @@
                 url: '/list',
                 controller: 'BookingListController',
                 controllerAs: 'booking',
-                templateUrl: bookingTemplatesDir + 'booking_list.html',
+                templateUrl: 'booking_list.html',
             })
             .state('booking.detail', {
                 url: '/detail/:id',
                 controller: 'BookingDetailController',
                 controllerAs: 'vm',
-                templateUrl: bookingTemplatesDir + 'booking_detail.html',
+                templateUrl: 'booking_detail.html',
             });
         $stateProvider
             .state('campsite', {
@@ -60,13 +60,13 @@
                 url: '/list',
                 controller: 'CampsiteListController',
                 controllerAs: 'campsite',
-                templateUrl: campsiteTemplatesDir + 'campsite_list.html',
+                templateUrl: 'campsite_list.html',
             })
             .state('campsite.detail', {
                 url: '/detail/:id',
                 controller: 'CampsiteDetailController',
                 controllerAs: 'vm',
-                templateUrl: campsiteTemplatesDir + 'campsite_detail.html',
+                templateUrl: 'campsite_detail.html',
             });
         $stateProvider
             .state('events', {
@@ -77,13 +77,13 @@
                 url: '/list',
                 controller: 'EventsListController',
                 controllerAs: 'events',
-                templateUrl: eventsTemplatesDir + 'events_list.html',
+                templateUrl: 'events_list.html',
             })
             .state('events.detail', {
                 url: '/detail/:id',
                 controller: 'EventsDetailController',
                 controllerAs: 'vm',
-                templateUrl: eventsTemplatesDir + 'events_detail.html',
+                templateUrl: 'events_detail.html',
             });
         $stateProvider
             .state('recent_search', {
@@ -94,13 +94,13 @@
                 url: '/list',
                 controller: 'RecentSearchListController',
                 controllerAs: 'recent_search',
-                templateUrl: recent_searchTemplatesDir + 'recent_search_list.html',
+                templateUrl: 'recent_search_list.html',
             })
             .state('recent_search.detail', {
                 url: '/detail/:id',
                 controller: 'RecentSearchDetailController',
                 controllerAs: 'vm',
-                templateUrl: recent_searchTemplatesDir + 'recent_search_detail.html',
+                templateUrl: 'recent_search_detail.html',
             });
         $stateProvider
             .state('restaurant', {
@@ -111,13 +111,13 @@
                 url: '/list',
                 controller: 'RestaurantListController',
                 controllerAs: 'restaurant',
-                templateUrl: restaurantTemplatesDir + 'restaurant_list.html',
+                templateUrl: 'restaurant_list.html',
             })
             .state('restaurant.detail', {
                 url: '/detail/:id',
                 controller: 'RestaurantDetailController',
                 controllerAs: 'vm',
-                templateUrl: restaurantTemplatesDir + 'restaurant_detail.html',
+                templateUrl: 'restaurant_detail.html',
             });
         $stateProvider
             .state('review', {
@@ -128,13 +128,13 @@
                 url: '/list',
                 controller: 'ReviewListController',
                 controllerAs: 'review',
-                templateUrl: reviewTemplatesDir + 'review_list.html',
+                templateUrl: 'review_list.html',
             })
             .state('review.detail', {
                 url: '/detail/:id',
                 controller: 'ReviewDetailController',
                 controllerAs: 'vm',
-                templateUrl: reviewTemplatesDir + 'review_detail.html',
+                templateUrl: 'review_detail.html',
             });
         $stateProvider
             .state('tour', {
@@ -145,13 +145,13 @@
                 url: '/list',
                 controller: 'TourListController',
                 controllerAs: 'tour',
-                templateUrl: tourTemplatesDir + 'tour_list.html',
+                templateUrl: 'tour_list.html',
             })
             .state('tour.detail', {
                 url: '/detail/:id',
                 controller: 'TourDetailController',
                 controllerAs: 'vm',
-                templateUrl: tourTemplatesDir + 'tour_detail.html',
+                templateUrl: 'tour_detail.html',
             });
 
 
