@@ -1,13 +1,13 @@
 <div class="container" id="hotels">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+    <div class="col-lg-3 col-md-3 col-sm-3">
         <h3>Search panel</h3>
     </div>
     <div class="col-lg-9 col-md-9  col-sm-9">
-        <div class="row" ng-repeat="item in hotel.data">
-            <div class="col-md-3">
+        <div class="row lineitem" ng-repeat="item in hotel.data">
+            <div class="col-md-3 col-sm-3 col-xs-3 img">
                 <img ng-src="{{ item.image }}">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6  col-xs-6 ">
                 <div class="row">
                     <a href="">{{ item.title }}</a>
                 </div>
@@ -15,7 +15,7 @@
                     <p>{{ item.description }}</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-3 col-xs-3">
                 <div class="row">
                     {{ item.feedback }}
                 </div>
