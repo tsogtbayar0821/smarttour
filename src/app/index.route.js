@@ -24,13 +24,13 @@
             })
             .state('hotel.list', {
                 url: '/list',
-                controller: 'HotelListController',
+                controller: 'HotelsListController',
                 controllerAs: 'hotel',
                 templateUrl: hotelTemplatesDir + 'hotel_list.html',
             })
             .state('hotel.detail', {
                 url: '/detail/:id',
-                controller: 'HotelDetailController',
+                controller: 'HotelsDetailController',
                 controllerAs: 'vm',
                 templateUrl: hotelTemplatesDir + 'hotel_detail.html',
             });
@@ -75,13 +75,13 @@
             })
             .state('events.list', {
                 url: '/list',
-                controller: 'EventListController',
+                controller: 'EventsListController',
                 controllerAs: 'events',
                 templateUrl: eventsTemplatesDir + 'events_list.html',
             })
             .state('events.detail', {
                 url: '/detail/:id',
-                controller: 'EventDetailController',
+                controller: 'EventsDetailController',
                 controllerAs: 'vm',
                 templateUrl: eventsTemplatesDir + 'events_detail.html',
             });
