@@ -16,45 +16,23 @@
             });
         // --- Hotel ---
         var hotelTemplatesDir = TEMPLATES_DIR + 'hotel/';
+        
         $stateProvider
             .state('hotel', {
                 url: '/hotel',
                 template: '<ui-view />',
-            });
-
-        // Sentences
-        $stateProvider
-            .state('hotel.sentences', {
-                url: '/sentences',
-                template: '<ui-view />',
             })
-            .state('hotel.sentences.create', {
-                url: '/create?closeOnDone&forcedTypeId',
-                controller: 'SentenceEditController',
-                controllerAs: 'vm',
-                templateUrl: hotelTemplatesDir + 'sentence_form.html',
-                resolve: {
-                    sentenceInstance: function(Sentence) {
-                        return new Sentence({ id: null, type_id: null });
-                    },
-                    localLanguage: function($translate) {
-                        return $translate.use();
-                    },
-                },
+            .state('hotel.list', {
+                url: '/list',
+                controller: 'HotelListController',
+                controllerAs: 'hotel',
+                templateUrl: hotelTemplatesDir + 'hotel_list.html',
             })
-            .state('hotel.sentences.edit', {
-                url: '/edit/:id?closeOnDone',
-                controller: 'SentenceEditController',
+            .state('hotel.detail', {
+                url: '/detail/:id',
+                controller: 'HotelDetailController',
                 controllerAs: 'vm',
-                templateUrl: hotelTemplatesDir + 'sentence_form.html',
-                resolve: {
-                    sentenceInstance: function($stateParams, Sentence) {
-                        return Sentence.get({ id: $stateParams.id });
-                    },
-                    localLanguage: function($translate) {
-                        return $translate.use();
-                    },
-                },
+                templateUrl: hotelTemplatesDir + 'hotel_detail.html',
             });
 
 
