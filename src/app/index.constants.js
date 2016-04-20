@@ -5,7 +5,7 @@
   angular
     .module('tour')
     .constant('malarkey', malarkey)
-    .constant('TEMPLATES_DIR', 'templates/')
+    .constant('TEMPLATES_DIR', './app/templates/')
     .constant('moment', moment);
 
 })();

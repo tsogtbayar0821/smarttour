@@ -13,7 +13,14 @@
                 templateUrl: 'app/templates/home/home.html',
                 controller: 'HomeController',
                 controllerAs: 'home'
-            });
+            })
+            .state('dashboard', {
+                url: '/dashboard',
+                templateUrl: 'app/templates/dashboard/dashboard.home.html',
+                controller: 'DashboardController',
+                controllerAs: 'dashboard'
+            })
+            ;
         // --- Hotel ---
         var hotelTemplatesDir = TEMPLATES_DIR + 'hotel/';
         
@@ -26,7 +33,7 @@
                 url: '/list',
                 controller: 'HotelsListController',
                 controllerAs: 'hotel',
-                templateUrl: 'hotel_list.html',
+                templateUrl: TEMPLATES_DIR + '/hotels/hotels.home.html',
             })
             .state('hotel.detail', {
                 url: '/detail/:id',
@@ -43,7 +50,7 @@
                 url: '/list',
                 controller: 'BookingListController',
                 controllerAs: 'booking',
-                templateUrl: 'booking_list.html',
+                templateUrl: TEMPLATES_DIR + 'booking/booking.home.html',
             })
             .state('booking.detail', {
                 url: '/detail/:id',
@@ -60,7 +67,7 @@
                 url: '/list',
                 controller: 'CampsiteListController',
                 controllerAs: 'campsite',
-                templateUrl: 'campsite_list.html',
+                templateUrl: TEMPLATES_DIR + 'campsite/campsite.home.html',
             })
             .state('campsite.detail', {
                 url: '/detail/:id',
@@ -77,7 +84,7 @@
                 url: '/list',
                 controller: 'EventsListController',
                 controllerAs: 'events',
-                templateUrl: 'events_list.html',
+                templateUrl: TEMPLATES_DIR + 'events/events.home.html',
             })
             .state('events.detail', {
                 url: '/detail/:id',
@@ -94,7 +101,7 @@
                 url: '/list',
                 controller: 'RecentSearchListController',
                 controllerAs: 'recent_search',
-                templateUrl: 'recent_search_list.html',
+                templateUrl: TEMPLATES_DIR + 'recentsearch/recentsearch.home.html',
             })
             .state('recent_search.detail', {
                 url: '/detail/:id',
@@ -111,7 +118,7 @@
                 url: '/list',
                 controller: 'RestaurantListController',
                 controllerAs: 'restaurant',
-                templateUrl: 'restaurant_list.html',
+                templateUrl: TEMPLATES_DIR + 'restaurants/restaurants.home.html',
             })
             .state('restaurant.detail', {
                 url: '/detail/:id',
@@ -128,7 +135,7 @@
                 url: '/list',
                 controller: 'ReviewListController',
                 controllerAs: 'review',
-                templateUrl: 'review_list.html',
+                templateUrl: TEMPLATES_DIR + 'review/review.home.html',
             })
             .state('review.detail', {
                 url: '/detail/:id',
@@ -145,7 +152,7 @@
                 url: '/list',
                 controller: 'TourListController',
                 controllerAs: 'tour',
-                templateUrl: 'tour_list.html',
+                templateUrl: TEMPLATES_DIR + 'tours/tours.home.html',
             })
             .state('tour.detail', {
                 url: '/detail/:id',

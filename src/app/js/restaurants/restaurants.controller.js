@@ -3,11 +3,11 @@
 
     angular
         .module('tour')
-        .controller('RestrauntListController', RestrauntListController)
-        .controller('RestrauntDetailController', RestrauntDetailController);
+        .controller('RestaurantListController', RestaurantListController)
+        .controller('RestaurantDetailController', RestaurantDetailController);
 
     /** @ngInject */
-    function RestrauntListController($timeout, webDevTec, toastr) {
+    function RestaurantListController($timeout, webDevTec, toastr) {
         var vm = this;
 
         vm.awesomeThings = [];
@@ -38,7 +38,7 @@
         }
     }
 
-    function RestrauntDetailController($timeout, webDevTec, toastr) {
+    function RestaurantDetailController($timeout, webDevTec, toastr) {
         var vm = this;
 
         vm.awesomeThings = [];

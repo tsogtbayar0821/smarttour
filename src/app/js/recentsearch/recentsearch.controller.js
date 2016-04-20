@@ -3,11 +3,11 @@
 
   angular
     .module('tour')
-    .controller('RecentSearachListController', RecentSearachListController)
-    .controller('RecentSearachDetailController', RecentSearachDetailController);
+    .controller('RecentSearchListController', RecentSearchListController)
+    .controller('RecentSearchDetailController', RecentSearchDetailController);
 
   /** @ngInject */
-  function RecentSearachListController($timeout, webDevTec, toastr) {
+  function RecentSearchListController($timeout, webDevTec, toastr) {
     var vm = this;
 
     vm.awesomeThings = [];
@@ -38,7 +38,7 @@
     }
   }
 
-  function RecentSearachDetailController($timeout, webDevTec, toastr) {
+  function RecentSearchDetailController($timeout, webDevTec, toastr) {
     var vm = this;
 
     vm.awesomeThings = [];
