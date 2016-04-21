@@ -1,0 +1,9 @@
+{
+    "data": [{ "id": 1, "name": "Hotels" },
+            { "id": 2, "name": "Homes and Apartments" },
+            { "id": 3, "name": "Guesthouses" },
+            { "id": 4, "name": "Resorts" },
+            { "id": 5, "name": "Farm Stays" },
+            { "id": 6, "name": "Bed and Breackfasts" }
+        ]
+}

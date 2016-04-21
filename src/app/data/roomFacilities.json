@@ -1,0 +1,12 @@
+{
+    "data": [{ "id": 1, "name": "Air Conditioning" },
+            { "id": 2, "name": "Bathtub" },
+            { "id": 3, "name": "Flat-screen TV" },
+            { "id": 4, "name": "Kitchen" },
+            { "id": 5, "name": "Patio" },
+            { "id": 6, "name": "Soundproof" },
+            { "id": 7, "name": "Spa tub" },
+            { "id": 8, "name": "Terrace" },
+            { "id": 9, "name": "Washing Machine" }
+        ]
+}

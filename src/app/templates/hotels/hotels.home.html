@@ -1,29 +1,91 @@
 <div class="container" id="hotels">
-    <div class="col-lg-3 col-md-3 col-sm-3">
-        <h3>Search panel</h3>
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb bread-large">
+                <li><a href="/">Home</a>
+                </li>
+                <li class="active">Hotels</li>
+            </ol>
+        </div>
     </div>
-    <div class="col-lg-9 col-md-9  col-sm-9">
-        <div class="row lineitem" ng-repeat="item in hotel.data">
-            <div class="col-md-3 col-sm-3 col-xs-3 img">
-                <img ng-src="{{ item.image }}">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="row">
+                <quicksearch></quicksearch>
             </div>
-            <div class="col-md-6 col-sm-6  col-xs-6 ">
-                <div class="row">
-                    <a href="">{{ item.title }}</a>
-                </div>
-                <div class="row">
-                    <p>{{ item.description }}</p>
-                </div>
+            <div class="row margin-top-10">
+				<div class="panel panel-primary">
+				    <div class="panel-heading"><h3 class="panel-title">Filter by:</h3></div>
+				    <div class="panel-body">
+				        <div class="list-group bmd-list-group-primary">
+		                    <a href="" class="list-group-item bmd-ripple filter-title" data-toggle="collapse" data-target="#accordion-primary-item-star" aria-expanded="true">Star Rating</a>
+		                    <div id="accordion-primary-item-star" class="collapse in " aria-expanded="true">
+		                        <div class="checkbox bmd-checkbox leftpad30" ng-repeat="item in hotel.starList">
+		                            <label>
+		                                <input type="checkbox" class="bmd-ripple bmd-ink-gray">
+		                                <span class="check"></span> {{item.name}}
+		                            </label>
+		                        </div>
+		                    </div>
+		                    <a href="" class="list-group-item bmd-ripple filter-title" data-toggle="collapse" data-target="#accordion-primary-item-property" aria-expanded="true">Property Types</a>
+		                    <div id="accordion-primary-item-property" class="collapse in " aria-expanded="true">
+		                        <div class="checkbox bmd-checkbox leftpad30" ng-repeat="item in hotel.propertyTypes">
+		                            <label>
+		                                <input type="checkbox" class="bmd-ripple bmd-ink-gray">
+		                                <span class="check"></span> {{item.name}}
+		                            </label>
+		                        </div>
+		                    </div>
+		                    <a href="" class="list-group-item bmd-ripple filter-title" data-toggle="collapse" data-target="#accordion-primary-item-facility" aria-expanded="true">Facility</a>
+		                    <div id="accordion-primary-item-facility" class="collapse in " aria-expanded="true">
+		                        <div class="checkbox bmd-checkbox leftpad30" ng-repeat="item in hotel.facilities">
+		                            <label>
+		                                <input type="checkbox" class="bmd-ripple bmd-ink-gray">
+		                                <span class="check"></span> {{item.name}}
+		                            </label>
+		                        </div>
+		                    </div>
+		                    <a href="" class="list-group-item bmd-ripple filter-title" data-toggle="collapse" data-target="#accordion-primary-item-roomfacility" aria-expanded="true">Room Facility</a>
+		                    <div id="accordion-primary-item-roomfacility" class="collapse in " aria-expanded="true">
+		                        <div class="checkbox bmd-checkbox leftpad30" ng-repeat="item in hotel.roomFacilities">
+		                            <label>
+		                                <input type="checkbox" class="bmd-ripple bmd-ink-gray">
+		                                <span class="check"></span> {{item.name}}
+		                            </label>
+		                        </div>
+		                    </div>
+		                </div>
+				    </div>
+				</div>
+
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-                <div class="row">
-                    {{ item.feedback }}
+        </div>
+        <div class="col-lg-9 col-md-9  col-sm-9">
+            <div class="row lineitem  panel panel-default" ng-repeat="item in hotel.data">
+                <div class="col-md-3 col-sm-3 col-xs-3 img">
+                    <img ng-src="{{ item.image }}">
                 </div>
-                <div class="row">
-                    {{ item.reviewCount }} reviews
+                <div class="col-md-6 col-sm-6  col-xs-6 ">
+                    <div class="row">
+                        <a href="" class="item-title">{{ item.title }}</a>
+                    </div>
+                    <div class="row">
+                        <p>{{ item.description }}</p>
+                    </div>
                 </div>
-                <div class="row">
-                    {{ item.price }}
+                <div class="col-md-3 col-sm-3 col-xs-3 text-right">
+                    <div class="row item-title">
+                        {{ item.feedback }}
+                    </div>
+                    <div class="row review-count">
+                        {{ item.reviewCount }} reviews
+                    </div>
+                    <div class="row like-count">
+                        <i class="flaticon-rate"></i>{{ item.reviewCount }} 
+                    </div>
+                    <div class="row">
+                        {{ item.price }}
+                    </div>
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@
             "description": "Surrounded by lush parks, this 4-star hotel is ideal for a relaxing stay in Abano Terme. It offers a variety of wellness, spa and rehabilitation programs, as well as free Thermal Spa Cards for guests....",
             "feedback": "Excellent 8.7",
             "reviewCount": 152,
+            "likeCount": 72,
             "price": "$319.99"
 
         }, {
@@ -13,6 +14,7 @@
             "description": "In the center of Abano Terme, just 6 miles from Padua, the Hotel Venezia features 2 thermal swimming pools and a spa.",
             "feedback": "Very good 8.1",
             "reviewCount": 236,
+            "likeCount": 72,
             "price": "$319.99"
 
         }, {
@@ -21,6 +23,7 @@
             "description": "Hotel Terme All'Alba features 2 swimming pools, a free gym and a free spa center.",
             "feedback": "Very good 8.5",
             "reviewCount": 184,
+            "likeCount": 72,
             "price": "$319.99"
 
         }, {
@@ -29,6 +32,7 @@
             "description": "The Hotel Due Torri provides an elegant setting for your stay in Abano Terme, overlooking Montirone Park. It has 3 thermal pools and a luxury spa center.",
             "feedback": "Wonderful 9.0",
             "reviewCount": 192,
+            "likeCount": 72,
             "price": "$319.99"
 
         }, {
@@ -37,6 +41,7 @@
             "description": "The Hotel Terme Roma is in central Abano Terme, at the start of a traffic-free area near Piazza della Repubblica. It features a free thermal spa with 3 naturally heated pools and a gym.",
             "feedback": "Good 7.9",
             "reviewCount": 252,
+            "likeCount": 72,
             "price": "$319.99"
 
         }, {
@@ -45,6 +50,7 @@
             "description": "This stylish hotel is found in a picturesque, quiet location near the shopping district and spa gardens of Abano Terme.",
             "feedback": "Very good 8.1",
             "reviewCount": 122,
+            "likeCount": 72,
             "price": "$319.99"
 
         }

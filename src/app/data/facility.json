@@ -1,0 +1,15 @@
+{
+    "data": [{ "id": 1, "name": "Free WiFi" },
+            { "id": 2, "name": "Wi-Fi" },
+            { "id": 3, "name": "Free Parking" },
+            { "id": 4, "name": "Airport Shuttle" },
+            { "id": 5, "name": "Fitness Center" },
+            { "id": 6, "name": "Non-smoking Rooms" },
+            { "id": 7, "name": "Indoor Pool" },
+            { "id": 8, "name": "Spa" },
+            { "id": 9, "name": "Family Rooms" },
+            { "id": 10, "name": "Ourdoor Pool" },
+            { "id": 11, "name": "Pet Friendly" },
+            { "id": 12, "name": "Retaurant" }
+        ]
+}

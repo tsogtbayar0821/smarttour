@@ -1,0 +1,52 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Find a Hotel</h3>
+  </div>
+  <div class="panel-body">
+    <div class="form-group">
+        <form class="custom">
+            <input type="hidden" id="checkin" name="checkin" readonly="readonly" value="">
+            <input type="hidden" id="checkout" name="checkout" readonly="readonly" value="">
+            <div class="form-group">
+                <div class="bmd-field-group">
+                    <input type="text" class="bmd-input" required="" id="arrival-and-departure2" placeholder="Arrival &amp; Departure Dates" readonly="readonly" data-cifmt="MM/DD/YYYY" data-cofmt="MM/DD/YYYY" data-separator=" - " data-title="Select Arrival &amp; Departure Dates" type="text" value="" onload="datepickerinit()">
+                    <span class="bmd-bar"></span>
+                    <span class="bmd-field-feedback"></span>
+                </div>
+            </div>
+
+            <select id="locations" name="locations" class="form-control">
+                <option value="-1" selected="selected">Locations: Any</option>
+                <option value="1">Locations: 1</option>
+                <option value="2">Locations: 2</option>
+                <option value="3">Locations: 3</option>
+                <option value="4">Locations: 4</option>
+                <option value="5">Locations: 5</option>
+                <option value="6">Locations: 6</option>
+                <option value="7">Locations: 7</option>
+            </select>
+            <br>
+            <select id="areas" name="areas" class="form-control">
+                <option value="-1" selected="selected">Area: No Preference</option>
+                <option value="4">Area: 4+</option>
+                <option value="5">Area: 5+</option>
+                <option value="6">Area: 6+</option>
+                <option value="7">Area: 7+</option>
+            </select>
+            <br>
+            <select id="occupancy" name="occupancy" class="form-control">
+                <option value="-1" selected="selected">Occupancy: No Preference</option>
+                <option value="4">Sleeps: 4+</option>
+                <option value="5">Sleeps: 5+</option>
+                <option value="6">Sleeps: 6+</option>
+                <option value="7">Sleeps: 7+</option>
+            </select>
+            <br>
+            <div class="left text-center">
+                <a href="" class="btn btn-primary bmd-ripple search-btn2">Search</a>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+
