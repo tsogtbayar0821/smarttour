@@ -1,1 +1,227 @@
-<h3>this is dashboard home</h3>
+<div class="container" id="dashboard">
+    <div class="row">
+        <div class="col-sm-2">
+            <div id="sidebar-primary" class="bmd-sidebar-primary tour-sidebar bmd-sidebar bmd-sidebar-collapse bmd-sidebar-left bmd-sidebar-active">
+                <ul class="bmd-sidebar-nav list-unstyled">
+                    <li class="bmd-sidebar-brand">
+                        <h3><a href="" class="bmd-ripple">My Account</a></h3></li>
+                    <li><a href="" class="bmd-ripple">Bookings</a></li>
+                    <li>
+                        <a href="" data-target="#submenu-primary" data-toggle="collapse" class="bmd-ripple collapsed" aria-expanded="false">Reviews</a>
+                        <ul class="list-unstyled collapse" id="submenu-primary" aria-expanded="false" style="height: 0px;">
+                            <li><a href="" class="bmd-ripple">Sub-item 1</a></li>
+                            <li><a href="" class="bmd-ripple">Sub-item 2</a></li>
+                            <li><a href="" class="bmd-ripple">Sub-item 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-10">
+            <div class="panel panel-default margin-top-30">
+                <div class="panel-heading">Social Networks</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            Your networks
+                        </div>
+                        <div class="colsm-9">
+                            One less password to remember! Link your account to Facebook or Google.
+                        </div>
+                    </div>
+                    <div class="row margin-top-20">
+                        <div class="col-md-9 col-md-offset-3">
+                            <a href="" class="btn btn-default bmd-ripple bmd-ink-grey-400 social-connect-button-facebook">Facebook</a>
+                            <a href="" class="btn btn-default bmd-ripple bmd-ink-grey-400 social-connect-button-google">Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">About You</div>
+                <div class="panel-body">
+                    <div class="profile-item">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <strong>You on our site	</strong>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                These details are displayed next to your publicly shared reviews, ratings, photos, etc. Any updates you make here will also appear in past contributions.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Profile Picture
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="profile-img col-sm-3">
+                                    <img ng-src="assets/images/hotel2.jpg" class="img-circle" width="100" height="100">
+                                </div>
+                                <div class="col-sm-9">
+                                    <form class="form-horizontal">
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <div class="col-lg-9">
+                                                    <div class="bmd-field-group">
+                                                        <input type="text" class="bmd-input bmd-input-file" required="">
+                                                        <span class="bmd-bar"></span>
+                                                        <label class="bmd-label">Browse files...</label>
+                                                        <input type="file" class="bmd-input">
+                                                        <input type="file" class="bmd-input">
+                                                        <span class="bmd-field-feedback"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i> The first thing people see is your photo, so show them your best side!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Username
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="col-sm-5 user">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Age
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="col-sm-5 user">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Country
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="col-sm-5 user">
+                                    <select id="locations" name="locations" class="form-control">
+                                        <option value="-1" selected="selected">Country: Any</option>
+                                        <option value="1">Country: 1</option>
+                                        <option value="2">Country: 2</option>
+                                        <option value="3">Country: 3</option>
+                                        <option value="4">Country: 4</option>
+                                        <option value="5">Country: 5</option>
+                                        <option value="6">Country: 6</option>
+                                        <option value="7">Country: 7</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-item">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <strong>For when you book</strong>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                This information is only used to autofill your details and make it quicker for you to book. We won't share it publicly.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                First Name
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="col-sm-5 user">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Last Name
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="col-sm-5 user">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Gender
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="col-sm-5 user">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Email
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="col-sm-5 user">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Address
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="col-sm-5 user">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Credit Cards</div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Password &amp; Currency</div>
+                <div class="panel-body">
+                    <div class="profile-item">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Currency
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="col-sm-5 user">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                Password
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="col-sm-5 user">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

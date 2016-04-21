@@ -1,5 +1,61 @@
-#main {
+#dashboard {
     a.pull-right {
         margin-right: 15px;
     }    
+    .tour-sidebar {
+	    background-color: #2196f3!important;
+	    position: static;
+	    padding-top: 0px;
+	    width: auto;
+	    height: 100%;
+    }
+    .margin-top-30 {
+    	margin-top: 30px;
+    }
+    .margin-top-20 {
+    	margin-top: 20px;
+    }
+    .social-connect-button-facebook {
+	    background-image: url("//r.bstatic.com/static/img/facebook/fb_icon_58x58/8f9fc05b2a9ac4456eef29d2e4d2bd7cb0a988d6.png");
+	    background-repeat: no-repeat;
+	    background-size: 25px 25px;
+	    background-position: 11px 7px;
+	    padding-left: 50px;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    margin-right: 10px;
+        border: solid 1px #0896ff;
+	}
+	.social-connect-button-google {
+	    background-image: url("//q.bstatic.com/static/img/google/google_logo_new/11719962b541a863ad121c66d643f2d633dfc5b0.png");
+	    background-repeat: no-repeat;
+	    background-size: 25px 25px;
+	    background-position: 11px 7px;
+	    padding-left: 45px;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    border: solid 1px #0896ff;
+	}
+	.profile-img {
+		border: solid 2px #e3e5e4;
+		border-radius: 5px;
+		padding: 10px;
+		width: 124px;
+		height: 124px;
+	}
+	.panel-heading {
+		font-weight: bold;
+	}
+	div.row {
+		margin-top: 20px;
+	}
+    li.bmd-sidebar-brand {
+    	padding-top: 20px;
+    }
+    .user {
+	    padding-left: 0px;
+	    input {
+	    	border: 1px solid #ccc;
+	    }
+    }
 }
