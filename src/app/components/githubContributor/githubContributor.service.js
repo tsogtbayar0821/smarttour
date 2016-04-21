@@ -1,37 +1,37 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular
-    .module('tour')
-    .factory('githubContributor', githubContributor);
+    angular
+        .module('tour')
+        .factory('githubContributor', githubContributor);
 
-  /** @ngInject */
-  function githubContributor($log, $http) {
-    var apiHost = 'https://api.github.com/repos/Swiip/generator-gulp-angular';
+    /** @ngInject */
+    function githubContributor($log, $http) {
+        var apiHost = 'https://api.github.com/repos/Swiip/generator-gulp-angular';
 
-    var service = {
-      apiHost: apiHost,
-      getContributors: getContributors
-    };
+        var service = {
+            apiHost: apiHost,
+            getContributors: getContributors
+        };
 
-    return service;
+        return service;
 
-    function getContributors(limit) {
-      if (!limit) {
-        limit = 30;
-      }
+        function getContributors(limit) {
+            if (!limit) {
+                limit = 30;
+            }
 
-      return $http.get(apiHost + '/contributors?per_page=' + limit)
-        .then(getContributorsComplete)
-        .catch(getContributorsFailed);
+            return $http.get(apiHost + '/contributors?per_page=' + limit)
+                .then(getContributorsComplete)
+                .catch(getContributorsFailed);
 
-      function getContributorsComplete(response) {
-        return response.data;
-      }
+            function getContributorsComplete(response) {
+                return response.data;
+            }
 
-      function getContributorsFailed(error) {
-        $log.error('XHR Failed for getContributors.\n' + angular.toJson(error.data, true));
-      }
+            function getContributorsFailed(error) {
+                $log.error('XHR Failed for getContributors.\n' + angular.toJson(error.data, true));
+            }
+        }
     }
-  }
 })();

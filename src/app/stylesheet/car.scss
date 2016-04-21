@@ -1,4 +1,4 @@
-#campsite {
+#car {
     .header {
         h3 {
             font-weight: 700;
@@ -14,6 +14,9 @@
             .navbar {
                 border: none;
                 background: white;
+                .map{
+                    
+                }
             }
             .filter-cell {
             	h3{
@@ -61,7 +64,9 @@
                     		margin-right: 7px;
                     	}
                     }
-                    
+                    .tag{
+                        color: black;
+                    }
                 }
             }
         }
