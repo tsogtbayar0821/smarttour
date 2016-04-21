@@ -83,7 +83,7 @@
             .state('events.list', {
                 url: '/list',
                 controller: 'EventsListController',
-                controllerAs: 'events',
+                controllerAs: 'event',
                 templateUrl: TEMPLATES_DIR + 'events/events.home.html',
             })
             .state('events.detail', {
@@ -157,6 +157,23 @@
             .state('tour.detail', {
                 url: '/detail/:id',
                 controller: 'TourDetailController',
+                controllerAs: 'vm',
+                templateUrl: 'tour_detail.html',
+            });
+        $stateProvider
+            .state('car', {
+                url: '/car',
+                template: '<ui-view />',
+            })
+            .state('car.list', {
+                url: '/list',
+                controller: 'CarListController',
+                controllerAs: 'car',
+                templateUrl: TEMPLATES_DIR + 'car/car.home.html',
+            })
+            .state('car.detail', {
+                url: '/detail/:id',
+                controller: 'CarDetailController',
                 controllerAs: 'vm',
                 templateUrl: 'tour_detail.html',
             });

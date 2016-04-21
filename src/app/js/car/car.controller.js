@@ -3,20 +3,20 @@
 
     angular
         .module('tour')
-        .controller('EventsListController', EventsListController)
-        .controller('EventsDetailController', EventsDetailController);
+        .controller('CarListController', CarListController)
+        .controller('CarDetailController', CarDetailController);
 
     /** @ngInject */
-    function EventsListController($timeout, $scope, EventSvc, NgMap) {
+    function CarListController($timeout, CarSvc, $scope, $log, NgMap) {
         var vm = this;
-        var eventFilter = 'app/data/event/event-filter.json'
-        EventSvc.getEventList(eventFilter).get(function(data) {
+        var carFilter = 'app/data/car/car-filter.json'
+        CarSvc.getCarList(carFilter).get(function(data) {
             // $log.log('filter', data.data)
             vm.filters = data.data
         })
 
-        var eventContent = 'app/data/event/event-content.json'
-        EventSvc.getEventList(eventContent).get(function(data) {
+        var carContent = 'app/data/car/car-content.json'
+        CarSvc.getCarList(carContent).get(function(data) {
             // $log.log('content', data.data)
             vm.contents = data.data
         })
@@ -29,9 +29,10 @@
             // console.log('shapes', map.shapes);
         });
 
+
     }
 
-    function EventsDetailController($timeout, webDevTec, toastr) {
+    function CarDetailController($timeout) {
         var vm = this;
 
 
