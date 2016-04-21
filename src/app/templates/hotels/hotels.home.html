@@ -81,13 +81,19 @@
                         {{ item.reviewCount }} reviews
                     </div>
                     <div class="row like-count">
-                        <i class="flaticon-rate"></i>{{ item.reviewCount }} 
+                        <i class="fa fa-heart-o"></i>{{ item.likeCount }} 
                     </div>
                     <div class="row">
                         {{ item.price }}
                     </div>
+                    <br/>
+                    <div class="hidden-sm hidden-xs pull-right">
+                        <a href="" class="btn btn-primary bmd-ripple">Reserve</a>
+                    </div>
                 </div>
             </div>
+            <paging page="1" page-size="6" total="3000" show-prev-next="true" show-first-last="true" text-next-class="glyphicon glyphicon-chevron-right" text-prev-class="glyphicon glyphicon-chevron-left" text-first-class="glyphicon glyphicon-backward" text-last-class="glyphicon glyphicon-forward" class="pull-right">
+            </paging>
         </div>
     </div>
 </div>
