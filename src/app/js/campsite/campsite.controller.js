@@ -7,7 +7,7 @@
         .controller('CampsiteDetailController', CampsiteDetailController);
 
     /** @ngInject */
-    function CampsiteListController($timeout, $scope, CampsiteSvc, $log) {
+    function CampsiteListController($timeout, $scope, CampsiteSvc, $log, $state) {
         var vm = this;
         var camFilter = 'app/data/campsite/campsite-filter.json'
         CampsiteSvc.getCampList(camFilter).get(function(data){
@@ -20,7 +20,10 @@
             // $log.log('content', data.data)
             vm.contents = data.data
         })
-
+        $log.log
+        vm.goCampDetail = function(index){
+            $state.go('campsite.detail')
+        }
         
     }
 

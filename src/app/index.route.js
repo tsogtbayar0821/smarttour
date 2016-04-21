@@ -72,8 +72,8 @@
             .state('campsite.detail', {
                 url: '/detail/:id',
                 controller: 'CampsiteDetailController',
-                controllerAs: 'vm',
-                templateUrl: 'campsite_detail.html',
+                controllerAs: 'campsitedetail',
+                templateUrl: TEMPLATES_DIR + 'campsite/campsite.detail.html',
             });
         $stateProvider
             .state('events', {
