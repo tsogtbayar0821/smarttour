@@ -16,16 +16,16 @@
                        {"id": 4, "name": "5 Stars"}, 
                        {"id": 5, "name": "Unrated"}];
 
-        $http.get('app/data/hotels.json').success(function(response) {
+        $http.get('app/data/hotel/hotels.json').success(function(response) {
             vm.data = response.data;
         });
-        $http.get('app/data/facility.json').success(function(response) {
+        $http.get('app/data/hotel/facility.json').success(function(response) {
             vm.facilities = response.data;
         });
-        $http.get('app/data/propertyTypes.json').success(function(response) {
+        $http.get('app/data/hotel/propertyTypes.json').success(function(response) {
             vm.propertyTypes = response.data;
         });
-        $http.get('app/data/roomFacilities.json').success(function(response) {
+        $http.get('app/data/hotel/roomFacilities.json').success(function(response) {
             vm.roomFacilities = response.data;
         });
 
