@@ -1,1 +1,103 @@
-<h3>this is tours home</h3>
+<div class="container" id="tours">
+    <div class="header">
+        <h3 class="title">Tour</h3>
+        <p>Total includes taxes and fees.</p>
+    </div>
+    <div class="body row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 filter-group">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-target="filter-collapse" data-toggle="collapse" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="filter-collapse">
+                    <div class="map">
+                        <ng-map center="[47.8864, 106.9057]"></ng-map>  
+                    </div>
+                    <div class="filter-cell" ng-repeat="main in tour.filters">
+                        <h3>{{main.title}}</h3>
+                        <div class="row" ng-repeat="filter in main.filters">
+                            <div class="checkbox bmd-checkbox">
+                                <label>
+                                    <input type="checkbox" class="bmd-ripple bmd-ink-gray">
+                                    <span class="check"></span> {{filter.name}}
+                                </label>
+                            </div>
+                            <p class="pull-right">{{filter.cnt}}</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-6 col-xs-12 camp-group">
+            <div class="trip-container panel" ng-repeat="item in tour.contents">
+                <div style="row">
+                    <div class="trip-image-container col-md-3 col-sm-4 col-xs-12">
+                        <div class="trip-image">
+                            <a href="">
+                                <img ng-src="{{item.image}}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="trip-content col-md-9 col-sm-8 col-xs-12">
+                        <div class="flex-content">
+                            <div>
+                                <h4 class="">
+                                        <a href="">{{item.title}}</a>
+                                    </h4>
+                            </div>
+                            <div class="mt5">
+                                <span class="mr10">
+                                    <span class="text-gray-light">Citroen C1 or similar</span>
+                                </span>
+                            </div>
+                            <div class="mt5 text-justify">
+                                {{item.content}}
+                            </div>
+                            <div class="hidden-sm hidden-xs pull-right">
+                                <a href="" class="btn btn-primary bmd-ripple">Reserve</a>
+                            </div>
+                            <div class="mt5 hidden-sm hidden-xs">
+                                <div class="">
+                                    <a href="" class="tag">
+                                        <i class="fa fa-male"></i>
+                                        <span class="">4</span>
+                                    </a>
+                                    <a href="" class="tag">
+                                        <i class="fa fa-car"></i>
+                                        <span class="">3/5</span>
+                                    </a>
+                                    <a href="" class="tag">
+                                        <i class="fa fa-empire"></i>
+                                        <span class="">A/C</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="mr10">
+                                <span class="text-gray-light">Fuel info: Full to full</span>
+                            </span>
+                            <div class="mt5 hidden-sm hidden-xs">
+                                <div class="">
+                                    <a href="" class="tag">
+                                        <i class="fa fa-check"></i>
+                                        <span class="">{{item.tag1}}</span>
+                                    </a>
+                                    <a href="" class="tag">
+                                        <i class="fa fa-check"></i>
+                                        <span class="">{{item.tag2}}</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <paging page="1" page-size="6" total="3000" show-prev-next="true" show-first-last="true" text-next-class="glyphicon glyphicon-chevron-right" text-prev-class="glyphicon glyphicon-chevron-left" text-first-class="glyphicon glyphicon-backward" text-last-class="glyphicon glyphicon-forward">
+            </paging>
+        </div>
+    </div>
+</div>

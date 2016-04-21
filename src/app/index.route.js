@@ -117,7 +117,7 @@
             .state('restaurant.list', {
                 url: '/list',
                 controller: 'RestaurantListController',
-                controllerAs: 'restaurant',
+                controllerAs: 'restraunt',
                 templateUrl: TEMPLATES_DIR + 'restaurants/restaurants.home.html',
             })
             .state('restaurant.detail', {

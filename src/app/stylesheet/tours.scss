@@ -1,5 +1,74 @@
-#main {
-    a.pull-right {
-        margin-right: 15px;
-    }    
+#tours {
+    .header {
+        h3 {
+            font-weight: 700;
+            color: #393130;
+            font-size: 32px;
+        }
+        p {}
+    }
+    .body {
+        margin-top: 20px;
+        .filter-group {
+            background: white;
+            .navbar {
+                border: none;
+                background: white;
+                .map{
+                    
+                }
+            }
+            .filter-cell {
+            	h3{
+            		font-weight: 700;
+            		font-size: 15px;
+            	}
+                p {
+                    margin-top: 10px;
+                    color: #e67e28;
+                    font-weight: 700;
+                }
+            }
+        }
+        .camp-group {
+        	text-align: center;
+            .trip-container {
+            	text-align: left;
+                border: none;
+                box-shadow: none;
+                overflow: hidden;
+                .trip-image-container {
+                    overflow: hidden;
+                    height: 160px;
+                    .trip-image {
+                        position: absolute;
+                        left: -1000px;
+                        right: -1000px;
+                        top: 0;
+                        bottom: 0;
+                        text-align: center;
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+                .trip-content {
+                    padding: 10px 13px;
+                    h4{
+                    	margin-top: 5px;
+                    	margin-bottom: 5px;
+                    }
+                    .mt5{
+                    	margin: 5px 0px;
+                    	a{
+                    		margin-right: 7px;
+                    	}
+                    }
+                    .tag{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -11,22 +11,22 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="">
-                    <a class="bmd-ripple" ui-sref="hotel.list">Hotels</a>
+                    <a class="bmd-ripple" ui-sref="hotel.list" ng-class="{active: $root.isState('hotel.list')}">Hotels</a>
                 </li>
                 <li>
-                    <a class="bmd-ripple" ui-sref="campsite.list">Camp Site</a>
+                    <a class="bmd-ripple" ui-sref="campsite.list" ng-class="{active: $root.isState('campsite.list')}">Camp Site</a>
                 </li>
                 <li>
-                    <a class="bmd-ripple" ui-sref="restaurant.list">Restraunts</a>
+                    <a class="bmd-ripple" ui-sref="restaurant.list" ng-class="{active: $root.isState('restaurant.list')}">Restraunts</a>
                 </li>
                 <li>
-                    <a class="bmd-ripple" ui-sref="tour.list">Tours</a>
+                    <a class="bmd-ripple" ui-sref="tour.list" ng-class="{active: $root.isState('tour.list')}">Tours</a>
                 </li>
                 <li>
-                    <a class="bmd-ripple" ui-sref="events.list">Events</a>
+                    <a class="bmd-ripple" ui-sref="events.list" ng-class="{active: $root.isState('events.list')}">Events</a>
                 </li>
                 <li>
-                    <a class="bmd-ripple" ui-sref="car.list">Car Rental</a>
+                    <a class="bmd-ripple" ui-sref="car.list" ng-class="{active: $root.isState('car.list')}">Car Rental</a>
                 </li>
             </ul>
         </div>

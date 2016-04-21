@@ -7,66 +7,34 @@
         .controller('TourDetailController', TourDetailController);
 
     /** @ngInject */
-    function TourListController($timeout, webDevTec, toastr) {
+    function TourListController($scope, ToursSvc, NgMap) {
         var vm = this;
+        var toursFilter = 'app/data/tours/tours-filter.json'
+        ToursSvc.getToursList(toursFilter).get(function(data) {
+            // $log.log('filter', data.data)
+            vm.filters = data.data
+        })
 
-        vm.awesomeThings = [];
-        vm.classAnimation = '';
-        vm.creationDate = 1461062986089;
-        vm.showToastr = showToastr;
-
-        activate();
-
-        function activate() {
-            getWebDevTec();
-            $timeout(function() {
-                vm.classAnimation = 'rubberBand';
-            }, 4000);
-        }
-
-        function showToastr() {
-            toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-            vm.classAnimation = '';
-        }
-
-        function getWebDevTec() {
-            vm.awesomeThings = webDevTec.getTec();
-
-            angular.forEach(vm.awesomeThings, function(awesomeThing) {
-                awesomeThing.rank = Math.random();
-            });
-        }
+        var toursContent = 'app/data/tours/tours-content.json'
+        ToursSvc.getToursList(toursContent).get(function(data) {
+            // $log.log('content', data.data)
+            vm.contents = data.data
+        })
+       
+        // map
+        NgMap.getMap().then(function(map) {
+            vm.map = map;
+            // console.log(map.getCenter());
+            // console.log('markers', map.markers);
+            // console.log('shapes', map.shapes);
+        });
+        
     }
 
-    function TourDetailController($timeout, webDevTec, toastr) {
+    function TourDetailController() {
         var vm = this;
 
-        vm.awesomeThings = [];
-        vm.classAnimation = '';
-        vm.creationDate = 1461062986089;
-        vm.showToastr = showToastr;
-
-        activate();
-
-        function activate() {
-            getWebDevTec();
-            $timeout(function() {
-                vm.classAnimation = 'rubberBand';
-            }, 4000);
-        }
-
-        function showToastr() {
-            toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-            vm.classAnimation = '';
-        }
-
-        function getWebDevTec() {
-            vm.awesomeThings = webDevTec.getTec();
-
-            angular.forEach(vm.awesomeThings, function(awesomeThing) {
-                awesomeThing.rank = Math.random();
-            });
-        }
+        
     }
 
 
