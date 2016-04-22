@@ -8,12 +8,16 @@
     /** @ngInject */
     function CampsiteSvc($resource) {
        var service = {           
-            getCampList: getCampList
+            getCampList: getCampList,
+            getCampImg: getCampImg
         };
 
         return service;
 
         function getCampList(url) {
+            return $resource(url);
+        }
+        function getCampImg(url) {
             return $resource(url);
         }
     } 
