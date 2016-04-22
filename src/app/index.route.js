@@ -117,9 +117,9 @@
             })
             .state('events.detail', {
                 url: '/detail/:id',
-                controller: 'EventsDetailController',
-                controllerAs: 'vm',
-                templateUrl: 'events_detail.html',
+                // controller: 'EventsDetailController',
+                // controllerAs: 'vm',
+                templateUrl: TEMPLATES_DIR + 'events/events.detail.html',
             });
         $stateProvider
             .state('recent_search', {
@@ -151,9 +151,9 @@
             })
             .state('restaurant.detail', {
                 url: '/detail/:id',
-                controller: 'RestaurantDetailController',
-                controllerAs: 'vm',
-                templateUrl: 'restaurant_detail.html',
+                // controller: 'RestaurantDetailController',
+                // controllerAs: 'vm',
+                templateUrl: TEMPLATES_DIR + 'restaurants/restaurants.detail.html',
             });
         
         $stateProvider
@@ -169,9 +169,9 @@
             })
             .state('tour.detail', {
                 url: '/detail/:id',
-                controller: 'TourDetailController',
-                controllerAs: 'vm',
-                templateUrl: 'tour_detail.html',
+                // controller: 'TourDetailController',
+                // controllerAs: 'vm',
+                templateUrl: TEMPLATES_DIR + 'tours/tours.detail.html',
             });
         $stateProvider
             .state('car', {
@@ -186,9 +186,9 @@
             })
             .state('car.detail', {
                 url: '/detail/:id',
-                controller: 'CarDetailController',
-                controllerAs: 'vm',
-                templateUrl: 'tour_detail.html',
+                // controller: 'CarDetailController',
+                // controllerAs: 'vm',
+                templateUrl: TEMPLATES_DIR + 'car/car.detail.html',
             });
 
 
