@@ -16,10 +16,10 @@
                 background: white;
             }
             .filter-cell {
-            	h3{
-            		font-weight: 700;
-            		font-size: 15px;
-            	}
+                h3 {
+                    font-weight: 700;
+                    font-size: 15px;
+                }
                 p {
                     margin-top: 10px;
                     color: #e67e28;
@@ -28,9 +28,9 @@
             }
         }
         .camp-group {
-        	text-align: center;
+            text-align: center;
             .trip-container {
-            	text-align: left;
+                text-align: left;
                 border: none;
                 box-shadow: none;
                 overflow: hidden;
@@ -51,19 +51,50 @@
                 }
                 .trip-content {
                     padding: 10px 13px;
-                    h4{
-                    	margin-top: 5px;
-                    	margin-bottom: 5px;
+                    h4 {
+                        margin-top: 5px;
+                        margin-bottom: 5px;
                     }
-                    .mt5{
-                    	margin: 5px 0px;
-                    	a{
-                    		margin-right: 7px;
-                    	}
+                    .mt5 {
+                        margin: 5px 0px;
+                        a {
+                            margin-right: 7px;
+                        }
                     }
-                    
                 }
             }
         }
+    }
+}
+
+#campsitedetail {
+    #lightSlider {
+        .car-body {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .lSPager.lSGallery {
+        width: 100%!important;
+        transform: none!important;
+        li {
+            opacity: 0.5;
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+    .nav-tabs > li > a{
+        padding: 0px 10px;
+    }
+    .nav.nav-tabs.bmd-nav-tabs.bmd-nav-tabs-primary{
+        box-shadow: none;
+    }
+    .segment{
+        float: left;
+        border: 1px #8D8D8D solid;
+        border-radius: 2px;
+        margin-bottom: 10px;
     }
 }
