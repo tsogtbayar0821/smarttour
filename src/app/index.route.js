@@ -10,17 +10,10 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'app/templates/home/home.html',
+                templateUrl: TEMPLATES_DIR +  'home/home.html',
                 controller: 'HomeController',
                 controllerAs: 'home'
-            })
-            .state('dashboard', {
-                url: '/dashboard',
-                templateUrl: 'app/templates/dashboard/dashboard.home.html',
-                controller: 'DashboardController',
-                controllerAs: 'dashboard'
-            })
-            ;
+            });
         // --- Hotel ---
         var hotelTemplatesDir = TEMPLATES_DIR + 'hotel/';
         
@@ -42,22 +35,58 @@
                 templateUrl: 'hotel_detail.html',
             });
         $stateProvider
-            .state('booking', {
+            .state('secure', {
+                url: '/secure',
+                template: '<ui-view />',
+            });
+        $stateProvider
+            .state('secure.home', {
+                url: '/home',
+                templateUrl: TEMPLATES_DIR + 'account/account.home.html'
+            });
+        $stateProvider
+            .state('secure.home.dashboard', {
+                url: '/dashboard',
+                templateUrl: TEMPLATES_DIR + 'dashboard/dashboard.home.html',
+                controller: 'DashboardController',
+                controllerAs: 'dashboard'
+            });
+        $stateProvider
+            .state('secure.home.booking', {
                 url: '/booking',
                 template: '<ui-view />',
             })
-            .state('booking.list', {
+            .state('secure.home.booking.list', {
                 url: '/list',
                 controller: 'BookingListController',
                 controllerAs: 'booking',
                 templateUrl: TEMPLATES_DIR + 'booking/booking.home.html',
             })
-            .state('booking.detail', {
+            .state('secure.home.booking.detail', {
                 url: '/detail/:id',
                 controller: 'BookingDetailController',
-                controllerAs: 'vm',
+                controllerAs: 'booking',
                 templateUrl: 'booking_detail.html',
             });
+        $stateProvider
+            .state('secure.home.review', {
+                url: '/review',
+                template: '<ui-view />',
+            })
+            .state('secure.home.review.list', {
+                url: '/list',
+                controller: 'ReviewListController',
+                controllerAs: 'review',
+                templateUrl: TEMPLATES_DIR + 'review/review.home.html',
+            })
+            .state('secure.home.review.detail', {
+                url: '/detail/:id',
+                controller: 'ReviewDetailController',
+                controllerAs: 'review',
+                templateUrl: 'review_detail.html',
+            });
+        
+
         $stateProvider
             .state('campsite', {
                 url: '/campsite',
@@ -126,23 +155,7 @@
                 controllerAs: 'vm',
                 templateUrl: 'restaurant_detail.html',
             });
-        $stateProvider
-            .state('review', {
-                url: '/review',
-                template: '<ui-view />',
-            })
-            .state('review.list', {
-                url: '/list',
-                controller: 'ReviewListController',
-                controllerAs: 'review',
-                templateUrl: TEMPLATES_DIR + 'review/review.home.html',
-            })
-            .state('review.detail', {
-                url: '/detail/:id',
-                controller: 'ReviewDetailController',
-                controllerAs: 'vm',
-                templateUrl: 'review_detail.html',
-            });
+        
         $stateProvider
             .state('tour', {
                 url: '/tour',

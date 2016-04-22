@@ -1,1 +1,44 @@
-<h3>this is booking home</h3>
+<div id="bookings">
+    <div class="panel-heading">Your Bookings</div>
+    <div class="panel-body">
+        <div class="row lineitem  panel panel-default" ng-repeat="item in booking.data">
+            <div class="col-sm-3 col-xs-3 img">
+                <a href=""><img ng-src="{{ item.image }}"></a>
+            </div>
+            <div class="col-sm-5  col-xs-5 ">
+                <div class="row">
+                    <a href="" class="item-title">{{ item.title }}</a>
+                </div>
+                <div class="row">
+                    <p>{{ item.address }}</p>
+                </div>
+                <div class="row">
+                    <p><strong>Telephone</strong>: {{ item.phone }}</p>
+                </div>
+                <div class="row">
+                    <p><strong>Reservation Number</strong>: {{ item.reserve_num }})</p>
+                    <p><strong>PIN Code</strong>: {{ item.pin_code }}</p>
+                </div>
+                <div class="row price-title">
+                    {{item.price}}
+                </div>
+                <div class="row">
+                    <a href="" class="btn btn-primary bmd-ripple">Manage Booking</a>
+                    <a href="" class="btn btn-primary bmd-ripple ml-20">View Travel Guide</a>
+                </div>
+            </div>
+            <div class="col-sm-2 date">
+                <h4>Check in</h4>
+                <br/><span class="day-bold" ng-bind="booking.convertToDate(item.check_in) | date:'d'"></span>
+                <br/><span ng-bind="booking.convertToDate(item.check_in) | date:'MMM y'"></span>
+            </div>
+            <div class="col-sm-2 date">
+                <h4>Check out</h4>
+                <br/><span class="day-bold" ng-bind="booking.convertToDate(item.check_out) | date:'d'"></span>
+                <br/><span ng-bind="booking.convertToDate(item.check_out) | date:'MMM y'"></span>
+            </div>
+        </div>
+        <paging page="1" page-size="6" total="3000" show-prev-next="true" show-first-last="true" text-next-class="glyphicon glyphicon-chevron-right" text-prev-class="glyphicon glyphicon-chevron-left" text-first-class="glyphicon glyphicon-backward" text-last-class="glyphicon glyphicon-forward" class="pull-right">
+        </paging>
+    </div>
+</div>

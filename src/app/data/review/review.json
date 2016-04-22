@@ -1,0 +1,52 @@
+{
+    "data": [{
+            "image": "assets/images/hotel1.jpg",
+            "property_name": "Hotel La Residence & Idrokinesis",
+            "review_title": "Excellent hotel in beautiful setting",
+            "tags": ["Leisure trip", "Couple", "Double"],
+            "review_content": "Excellent hotel all round, extremely friendly staff welcoming to us even as we arrived late in the evening. Ample secure parking available even when we didn't prebook, very easy to access off the main route we take to Germany via Reims.",
+            "helpful_count": 12,
+            "review_score": 10
+        }, {
+            "image": "assets/images/hotel1.jpg",
+            "property_name": "Hotel La Residence & Idrokinesis",
+            "review_title": "Excellent hotel in beautiful setting",
+            "tags": ["Leisure trip", "Couple", "Double"],
+            "review_content": "Excellent hotel all round, extremely friendly staff welcoming to us even as we arrived late in the evening. Ample secure parking available even when we didn't prebook, very easy to access off the main route we take to Germany via Reims.",
+            "helpful_count": 1,
+            "review_score": 8.5
+        }, {
+            "image": "assets/images/hotel1.jpg",
+            "property_name": "Hotel La Residence & Idrokinesis",
+            "review_title": "Excellent hotel in beautiful setting",
+            "tags": ["Leisure trip", "Couple", "Double"],
+            "review_content": "Excellent hotel all round, extremely friendly staff welcoming to us even as we arrived late in the evening. Ample secure parking available even when we didn't prebook, very easy to access off the main route we take to Germany via Reims.",
+            "helpful_count": 12,
+            "review_score": 10
+        }, {
+            "image": "assets/images/hotel1.jpg",
+            "property_name": "Hotel La Residence & Idrokinesis",
+            "review_title": "Excellent hotel in beautiful setting",
+            "tags": ["Leisure trip", "Couple", "Double"],
+            "review_content": "Excellent hotel all round, extremely friendly staff welcoming to us even as we arrived late in the evening. Ample secure parking available even when we didn't prebook, very easy to access off the main route we take to Germany via Reims.",
+            "helpful_count": 4,
+            "review_score": 7.6
+        }, {
+            "image": "assets/images/hotel1.jpg",
+            "property_name": "Hotel La Residence & Idrokinesis",
+            "review_title": "Excellent hotel in beautiful setting",
+            "tags": ["Leisure trip", "Couple", "Double"],
+            "review_content": "Excellent hotel all round, extremely friendly staff welcoming to us even as we arrived late in the evening. Ample secure parking available even when we didn't prebook, very easy to access off the main route we take to Germany via Reims.",
+            "helpful_count": 0,
+            "review_score": 9.3
+        }, {
+            "image": "assets/images/hotel1.jpg",
+            "property_name": "Hotel La Residence & Idrokinesis",
+            "review_title": "Excellent hotel in beautiful setting",
+            "tags": ["Leisure trip", "Couple", "Double"],
+            "review_content": "Excellent hotel all round, extremely friendly staff welcoming to us even as we arrived late in the evening. Ample secure parking available even when we didn't prebook, very easy to access off the main route we take to Germany via Reims.",
+            "helpful_count": 10,
+            "review_score": 8.4
+        } 
+    ]
+}

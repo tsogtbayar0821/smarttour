@@ -1,0 +1,54 @@
+{
+    "data": [{
+            "image": "assets/images/hotel1.jpg",
+            "title": "Hotel La Residence & Idrokinesis",
+            "address": "201 West 79th Street Upper West Side New Yourk, NY 10024, USA",
+            "phone": "+654865486546",
+            "reserve_num": 654865486546,
+            "pin_code": 1052,
+            "check_in": "10/21/2016",
+            "check_out": "10/25/2016",
+            "price": "$319.99"
+        }, {
+            "image": "assets/images/hotel1.jpg",
+            "title": "Hotel La Residence & Idrokinesis",
+            "address": "201 West 79th Street Upper West Side New Yourk, NY 10024, USA",
+            "phone": "+654865486546",
+            "reserve_num": 654865486546,
+            "pin_code": 1052,
+            "check_in": "10/21/2016",
+            "check_out": "10/25/2016",
+            "price": "$319.99"
+        }, {
+            "image": "assets/images/hotel1.jpg",
+            "title": "Hotel La Residence & Idrokinesis",
+            "address": "201 West 79th Street Upper West Side New Yourk, NY 10024, USA",
+            "phone": "+654865486546",
+            "reserve_num": 654865486546,
+            "pin_code": 1052,
+            "check_in": "10/21/2016",
+            "check_out": "10/25/2016",
+            "price": "$319.99"
+        }, {
+            "image": "assets/images/hotel1.jpg",
+            "title": "Hotel La Residence & Idrokinesis",
+            "address": "201 West 79th Street Upper West Side New Yourk, NY 10024, USA",
+            "phone": "+654865486546",
+            "reserve_num": 654865486546,
+            "pin_code": 1052,
+            "check_in": "10/21/2016",
+            "check_out": "10/25/2016",
+            "price": "$319.99"
+        }, {
+            "image": "assets/images/hotel1.jpg",
+            "title": "Hotel La Residence & Idrokinesis",
+            "address": "201 West 79th Street Upper West Side New Yourk, NY 10024, USA",
+            "phone": "+654865486546",
+            "reserve_num": 654865486546,
+            "pin_code": 1052,
+            "check_in": "10/21/2016",
+            "check_out": "10/25/2016",
+            "price": "$319.99"
+        } 
+    ]
+}

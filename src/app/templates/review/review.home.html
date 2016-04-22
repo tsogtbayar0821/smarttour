@@ -1,1 +1,35 @@
-<h3>this is review home</h3>
+<div id="reviews">
+	<div class="panel-heading">Your reviews</div>
+	<div class="panel-body">
+		<div class="row lineitem  panel panel-default" ng-repeat="item in review.data">
+	    	<div class="col-sm-3 img">
+	            <a href=""><img ng-src="{{ item.image }}"></a>
+	        </div>
+	        <div class="col-sm-9  col-xs-9 ">
+	            <div class="row">
+	                <a href="" class="item-title">{{ item.property_name }}</a>
+	            </div>
+	            <div class="row">
+	                <span class="score">{{item.review_score}}</span><span class="review-title">{{ item.review_title }}</span>
+	            </div>
+	            <div class="row">
+	                <p><span class="label label-info tag" ng-repeat="tag in item.tags">{{tag}}</span></p>
+	            </div>
+	            <div class="row review-content">
+	                <p>{{ item.review_content }}</p>
+	            </div>
+	            <div class="row helpful">
+	                <a href="" class="btn btn-primary bmd-ripple bmd-flat-btn helpful-btn">Helpful</a>
+	                <!-- <span class="helpful-count">{{item.helpful_count}} person found this review helpful.</span> -->
+	                <ng-pluralize count="item.helpful_count"
+				                when="{'0': 'Nobody found this review helpful.',
+				                       'one': '1 person found this review helpful.',
+				                       'other': '{} people found this review helpful.'}">
+				  </ng-pluralize>
+	            </div>
+	        </div>
+	    </div>
+	    <paging page="1" page-size="6" total="3000" show-prev-next="true" show-first-last="true" text-next-class="glyphicon glyphicon-chevron-right" text-prev-class="glyphicon glyphicon-chevron-left" text-first-class="glyphicon glyphicon-backward" text-last-class="glyphicon glyphicon-forward" class="pull-right">
+	    </paging>
+	</div>
+</div>
