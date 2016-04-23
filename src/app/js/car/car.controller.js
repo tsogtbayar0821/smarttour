@@ -32,9 +32,14 @@
 
     }
 
-    function CarDetailController($timeout) {
+    function CarDetailController($timeout, CarSvc, $scope, $state) {
         var vm = this;
 
+        var carImage = 'app/data/car/car-detail-image.json';
+        CarSvc.getCarImg(carImage).get(function(data){
+            // $log.log('img content', data.data)
+            vm.contentImages = data.data
+        })
 
     }
 

@@ -31,9 +31,13 @@
         
     }
 
-    function TourDetailController() {
+    function TourDetailController($scope, ToursSvc, $state) {
         var vm = this;
-
+        var tourImage = 'app/data/tours/tours-detail-image.json';
+        ToursSvc.getTourImg(tourImage).get(function(data){
+            // $log.log('img content', data.data)
+            vm.contentImages = data.data
+        })
         
     }
 

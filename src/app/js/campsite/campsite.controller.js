@@ -31,8 +31,8 @@
 
     function CampsiteDetailController($timeout, $state, $log, $scope, $rootScope, CampsiteSvc) {
         var vm = this;
-        $log.log('this is camp detail')
-        $log.log('current campdetail', $rootScope.currentCamp)
+        // $log.log('this is camp detail')
+        // $log.log('current campdetail', $rootScope.currentCamp)
 
         var camImage = 'app/data/campsite/campsite-detail-image.json';
         CampsiteSvc.getCampImg(camImage).get(function(data){

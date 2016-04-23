@@ -1,6 +1,6 @@
-<div class="container" id="restraunts">
+<div class="container" id="restaurants">
     <div class="header">
-        <h3 class="title">Restraunt</h3>
+        <h3 class="title">Restaurants</h3>
         <p>Total includes taxes and fees.</p>
     </div>
     <div class="body row">
@@ -18,7 +18,7 @@
                     <div class="map">
                         <ng-map center="[47.8864, 106.9057]"></ng-map>  
                     </div>
-                    <div class="filter-cell" ng-repeat="main in restraunt.filters">
+                    <div class="filter-cell" ng-repeat="main in restaurants.filters">
                         <h3>{{main.title}}</h3>
                         <div class="row" ng-repeat="filter in main.filters">
                             <div class="checkbox bmd-checkbox">
@@ -34,7 +34,7 @@
             </nav>
         </div>
         <div class="col-lg-9 col-md-9 col-sm-6 col-xs-12 camp-group">
-            <div class="trip-container panel" ng-repeat="item in restraunt.contents">
+            <div class="trip-container panel" ng-repeat="item in restaurants.contents">
                 <div style="row">
                     <div class="trip-image-container col-md-3 col-sm-4 col-xs-12">
                         <div class="trip-image">
@@ -59,7 +59,7 @@
                                 {{item.content}}
                             </div>
                             <div class="hidden-sm hidden-xs pull-right">
-                                <a class="btn btn-primary bmd-ripple" ui-sref='restaurant.detail' ng-click="restraunt.goRestrauntDetail($index)" target="_blank">Reserve</a>
+                                <a class="btn btn-primary bmd-ripple" ui-sref='restaurants.detail' ng-click="restaurants.gorestaurantsDetail($index)" target="_blank">Reserve</a>
                             </div>
                             <div class="mt5 hidden-sm hidden-xs">
                                 <div class="">

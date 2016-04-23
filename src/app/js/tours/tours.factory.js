@@ -8,12 +8,16 @@
     /** @ngInject */
     function ToursSvc($resource) {
        var service = {           
-            getToursList: getToursList
+            getToursList: getToursList,
+            getTourImg: getTourImg
         };
 
         return service;
 
         function getToursList(url) {
+            return $resource(url);
+        }
+        function getTourImg(url) {
             return $resource(url);
         }
     } 

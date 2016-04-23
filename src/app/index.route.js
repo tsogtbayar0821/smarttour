@@ -117,8 +117,8 @@
             })
             .state('events.detail', {
                 url: '/detail/:id',
-                // controller: 'EventsDetailController',
-                // controllerAs: 'vm',
+                controller: 'EventsDetailController',
+                controllerAs: 'eventsdeatail',
                 templateUrl: TEMPLATES_DIR + 'events/events.detail.html',
             });
         $stateProvider
@@ -139,20 +139,20 @@
                 templateUrl: 'recent_search_detail.html',
             });
         $stateProvider
-            .state('restaurant', {
+            .state('restaurants', {
                 url: '/restaurant',
                 template: '<ui-view />',
             })
-            .state('restaurant.list', {
+            .state('restaurants.list', {
                 url: '/list',
                 controller: 'RestaurantListController',
-                controllerAs: 'restraunt',
+                controllerAs: 'restaurants',
                 templateUrl: TEMPLATES_DIR + 'restaurants/restaurants.home.html',
             })
-            .state('restaurant.detail', {
+            .state('restaurants.detail', {
                 url: '/detail/:id',
-                // controller: 'RestaurantDetailController',
-                // controllerAs: 'vm',
+                controller: 'RestaurantDetailController',
+                controllerAs: 'restaurantsdetail',
                 templateUrl: TEMPLATES_DIR + 'restaurants/restaurants.detail.html',
             });
         
@@ -169,8 +169,8 @@
             })
             .state('tour.detail', {
                 url: '/detail/:id',
-                // controller: 'TourDetailController',
-                // controllerAs: 'vm',
+                controller: 'TourDetailController',
+                controllerAs: 'tourdetail',
                 templateUrl: TEMPLATES_DIR + 'tours/tours.detail.html',
             });
         $stateProvider
@@ -186,8 +186,8 @@
             })
             .state('car.detail', {
                 url: '/detail/:id',
-                // controller: 'CarDetailController',
-                // controllerAs: 'vm',
+                controller: 'CarDetailController',
+                controllerAs: 'cardetail',
                 templateUrl: TEMPLATES_DIR + 'car/car.detail.html',
             });
 

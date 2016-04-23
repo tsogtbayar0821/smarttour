@@ -3,17 +3,21 @@
 
     angular
         .module('tour')
-        .factory('EventSvc', EventSvc)
+        .factory('EventsSvc', EventsSvc)
 
     /** @ngInject */
-    function EventSvc($resource) {
+    function EventsSvc($resource) {
        var service = {           
-            getEventList: getEventList
+            getEventsList: getEventsList,
+            getEventsImg: getEventsImg
         };
 
         return service;
 
-        function getEventList(url) {
+        function getEventsList(url) {
+            return $resource(url);
+        }
+        function getEventsImg(url) {
             return $resource(url);
         }
     } 

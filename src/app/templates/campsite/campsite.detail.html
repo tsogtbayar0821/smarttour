@@ -680,10 +680,19 @@ $(document).ready(function() {
     $(".lSPager.lSGallery").mouseover(function() {
         // console.log('yes', this);
         var element = $(this).find('li').mouseover(function() {
-            console.log('yes', this);
-            // setTimeout(function(){
-            $(this).trigger('click')
-                // }, 500)
+            // console.log('yes', this);
+            var tem = $(this);
+            setTimeout(function(){
+                // $(".lSPager.lSGallery").mouseover(function() {
+                //     $(this).find('li').mouseover(function() {
+                //         var current = $(this);
+                //         console.log('after', current);
+                //     })
+                // })                
+                // if(tem == current){
+                    tem.trigger('click')
+                // }
+            }, 500)
         });
     });
 })
