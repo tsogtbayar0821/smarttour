@@ -103,6 +103,11 @@
                 controller: 'CampsiteDetailController',
                 controllerAs: 'campsitedetail',
                 templateUrl: TEMPLATES_DIR + 'campsite/campsite.detail.html',
+            }).state('campsite.booking', {
+                url: '/booking/:id',
+                controller: 'CampsiteDetailController',
+                controllerAs: 'campsitedetail',
+                templateUrl: TEMPLATES_DIR + 'campsite/campsite.booking.html',
             });
         $stateProvider
             .state('events', {
