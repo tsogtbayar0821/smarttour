@@ -1,9 +1,11 @@
 .navbar.navbar-default {
     margin-bottom: 0px;
 }
-.dropdown-menu{
-	min-width: auto;
+
+.dropdown-menu {
+    min-width: auto;
 }
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
     margin-top: 0px;
@@ -32,8 +34,25 @@ a:focus {
         a {
             padding: 5px 15px;
             color: blue;
-            &.active{
+            &.active {
                 color: red;
+            }
+        }
+    }
+}
+
+footer {
+    .social {
+        margin-top: 20px;
+        .wrapper {
+            .title {
+                font-size: 28px;
+                font-weight: bold;
+                color: #fff;
+                margin-right: 20px;
+            }
+            a {
+                margin-right: 20px;
             }
         }
     }

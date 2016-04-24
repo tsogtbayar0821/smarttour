@@ -128,5 +128,26 @@ html {
     }
     .wyCh{
     	text-align: center;
+    	.oneusp{
+    		.lp-index-usp-iconfont{
+    			float: left;
+    			.lp-index-usp-iconfont__background{
+					background-color: #7bbd65;
+					border-radius: 50%;
+					width: 80px;
+					height: 80px;
+    			}
+    			.lp-index-usp-iconfont__icon{
+
+    			}
+    		}
+    		.txt{
+    			text-align: left;
+    			float: left;
+    			padding-left: 20px;
+				p{
+				}
+    		}
+    	}
     }
 }
