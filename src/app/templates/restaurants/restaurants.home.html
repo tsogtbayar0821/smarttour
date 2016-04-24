@@ -18,23 +18,27 @@
                     <div class="map">
                         <ng-map center="[47.8864, 106.9057]"></ng-map>  
                     </div>
-                    <div class="filter-cell" ng-repeat="main in restaurants.filters">
-                        <h3>{{main.title}}</h3>
-                        <div class="row" ng-repeat="filter in main.filters">
-                            <div class="checkbox bmd-checkbox">
-                                <label>
-                                    <input type="checkbox" class="bmd-ripple bmd-ink-gray">
-                                    <span class="check"></span> {{filter.name}}
-                                </label>
+                    <div class="panel panel-primary mt-30">
+                        <div class="panel-heading"><h3 class="panel-title">Filter by:</h3></div>
+                        <div class="panel-body">
+                            <div class="list-group bmd-list-group-primary" ng-repeat="main in restaurants.filters">
+                                <a href="" class="list-group-item bmd-ripple filter-title" data-toggle="collapse" data-target="#accordion-primary-item-{{$index}}" aria-expanded="true">{{main.title}}</a>
+                                <div id="accordion-primary-item-{{$index}}" class="collapse in " aria-expanded="true">
+                                    <div class="checkbox bmd-checkbox pl-20" ng-repeat="filter in main.filters">
+                                        <label>
+                                            <input type="checkbox" class="bmd-ripple bmd-ink-gray">
+                                            <span class="check"></span> {{filter.name}}
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="pull-right">{{filter.cnt}}</p>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
         <div class="col-lg-9 col-md-9 col-sm-6 col-xs-12 camp-group">
-            <div class="trip-container panel" ng-repeat="item in restaurants.contents">
+            <div class="trip-container panel panel-default" ng-repeat="item in restaurants.contents">
                 <div style="row">
                     <div class="trip-image-container col-md-3 col-sm-4 col-xs-12">
                         <div class="trip-image">

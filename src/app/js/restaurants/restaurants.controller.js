@@ -17,7 +17,7 @@
 
         var restaurantsContent = 'app/data/restaurants/restaurants-content.json'
         RestaurantsSvc.getRestaurantsSvcList(restaurantsContent).get(function(data) {
-            $log.log('content', data.data)
+            // $log.log('content', data.data)
             vm.contents = data.data
         })
        
