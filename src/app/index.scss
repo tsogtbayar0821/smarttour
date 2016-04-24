@@ -33,3 +33,13 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
  */
 // injector
 // endinjector
+// remove scroll
+.sc_hd1::-webkit-scrollbar{
+	width: 0 !important
+}
+.sc_hd2{
+	 -ms-overflow-style: none; 
+}
+.sc_hd3{
+	 overflow: -moz-scrollbars-none; 
+}

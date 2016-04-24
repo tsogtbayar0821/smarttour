@@ -8,6 +8,9 @@
                         <div class="row">
                             <div class="col-lg-12 head-container">
                                 <div class="row">
+                                    <div class="" id="mainC" ng-repeat="item in home.mainCs">
+                                        <img ng-src="{{item.image}}" alt="">
+                                    </div>
                                     <!-- <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hidden-phone">
                                         <h2 class="head-title">Welcome to Realto</h2>
                                         <p class="head-message"><strong>Realto xHTML/CSS Template is The Best Solution To Sell House Online.</strong>
@@ -105,81 +108,74 @@
         <!-- .container -->
     </div>
     <!-- latest-properties  -->
-    
     <div class="container">
-        <div class="row mt-30">
-            <div class="home-bottom-top">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <h2 class="secion-title">Why choose us?</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore magna aliqua adipisicing elit seddo eiusmod tempor.</p>
-                        <p>Sed perspiciatis unde omnisiste natus error voluptatem remopa accusantium doloremque laudantium, totam rem aperiam.</p>
-                        <a class="serif italic" href="" title="Continue">Continue &raquo;</a>
+        <div class="row topC">
+            <h2>Top Experiences in Mongolia</h2>
+            <ul class="" id="topCarousel">
+                <div class="topC-each" ng-repeat="item in home.topCs">
+                    <img ng-src="{{item.image}}" alt="">
+                    <p class="title">{{item.title}}</p>
+                    <p class="cont">{{item.txt}}</p>
+                </div>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 topD-group sc_hd1 sc_hd2 sc_hd3">
+                <h2>Top Deals</h2>
+                <div class="top-deal row" style="" ng-repeat="item in topD = [1, 2, 3, 4, 5, 6, 7, 8]">
+                    <a class="thumb-holder" href='' style="float:left">
+                        <img src="http://q-ec.bstatic.com/images/city/square100/295/29538.jpg" alt="Riga Latvia Hotels" title="Hotels in Riga, Latvia" width="100">
+                    </a>
+                    <div class="txt-group">
+                        <a class="b-sprite b-app_dots">491 Hotels in Riga</a>
+                        <a>Riga</a>
+                        <div class="">
+                            <p class="social_tag">
+                                Riga was highly rated for <b>old town</b> by 578 guests from Finland!
+                            </p>
+                        </div>
+                        <p class="count">13,649 endorsements
+                        </p>
+                        <li>
+                            <p class="endorsement dficon-301">
+                            </p>
+                            <p class="name"></p>
+                            <p class="count">5,630 endorsements
+                            </p>
+                        </li>
+                        <a href="">104 hotels</a>
+                        <a href="">305 apartments</a>
+                        <a href="">40 hostels</a>
+                        <a href="">14 guesthouses</a>
+                        <a href="">13 villas</a>
                     </div>
                 </div>
-                <!-- .span4 -->
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <h3 class="info-head">Designed for your business</h3>
-                        <div class="row clearfix">
-                            <div class="pull-left icons hidden-phone">
-                                <i class="icon-briefcase"></i>
-                            </div>
-                            <div class="col-lg-12">
-                                <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore magna aliqua adipisicing elit seddo eiusmod tempor.</p>
-                                <a class="serif italic" href="" title="Continue">Continue &raquo;</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nsF">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">News Feed</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="each sc_hd1 sc_hd2 sc_hd3">
+                            <div class="activity_box" ng-repeat="item in nsFs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+                                <div class="image">
+                                    <img src="http://r-ec.bstatic.com/images/hotel/square60/370/37045918.jpg">
+                                </div>
+                                <div class="txt">
+                                    <p class="booker_from">A traveler from Finland </p>
+                                    <a href="">Radisson Blu Royal Hotel, Helsinki</a>
+                                </div>
                             </div>
                         </div>
-                        <!-- .clearfix -->
                     </div>
-                    <!-- .info-box -->
-                    <div class="info-box">
-                        <h3 class="info-head">Ample Customizations</h3>
-                        <div class="row clearfix">
-                            <div class="pull-left icons hidden-phone">
-                                <i class="icon-cogs"></i>
-                            </div>
-                            <div class="col-lg-12">
-                                <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore magna aliqua adipisicing elit seddo eiusmod tempor.</p>
-                                <a class="serif italic" href="" title="Continue">Continue &raquo;</a>
-                            </div>
-                        </div>
-                        <!-- .clearfix -->
-                    </div>
-                    <!-- .info-box -->
                 </div>
-                <!-- .span4 -->
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <h3 class="info-head">Fully Responsive</h3>
-                        <div class="row clearfix">
-                            <div class="pull-left icons hidden-phone">
-                                <i class="icon-move"></i>
-                            </div>
-                            <div class="col-lg-12">
-                                <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore magna aliqua adipisicing elit seddo eiusmod tempor.</p>
-                                <a class="serif italic" href="" title="Continue">Continue &raquo;</a>
-                            </div>
-                        </div>
-                        <!-- .clearfix -->
-                    </div>
-                    <!-- .info-box -->
-                    <div class="info-box">
-                        <h3 class="info-head">Bootstrap Compatible</h3>
-                        <div class="row clearfix">
-                            <div class="pull-left icons hidden-phone">
-                                <i class="icon-thumbs-up"></i>
-                            </div>
-                            <div class="col-lg-12">
-                                <p>Lorem ipsum dolor sit amet consectetur incididunt ut labore et dolore magna aliqua adipisicing elit seddo eiusmod tempor.</p>
-                                <a class="serif italic" href="" title="Continue">Continue &raquo;</a>
-                            </div>
-                        </div>
-                        <!-- .clearfix -->
-                    </div>
-                    <!-- .info-box -->
-                </div>
-                <!-- .span4 -->
+            </div>
+        </div>
+        <div class="row mt-30 wyCh">
+            <h3>Why Choose Us?</h3>
+            <div class="wyCh-group">
+                
             </div>
         </div>
     </div>
@@ -292,3 +288,16 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+$('#topCarousel').lightSlider({
+    item: 5,
+    loop: true,
+    mode: 'slide',
+    speed: 700,
+    auto: true,
+    pause: 5000,
+    autoWidth: false,
+    slideMove: 1, // slidemove will be 1 if loop is true
+    slideMargin: 10,
+});
+</script>
