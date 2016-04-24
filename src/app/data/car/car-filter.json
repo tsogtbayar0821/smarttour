@@ -1,142 +1,59 @@
 {
     "data": [
         { 
-            "title": "Travel themes",
+            "title": "Car type",
             "filters": [{
-                    "name": "Adventure",
+                    "name": "Economy",
                     "cnt": "15"
                 },{
-                    "name": "Nomadic lifestyle",
+                    "name": "Compact",
                     "cnt": "14"
                 },{
-                    "name": "Cultural",
+                    "name": "Special",
                     "cnt": "13"
                 },{
-                    "name": "Horse riding",
+                    "name": "Midsize ",
                     "cnt": "160"
                 },{
-                    "name": "Travel with children",
+                    "name": "SUV",
                     "cnt": "102"
                 },{
-                    "name": "Hiking",
+                    "name": "Fullsize",
                     "cnt": "15"
                 },{
-                    "name": "Sport & Active tour",
+                    "name": "Luxury",
                     "cnt": "8"
-                },{
-                    "name": "Off the beaten track",
-                    "cnt": "4"
-                },{
-                    "name": "Comfort & Luxury",
-                    "cnt": "96"
-                },{
-                    "name": "Ethnic minority",
-                    "cnt": "357"
                 }
             ]
         },{            
-            "title": "Travel themes",
+            "title": "Daily prices",
             "filters": [{
-                    "name": "Adventure",
+                    "name": "Less than $200",
                     "cnt": "15"
                 },{
-                    "name": "Nomadic lifestyle",
+                    "name": "$200 to $299 (13)",
                     "cnt": "14"
                 },{
-                    "name": "Cultural",
+                    "name": "Greater than $300 (4)",
                     "cnt": "13"
-                },{
-                    "name": "Horse riding",
-                    "cnt": "160"
-                },{
-                    "name": "Travel with children",
-                    "cnt": "102"
-                },{
-                    "name": "Hiking",
-                    "cnt": "15"
-                },{
-                    "name": "Sport & Active tour",
-                    "cnt": "8"
-                },{
-                    "name": "Off the beaten track",
-                    "cnt": "4"
-                },{
-                    "name": "Comfort & Luxury",
-                    "cnt": "96"
-                },{
-                    "name": "Ethnic minority",
-                    "cnt": "357"
                 }
             ]  
         },{
-            "title": "Travel themes",
+            "title": "Rental car company",
             "filters": [{
-                    "name": "Adventure",
+                    "name": "Avis",
                     "cnt": "15"
                 },{
-                    "name": "Nomadic lifestyle",
+                    "name": "Budget",
                     "cnt": "14"
                 },{
-                    "name": "Cultural",
+                    "name": "Dollar",
                     "cnt": "13"
                 },{
-                    "name": "Horse riding",
+                    "name": "Hertz",
                     "cnt": "160"
-                },{
-                    "name": "Travel with children",
-                    "cnt": "102"
-                },{
-                    "name": "Hiking",
-                    "cnt": "15"
-                },{
-                    "name": "Sport & Active tour",
-                    "cnt": "8"
-                },{
-                    "name": "Off the beaten track",
-                    "cnt": "4"
-                },{
-                    "name": "Comfort & Luxury",
-                    "cnt": "96"
-                },{
-                    "name": "Ethnic minority",
-                    "cnt": "357"
                 }
             ]
-        },{            
-            "title": "Travel themes",
-            "filters": [{
-                    "name": "Adventure",
-                    "cnt": "15"
-                },{
-                    "name": "Nomadic lifestyle",
-                    "cnt": "14"
-                },{
-                    "name": "Cultural",
-                    "cnt": "13"
-                },{
-                    "name": "Horse riding",
-                    "cnt": "160"
-                },{
-                    "name": "Travel with children",
-                    "cnt": "102"
-                },{
-                    "name": "Hiking",
-                    "cnt": "15"
-                },{
-                    "name": "Sport & Active tour",
-                    "cnt": "8"
-                },{
-                    "name": "Off the beaten track",
-                    "cnt": "4"
-                },{
-                    "name": "Comfort & Luxury",
-                    "cnt": "96"
-                },{
-                    "name": "Ethnic minority",
-                    "cnt": "357"
-                }
-            ]            
-            
         }
         
     ]

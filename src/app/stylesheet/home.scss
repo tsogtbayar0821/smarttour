@@ -55,31 +55,33 @@ html {
         }
     }
     .topD-group {
-        max-height: 400px;
-        overflow: scroll;
-        .top-deal {
-            margin-bottom: 15px;
-            .thumb-holder {
-                float: left;
-            }
-            .txt-group {
-                float: left;
-                font-size: 12px;
-                margin-left: 10px;
-                p {
-                    margin-bottom: 5px;
+        .each {
+            max-height: 400px;
+            overflow: scroll;
+            .top-deal {
+                margin-bottom: 15px;
+                .thumb-holder {
+                    float: left;
+                }
+                .txt-group {
+                    float: left;
+                    font-size: 12px;
+                    margin-left: 10px;
+                    p {
+                        margin-bottom: 5px;
+                    }
                 }
             }
         }
     }
     .nsF {
-    	margin-top: 25px;
+        margin-top: 25px;
         .panel-default {
             border-radius: 7px;
             background-color: rgba(255, 255, 255, 0);
             .each {
-            	max-height: 300px;
-            	overflow: scroll;
+                max-height: 300px;
+                overflow: scroll;
                 .activity_box {
                     border-left: 2px solid #003580;
                     padding: 12px;
@@ -126,28 +128,33 @@ html {
             }
         }
     }
-    .wyCh{
-    	text-align: center;
-    	.oneusp{
-    		.lp-index-usp-iconfont{
-    			float: left;
-    			.lp-index-usp-iconfont__background{
-					background-color: #7bbd65;
-					border-radius: 50%;
-					width: 80px;
-					height: 80px;
-    			}
-    			.lp-index-usp-iconfont__icon{
+    .wyCh {
+        text-align: center;
+        .oneusp {
+            .lp-index-usp-iconfont {
+                float: left;
+                .lp-index-usp-iconfont__background {
+                    background-color: #7bbd65;
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                }
+                .lp-index-usp-iconfont__icon {}
+            }
+            .txt {
+                text-align: left;
+                float: left;
+                padding-left: 20px;
+                p {}
+            }
+        }
+    }
+}
 
-    			}
-    		}
-    		.txt{
-    			text-align: left;
-    			float: left;
-    			padding-left: 20px;
-				p{
-				}
-    		}
-    	}
+#menu {
+    width: 100%;
+    background-color: #2196f3;
+    ul {
+        box-shadow: none;
     }
 }

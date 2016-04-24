@@ -10,10 +10,10 @@
     .body {
         margin-top: 20px;
         .filter-group {
-            background: white;
+            background: transparent;
             .navbar {
                 border: none;
-                background: white;
+                // background: white;
                 .map{
                     
                 }
@@ -45,7 +45,7 @@
                     overflow: hidden;
                     height: 160px;
                     .trip-image {
-                        position: absolute;
+                        // position: absolute;
                         left: -1000px;
                         right: -1000px;
                         top: 0;
@@ -53,6 +53,9 @@
                         text-align: center;
                         img {
                             height: 100%;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(0%, 50%);
                         }
                     }
                 }
@@ -86,5 +89,13 @@
     }
     .mt-30 {
         margin-top: 30px;
+    }
+    .img-helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    a img {
+        vertical-align: middle;
     }
 }

@@ -242,7 +242,8 @@ a.overlay:hover .more {
 	padding: 20px 0;
 	min-height: 600px;
 	background: url('../assets/images/image2-1.jpg') no-repeat center center;
-	background-size: 100%;
+	background-size: 100% 100%;
+	margin-top: 10px;
 }
 .head-title, .head-message, .header-cta {
 	-moz-animation: fadein 3s; /* Firefox */
