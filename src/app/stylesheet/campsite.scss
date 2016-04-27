@@ -93,6 +93,9 @@
         transform: none!important;
         li {
             opacity: 0.5;
+            height: 30px;
+            overflow: hidden;
+            padding-top: 5px;
             &.active {
                 opacity: 1;
             }

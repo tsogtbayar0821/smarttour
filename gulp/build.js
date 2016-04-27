@@ -49,11 +49,11 @@ gulp.task('html', ['inject', 'partials'], function() {
         .pipe($.sourcemaps.write('maps'))
         .pipe(jsFilter.restore)
         .pipe(cssFilter)
-        // .pipe($.sourcemaps.init())
+        .pipe($.sourcemaps.init())
         .pipe($.replace('../../bower_components/bootstrap-sass/assets/fonts/bootstrap/', '../fonts/'))
         .pipe($.cssnano())
         .pipe($.rev())
-        // .pipe($.sourcemaps.write('maps'))
+        .pipe($.sourcemaps.write('maps'))
         .pipe(cssFilter.restore)
         .pipe($.revReplace())
         .pipe(htmlFilter)
@@ -94,11 +94,19 @@ gulp.task('clean', function() {
     return $.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')]);
 });
 
-gulp.task('finalcopy', function() {
+gulp.task('component-copy', function() {
     // Copy html
     gulp.src(['./src/app/components/bmd-1.4.2/**/*'])
         .pipe(gulp.dest('dist/app/components/bmd-1.4.2/'));
+    gulp.src(['./src/app/components/quicksearch/*.html'])
+        .pipe(gulp.dest('dist/app/components/quicksearch/'));
+});
+
+gulp.task('template-copy', function() {
+    // Copy html
+    gulp.src(['./src/app/templates/**/*'])
+        .pipe(gulp.dest('dist/app/templates/'));
 
 });
 
-gulp.task('build', ['html', 'fonts', 'other', 'finalcopy']);
+gulp.task('build', ['html', 'fonts', 'other', 'component-copy', 'template-copy']);

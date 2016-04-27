@@ -10,12 +10,12 @@
 
         $log.debug('runBlock end');
 
-        $rootScope.isState = function(state){
-        	if($state.current.name == state){
-        		return true
-        	}else{
-        		return false
-        	}
+        $rootScope.isState = function(state) {
+            if ($state.current.name == state) {
+                return true
+            } else {
+                return false
+            }
         };
 
         $rootScope.currentCamp;
